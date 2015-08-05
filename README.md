@@ -36,8 +36,7 @@
 ### Links úteis
 
 * Grid: http://getbootstrap.com/css/#grid
-* Paleta de cores usadas no layout:
-https://color.adobe.com/library/73BE1FDF-8912-453C-814C-51EFDB0B83B7/theme/e1df30cb-2f37-4165-9319-178fefe4466c/
+* Paleta de cores usadas no layout: https://color.adobe.com/pt/teste-folha-web-color-theme-6584765/
 * Mussum Ipsum (gerador de lorem ipsum do Mussum): http://mussumipsum.com/
 
 Ao terminar o teste, envie o resultado zipado de volta para o e-mail do seu contato na Folha de S.Paulo.
