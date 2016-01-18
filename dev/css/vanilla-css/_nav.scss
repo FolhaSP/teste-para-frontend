@@ -1,0 +1,14 @@
+//
+// Navigation
+// --------------------------------------------------
+
+
+.nav {
+	background-color: $nav-bg;
+	height: $nav-height;
+
+	li {
+		display: inline-block;
+		height: $nav-item-height;
+	}	
+}

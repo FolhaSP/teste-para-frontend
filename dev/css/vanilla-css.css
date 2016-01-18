@@ -1,0 +1,35 @@
+/*!
+ * Vanilla CSS v0.1 (https://github.com/duduindo/front-end-test)
+ */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0px; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.display-inline {
+  display: inline-block; }
+
+.nav {
+  background-color: #3498DB;
+  height: 114px; }
+  .nav li {
+    display: inline-block;
+    height: 114px; }
+
+/*# sourceMappingURL=vanilla-css.css.map */
