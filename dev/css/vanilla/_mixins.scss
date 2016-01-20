@@ -1,0 +1,20 @@
+//
+// Mixins
+// --------------------------------------------------
+
+
+//== Column
+//
+@mixin col($type-col) {
+  $n: 13;
+  @for $i from (1) through 12 {
+    .col-#{$type-col}-#{$i} { 
+    	width: percentage(($i / 12));
+    	float: left;
+    }
+  }
+}
+
+
+
+

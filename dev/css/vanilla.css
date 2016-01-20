@@ -1,0 +1,247 @@
+/*!
+ * Vanilla CSS v0.1 (https://github.com/duduindo/front-end-test)
+ */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0px; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 14px; }
+
+h5 {
+  font-size: 12px; }
+
+p {
+  font-size: 11px; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.display-inline {
+  display: inline-block; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.nav {
+  background-color: #3498DB;
+  height: 114px; }
+  .nav li {
+    height: 114px; }
+
+.btn {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0; }
+  .btn span {
+    display: block;
+    width: 100%; }
+  .btn.btn-menu {
+    line-height: 30px;
+    height: 30px;
+    margin-top: 38px;
+    width: 38px; }
+    .btn.btn-menu span {
+      background-color: #2c3e50;
+      border-radius: 4px;
+      height: 4px;
+      margin-top: 8px; }
+      .btn.btn-menu span:nth-of-type(1) {
+        margin-top: -1px; }
+
+.folha-logo {
+  margin-top: 35px; }
+
+.folha-slogan {
+  color: #fff;
+  margin-top: 65px; }
+
+@media (min-width: 991px) {
+  .col-md-1 {
+    width: 8.33333%;
+    float: left; }
+
+  .col-md-2 {
+    width: 16.66667%;
+    float: left; }
+
+  .col-md-3 {
+    width: 25%;
+    float: left; }
+
+  .col-md-4 {
+    width: 33.33333%;
+    float: left; }
+
+  .col-md-5 {
+    width: 41.66667%;
+    float: left; }
+
+  .col-md-6 {
+    width: 50%;
+    float: left; }
+
+  .col-md-7 {
+    width: 58.33333%;
+    float: left; }
+
+  .col-md-8 {
+    width: 66.66667%;
+    float: left; }
+
+  .col-md-9 {
+    width: 75%;
+    float: left; }
+
+  .col-md-10 {
+    width: 83.33333%;
+    float: left; }
+
+  .col-md-11 {
+    width: 91.66667%;
+    float: left; }
+
+  .col-md-12 {
+    width: 100%;
+    float: left; }
+
+  .hidden-md {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-sm-1 {
+    width: 8.33333%;
+    float: left; }
+
+  .col-sm-2 {
+    width: 16.66667%;
+    float: left; }
+
+  .col-sm-3 {
+    width: 25%;
+    float: left; }
+
+  .col-sm-4 {
+    width: 33.33333%;
+    float: left; }
+
+  .col-sm-5 {
+    width: 41.66667%;
+    float: left; }
+
+  .col-sm-6 {
+    width: 50%;
+    float: left; }
+
+  .col-sm-7 {
+    width: 58.33333%;
+    float: left; }
+
+  .col-sm-8 {
+    width: 66.66667%;
+    float: left; }
+
+  .col-sm-9 {
+    width: 75%;
+    float: left; }
+
+  .col-sm-10 {
+    width: 83.33333%;
+    float: left; }
+
+  .col-sm-11 {
+    width: 91.66667%;
+    float: left; }
+
+  .col-sm-12 {
+    width: 100%;
+    float: left; }
+
+  .hidden-sm {
+    display: none; } }
+@media (max-width: 768px) and (max-width: 768px) {
+  .col-xs-1 {
+    width: 8.33333%;
+    float: left; }
+
+  .col-xs-2 {
+    width: 16.66667%;
+    float: left; }
+
+  .col-xs-3 {
+    width: 25%;
+    float: left; }
+
+  .col-xs-4 {
+    width: 33.33333%;
+    float: left; }
+
+  .col-xs-5 {
+    width: 41.66667%;
+    float: left; }
+
+  .col-xs-6 {
+    width: 50%;
+    float: left; }
+
+  .col-xs-7 {
+    width: 58.33333%;
+    float: left; }
+
+  .col-xs-8 {
+    width: 66.66667%;
+    float: left; }
+
+  .col-xs-9 {
+    width: 75%;
+    float: left; }
+
+  .col-xs-10 {
+    width: 83.33333%;
+    float: left; }
+
+  .col-xs-11 {
+    width: 91.66667%;
+    float: left; }
+
+  .col-xs-12 {
+    width: 100%;
+    float: left; }
+
+  .hidden-xs {
+    display: none; } }
+
+/*# sourceMappingURL=vanilla.css.map */

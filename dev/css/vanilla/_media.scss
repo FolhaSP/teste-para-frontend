@@ -1,0 +1,32 @@
+//
+// Media
+// --------------------------------------------------
+
+
+//== md
+//
+@media (min-width: $media-col-md){
+	@include col("md");	
+
+	.hidden-md { display: none; }
+}
+
+
+
+//== sm
+//
+@media (min-width: $media-col-sm) and (max-width: $media-col-md) {
+	@include col("sm");	
+
+	.hidden-sm { display: none; }
+}
+
+
+
+//== xs
+//
+@media (max-width: $media-col-xs) and (max-width: $media-col-sm) {
+	@include col("xs");	
+
+	.hidden-xs { display: none; }
+}

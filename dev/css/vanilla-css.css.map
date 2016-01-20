@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;AAIA,CAAE;EACD,UAAU,EAAE,UAAU;;AAKvB,IAAK;EACJ,MAAM,ECUa,GAAG;;ADLvB,EAAG;EACF,eAAe,EAAE,IAAI;EACrB,MAAM,EAAE,CAAC;EACT,OAAO,EAAC,CAAC;;AEbV,UAAW;EACV,WAAW,EDqCW,IAAI;ECpC1B,YAAY,EDoCU,IAAI;ECnC1B,YAAY,EDkCW,IAAI;ECjC3B,aAAa,EDiCU,IAAI;;AC9B5B,gBAAiB;EAChB,YAAY,EAAE,GAAG;EACjB,aAAa,EAAE,GAAG;;AAMnB,eAAgB;EAAE,OAAO,EAAE,YAAY;;AChBvC,IAAK;EACJ,gBAAgB,EFwBD,OAAO;EEvBtB,MAAM,EFyBW,KAAK;EEvBtB,OAAG;IACF,OAAO,EAAE,YAAY;IACrB,MAAM,EF0Bc,KAAW",
-"sources": ["vanilla-css/_generic.scss","vanilla-css/_variables.scss","vanilla-css/_utilities.scss","vanilla-css/_nav.scss"],
-"names": [],
-"file": "vanilla-css.css"
-}

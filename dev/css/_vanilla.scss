@@ -1,0 +1,19 @@
+/*!
+ * Vanilla CSS v0.1 (https://github.com/duduindo/front-end-test)
+ */
+
+// Core variables and mixins
+@import "vanilla/variables";
+@import "vanilla/mixins";
+
+
+// Components
+@import "vanilla/generic";
+@import "vanilla/utilities";
+@import "vanilla/nav";
+@import "vanilla/buttons";
+@import "vanilla/etc";
+
+
+// Media
+@import "vanilla/media";
