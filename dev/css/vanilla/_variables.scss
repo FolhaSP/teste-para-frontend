@@ -53,10 +53,17 @@ $carousel-color:					#fff !default;
 $carousel-title-bg:					#348FCC !default;
 $carousel-title-size:				$h4 !default;
 $carousel-comment-size:				$h1 !default;
+$carousel-maxwidth:					1200px !default;
+$carousel-maxheight:				450px !default;
+
+
+
 
 //Indicators
 $carousel-indicator-color:			#9A9A9A !default;
 $carousel-indicator-active-color:	#1FA4E9 !default;
+$carousel-indicator-size:			10px !default;
+$carousel-indicator-radius:			10px !default;
 
 //Arrows
 $carousel-arrows-size:				60px !default;

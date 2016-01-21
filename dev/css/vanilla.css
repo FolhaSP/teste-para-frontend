@@ -67,9 +67,6 @@ p {
   border: 0;
   cursor: pointer;
   padding: 0; }
-  .btn span {
-    display: block;
-    width: 100%; }
   .btn.btn-menu {
     line-height: 30px;
     height: 30px;
@@ -78,10 +75,47 @@ p {
     .btn.btn-menu span {
       background-color: #2c3e50;
       border-radius: 4px;
+      display: block;
       height: 4px;
       margin-top: 8px; }
       .btn.btn-menu span:nth-of-type(1) {
         margin-top: -1px; }
+  .btn.btn-like {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px #2D3033;
+    font-size: 10px;
+    height: 32px;
+    margin-top: 38px;
+    width: 88px;
+    vertical-align: middle; }
+    .btn.btn-like.facebook {
+      color: #36528f; }
+    .btn.btn-like.twitter {
+      color: #00ADF2; }
+    .btn.btn-like span {
+      float: right;
+      margin: 6px 12px 0 0; }
+  .btn.btn-arrows {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 6px #2D3033;
+    height: 60px;
+    width: 60px; }
+    .btn.btn-arrows.btn-arrows-left {
+      float: left; }
+    .btn.btn-arrows.btn-arrows-right {
+      float: right; }
+    .btn.btn-arrows svg {
+      margin-top: 5px; }
+  .btn.btn-indicator {
+    background-color: #9A9A9A;
+    border-radius: 10px;
+    display: inline-block;
+    height: 10px;
+    width: 10px; }
+    .btn.btn-indicator.active {
+      background-color: #1FA4E9; }
 
 .folha-logo {
   margin-top: 35px; }
@@ -89,6 +123,45 @@ p {
 .folha-slogan {
   color: #fff;
   margin-top: 65px; }
+
+.img-responsive {
+  width: 100%; }
+
+.carousel {
+  margin: 50px auto 20px auto;
+  max-width: 1200px;
+  max-height: 450px;
+  position: relative;
+  overflow: hidden; }
+  .carousel .carousel-arrows {
+    height: 60px;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 2; }
+    .carousel .carousel-arrows button {
+      margin: 0px 4px; }
+  .carousel .carousel-indicator {
+    margin-top: 15px; }
+    .carousel .carousel-indicator button {
+      margin: 0 5px; }
+  .carousel .carousel-slide {
+    padding: 0 30px;
+    position: relative;
+    z-index: 1; }
+  .carousel .carousel-legend {
+    bottom: 20px;
+    left: 60px;
+    position: absolute; }
+    .carousel .carousel-legend h4 {
+      background-color: #348FCC;
+      color: #fff;
+      display: inline-block;
+      margin: 10px 0;
+      padding: 5px 15px; }
+    .carousel .carousel-legend h1 {
+      color: #fff;
+      margin: 10px 0; }
 
 @media (min-width: 991px) {
   .col-md-1 {
@@ -191,7 +264,13 @@ p {
     float: left; }
 
   .hidden-sm {
-    display: none; } }
+    display: none; }
+
+  .btn-like-responsive {
+    height: 40px !important;
+    width: 40px !important; }
+    .btn-like-responsive span {
+      display: none; } }
 @media (max-width: 768px) and (max-width: 768px) {
   .col-xs-1 {
     width: 8.33333%;
@@ -242,6 +321,14 @@ p {
     float: left; }
 
   .hidden-xs {
-    display: none; } }
+    display: none; }
+
+  .carousel .carousel-slide {
+    padding: 0 0; }
+  .carousel .carousel-legend {
+    bottom: 2px;
+    left: 0; }
+    .carousel .carousel-legend h4 {
+      font-size: 12px; } }
 
 /*# sourceMappingURL=vanilla.css.map */

@@ -19,6 +19,15 @@
 	@include col("sm");	
 
 	.hidden-sm { display: none; }
+
+	.btn-like-responsive {
+		height: 40px !important;
+		width: 40px !important;
+
+		span {
+			display: none;
+		}
+	}
 }
 
 
@@ -29,4 +38,24 @@
 	@include col("xs");	
 
 	.hidden-xs { display: none; }
+
+	.carousel {
+		.carousel-slide {
+			padding: 0 0;
+		}
+
+
+		.carousel-legend {
+			bottom: 2px;
+			left:0;
+			
+			h4 {
+				font-size: 12px;
+			}
+		}	
+	}
+
+	
+
+
 }
