@@ -14,7 +14,43 @@
 }
 
 .img-responsive {
-	width: 100%;
+	width: 98%;
+}
+
+.clear-both {
+	clear: both;
+}
+
+
+.featured-mini {
+	padding: 10px;
+	position: relative;	
+
+	h4 {
+		background-color: $featured-mini-legend-bg;
+		bottom: 10px;
+		color: $featured-mini-legend-color;
+		left: 10px;
+		padding: 5px 10px;
+		position: absolute;
+	}
+}
+
+.featured {
+	padding: 10px;
+
+	& > div > div {
+		padding: 10px;
+	}
+
+	h3 {
+		color: $featured-legend-title-color;
+		margin: 5px 0;
+	}
+	h4 {
+		color: $featured-legend-comment-color;
+		margin: 3px 5px;
+	}
 }
 
 //Carousel

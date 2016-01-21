@@ -15,24 +15,28 @@
 
 	//Create Array
 	for(var n=0; n<self_qts; n++) {
-		ar.push( ar );
+		
 		if( n == 0 ) {
 			ar.push(0);
 		}
-		if( n == 1 ) {
+
+		else if( n == 1 ) {
 			ar.push( self_width );
+		}
+
+		else {
+			ar.push( self_width*n );	
 		}
 	}
 	n = 0;
+	
 
-
+	
 	//Click Indicator
 	for(var n=0; n<indicators.length; n++) {
 		
-		indicators[n].addEventListener("click", function(){
-			
-			console.log( this.getAttribute("data-indicator") )
-
+		indicators[n].addEventListener("click", function(){			
+			//console.log( this.getAttribute("data-indicator") )
 		}, false);
 	}
 

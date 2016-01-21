@@ -128,7 +128,32 @@ p {
   margin-top: 65px; }
 
 .img-responsive {
-  width: 100%; }
+  width: 98%; }
+
+.clear-both {
+  clear: both; }
+
+.featured-mini {
+  padding: 10px;
+  position: relative; }
+  .featured-mini h4 {
+    background-color: #E5695C;
+    bottom: 10px;
+    color: #fff;
+    left: 10px;
+    padding: 5px 10px;
+    position: absolute; }
+
+.featured {
+  padding: 10px; }
+  .featured > div > div {
+    padding: 10px; }
+  .featured h3 {
+    color: #498BBD;
+    margin: 5px 0; }
+  .featured h4 {
+    color: #2C3E50;
+    margin: 3px 5px; }
 
 .carousel {
   margin: 50px auto 20px auto;
