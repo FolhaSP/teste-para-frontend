@@ -52,10 +52,19 @@
 		}
 	}
 
+	.carousel-slides {		
+		overflow: hidden;
+		-ms-transition: -ms-transform 2s;
+			-webkit-transition: -webkit-transform 2s;
+				transition: transform 2s;
+		white-space: nowrap;
+	}
+
 	.carousel-slide {
+		display: inline-block;
 		padding: 0 #{$carousel-arrows-size / 2};
 		position: relative;
-		z-index: 1;
+		z-index: 1;		
 	}
 
 	
