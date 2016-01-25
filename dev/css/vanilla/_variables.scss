@@ -12,13 +12,13 @@ $h3: 								18px;
 $h4: 								14px;
 $h5: 								12px;
 $p: 								11px;
-
+$small:								10px;
 
 
 
 //== Body '<body>'
 //
-$body-bg: 							#ECF0F1 !default;
+$body-bg: 							#EBF0F1 !default;
 $body-margin: 						0px !default;
 $text-color:						#2C3E50 !default;
 $text-size:							14px !default;
@@ -45,18 +45,14 @@ $container-padding:					15px !default;
 $container-margin:					auto !default;
 
 
-
-
 //== Carousel
 //
 $carousel-color:					#fff !default;
 $carousel-title-bg:					#348FCC !default;
 $carousel-title-size:				$h4 !default;
 $carousel-comment-size:				$h1 !default;
-$carousel-maxwidth:					1200px !default;
-$carousel-maxheight:				450px !default;
-
-
+$carousel-padding:					30px !default;
+$carousel-size:						100% !default;
 
 
 //Indicators
@@ -64,17 +60,6 @@ $carousel-indicator-color:			#9A9A9A !default;
 $carousel-indicator-active-color:	#1FA4E9 !default;
 $carousel-indicator-size:			10px !default;
 $carousel-indicator-radius:			10px !default;
-
-//Arrows
-$carousel-arrows-size:				60px !default;
-
-
-
-
-//== Excerpt
-//
-$excerpt-border-width:				1px !default;
-$excerpt-border-color:				#D3D3D3 !default;
 
 
 //== Medias
@@ -84,22 +69,37 @@ $media-col-sm:							768px !default;
 $media-col-md:							991px !default;
 
 
-
-//== Etc
-//
-$folha-link-especial-width:				205px !default;				
-$folha-link-especial-height:			90px !default;
-
-
-
 //== Featured mini
 //
 $featured-mini-legend-bg: 				#E5695C !default;
 $featured-mini-legend-color:			#fff !default;
 
 
-
 //== Featured
 //
+$featured-border-color: 				#d3d3d3 !default;
+$featured-border-width: 				1px !default;
 $featured-legend-title-color: 			#498BBD !default;
 $featured-legend-comment-color:			#2C3E50 !default;
+
+
+//== Excerpt only text
+//
+$excerpt-text-color:					$featured-legend-comment-color !default;
+$excerpt-text-title-color:				$featured-legend-title-color !default;
+$excerpt-text-border-width:				$featured-border-width !default;
+$excerpt-text-border-color:				$featured-border-color !default;
+
+
+
+//== Excerpt with image
+//
+$excerpt-with-image-title-color:		#E74C3C !default;
+$excerpt-with-image-color:				$featured-legend-comment-color !default;
+
+
+//== Footer
+//
+$footer-bg:								#273F4F !default;
+$footer-color:							$nav-color !default;
+$footer-top-up-bg:						#009BD6 !default;

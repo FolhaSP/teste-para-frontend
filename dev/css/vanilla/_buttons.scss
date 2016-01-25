@@ -59,21 +59,22 @@
 		}
 	}
 
+
 	// Buttons arrows
 	//
 	&.btn-arrows {
 		background-color: #fff;
 		border-radius: 30px;
 		box-shadow: 0px 0px 6px #2D3033;
-		height: $carousel-arrows-size;
-		width: $carousel-arrows-size;
+		height: 55px;
+		width: 55px;
 
 
-		&.btn-arrows-left { float: left; }
-		&.btn-arrows-right { float: right; }
+		&.btn-arrows-left { float: left; margin-left: 5px; }
+		&.btn-arrows-right { float: right; margin-right: 5px; }
 
 		svg {
-			margin-top: 5px;
+			margin-top: 2px;
 		}
 	}
 
@@ -90,4 +91,6 @@
 			background-color: $carousel-indicator-active-color;
 		}
 	}
+
+	
 }

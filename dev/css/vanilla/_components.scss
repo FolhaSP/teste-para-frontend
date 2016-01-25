@@ -1,0 +1,281 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+// Line
+// Because use of font-size 0?
+// display-inline has spacing, then using font-size removed spacing.
+//
+.row {
+	display: block;	
+	font-size: 0px;	
+}
+
+//Containers
+.container {	
+	margin-left: $container-margin;
+	margin-right: $container-margin;
+	padding-left: $container-padding;
+	padding-right: $container-padding;
+}
+
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;	
+}
+
+
+//Carousel
+//
+.carousel {
+	//background-color: silver;
+	overflow: hidden;
+	padding: $carousel-padding;
+	position: relative;
+	width: $carousel-size;
+
+	//Center
+	.carousel-contents {
+		//background-color: aqua;
+		font-size: 0px;
+		height: $carousel-size;	
+		overflow: hidden;	
+		white-space: nowrap;
+		width: $carousel-size;
+
+		& > div {			
+			//background-color: tomato;
+			@extend .display-inline;
+			font-size: 15px;			
+			width: $carousel-size;
+			//-ms-transform: translate(-250px);
+				//transform: translate(-250px);
+		}
+	}
+
+	// Slides
+	.carousel-slide {
+		position: relative;
+
+		& > img {
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	// Legend :: Content in text
+	.carousel-legend {
+		bottom: 10px;
+		left: 10px;
+		position: absolute;	
+
+		h4 {
+			@extend .display-inline;
+			background-color: $carousel-title-bg;
+			color: $carousel-color;			
+			margin:10px 0;
+			padding: 5px 15px;
+		}
+
+		h1 {
+			color: $carousel-color;
+			display: block;
+			margin:10px 0;
+		}		
+	}
+
+	//Arrows
+	.carousel-arrows {
+		//background-color: red;
+		height: 55px;
+		left: 0px;
+		position: absolute;
+		top: 45%;		
+		width: 100%;
+	}
+
+	//Indicators
+	.carousel-indicators {
+		margin-top: 15px;		
+	}
+}
+
+
+//Feature Mini
+//
+.feature-mini {
+	//padding-top: 30px;
+	
+	& > div > article {
+		position: relative;
+		padding: 5px;
+	}
+
+	img {
+		width: 100%;
+	}	
+
+	h4 {
+		background-color: $featured-mini-legend-bg;
+		bottom: 15px;
+		color: $featured-mini-legend-color;		
+		padding: 5px 10px;
+		position: absolute;
+	}
+
+}
+
+//Feature Mini
+//
+.feature {
+	//padding-top: 30px;
+
+	* {
+		vertical-align: top;
+	}
+
+	.feature-self {						
+		
+
+		& > img {
+			width: 100%;
+		}
+
+		&:nth-child(odd) {			
+			border-right: 20px solid $body-bg;
+		}
+
+		&:not(:nth-child(odd)) {			
+			border-left: 20px solid $body-bg;
+		}
+
+
+		&:after {
+			content: '';
+			display: block;
+			height: $featured-border-width;
+			background-color: $featured-border-color;
+			margin: 25px 0;
+		}
+	}
+
+	h3 {
+		color: $featured-legend-title-color;
+		margin: 5px 0;
+	}
+	h4 {
+		color: $featured-legend-comment-color;
+		margin: 3px 0;
+	}
+}
+
+
+//Excerpt content only text
+//
+.excerpt-text {
+	padding: 20px 10px;
+
+	h1 {
+		color: $excerpt-text-title-color;
+	}
+
+	h3 {
+		color: $excerpt-text-color;
+	}
+
+	ul {
+		padding-top: 15px;
+	}
+
+	li {
+		border-bottom: $excerpt-text-border-width solid $excerpt-text-border-color;
+		padding: 15px 0;
+	}
+}
+
+
+
+// Excerpt with image
+//
+.excerpt-with-image {
+	padding: 20px 10px;
+	vertical-align: top;
+
+
+	h1, li div h4:first-child {
+		color: $excerpt-with-image-title-color;
+	}
+
+	li div h4:last-child {
+		color: $excerpt-with-image-color;
+	}
+
+	li {
+		padding: 8px 0;
+
+		img {
+			width: 100%;
+		}
+
+		div {			
+			@extend .display-inline;
+			vertical-align: top;
+			width: 50%;
+
+			&:nth-of-type(2) {
+				padding: 5px;
+			}
+		}
+	}
+
+}
+
+
+// Up top click
+//
+.up-top {
+	background-color: $footer-top-up-bg;
+	height: 50px;
+	vertical-align: middle;
+
+	h3, svg {
+		@extend .display-inline;
+	}
+
+	h3 {
+		color: $footer-color;
+		cursor: pointer;
+		padding: 17px 0 0 15px;		
+	}
+
+	svg {
+		margin-right: 15px;
+	}
+}
+
+
+
+// Copyright footer
+//
+.copyright {
+	background-color: $footer-bg;
+
+	a {
+		color: $footer-color;
+	}
+
+	& > div {
+		color: $footer-color;
+		padding: 15px;
+		vertical-align: top;
+	}
+}
+
+
+//Class
+.display-inline { display: inline-block; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.img-responsive { max-width: 100%; }
+.img-responsive-full { width: 100%; }

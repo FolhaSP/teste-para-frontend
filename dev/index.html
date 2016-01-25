@@ -16,7 +16,7 @@
     <!-- HEADER -->
     <header>
       <nav class="container nav">
-        <ul>
+        <ul class="row">
           <!-- BUTTON MENU -->
           <li class="col-xs-2  col-sm-2 col-md-2">
             <button class="btn btn-menu">
@@ -28,11 +28,11 @@
 
           <!-- LOGO TIPO -->
           <li class="col-xs-8  col-sm-4 col-md-3 text-center">
-            <a href="."><img src="images/folha-logo.png" alt="Logo" title="Logo - Folha" class="folha-logo"></a>
+            <a href="/"><img src="images/folha-logo.png" alt="Logo" title="Logo - Folha" class="folha-logo"></a>
           </li>
 
           <!-- SLOGAN -->
-          <li class="hidden-xs col-sm-4 col-md-4">
+          <li class="hidden-xs col-sm-4 col-md-4" >
             <h3 class="folha-slogan">O site de teste para <b>novos webs</b></h3>
           </li>
 
@@ -69,11 +69,48 @@
     
     <!-- MAIN -->
     <main>
+      
+      <section class="container">        
+        <div class="carousel">
+          <div class="carousel-contents">
 
-      <section class="container">
-        <article class="carousel">
+            <!-- SLIDES -->
+            <div class="carousel-slide">
+              <img src="images/folha-mussum-ipsum-cadilds.png" alt="Mussum ipsum cadilds" title="Mussum ipsum cadilds - Folha" >
+                            
+              <div class="carousel-legend">
+                <h4><b>MUSSUM IPSUM CADILDS</b></h4>
+                <h1 class="hidden-xs"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b> </h1>
+                <h1 class="hidden-xs"><b>Lorem ipsum dolor sit amet.</b></h1>
+              </div>
+            </div>
 
-          <div class="carousel-arrows hidden-xs">
+
+            <div class="carousel-slide">
+              <img src="images/folha-mussum-ipsum-cadilds.png" alt="Mussum ipsum cadilds" title="Mussum ipsum cadilds - Folha" >              
+                            
+              <div class="carousel-legend">
+                <h4><b>MUSSUM IPSUM CADILDS</b></h4>
+                <h1 class="hidden-xs"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b> </h1>
+                <h1 class="hidden-xs"><b>Lorem ipsum dolor sit amet.</b></h1>
+              </div>
+            </div>
+
+
+            <div class="carousel-slide">
+              <img src="images/folha-mussum-ipsum-cadilds.png" alt="Mussum ipsum cadilds" title="Mussum ipsum cadilds - Folha" >              
+                            
+              <div class="carousel-legend">
+                <h4><b>MUSSUM IPSUM CADILDS</b></h4>
+                <h1 class="hidden-xs"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b> </h1>
+                <h1 class="hidden-xs"><b>Lorem ipsum dolor sit amet.</b></h1>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ARROWS -->
+          <div class="carousel-arrows">
             <button class="btn btn-arrows btn-arrows-left">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve" class="detail convertSvgInline replaced-svg" data-id="32542" data-kw="arrowhead7">
                 <g>
@@ -81,7 +118,6 @@
                 </g>
               </svg>
             </button>
-
             <button class="btn btn-arrows btn-arrows-right">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve" class="detail convertSvgInline replaced-svg" data-id="32542" data-kw="arrowhead7">
                 <g>
@@ -91,108 +127,200 @@
             </button>
           </div>
 
-          <div class="carousel-slides">
-
-          	<!-- SLIDE 1 -->
-          	<div class="carousel-slide">
-          	  <img src="images/folha-mussum-ipsum-cadilds.png" alt="Mussum ipsum cadilds" title="Mussum ipsum cadilds - Folha" class="img-responsive" >
-          	  <div class="carousel-legend">
-          	    <h4><b>MUSSUM IPSUM CADILDS</b></h4>
-          	    <h1 class="hidden-xs"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b></h1>
-          	    <h1 class="hidden-xs"><b>Lorem ipsum dolor sit amet.</b></h1>
-          	  </div>        
-          	</div>
-	
-          	<!-- SLIDE 2 -->
-          	<div class="carousel-slide">
-          	  <img src="images/folha-mussum-ipsum-cadilds.png" alt="Mussum ipsum cadilds" title="Mussum ipsum cadilds - Folha" class="img-responsive" >
-          	  <div class="carousel-legend">
-          	    <h4><b>MUSSUM IPSUM CADILDS</b></h4>
-          	    <h1 class="hidden-xs"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b></h1>
-          	    <h1 class="hidden-xs"><b>Lorem ipsum dolor sit amet.</b></h1>
-          	  </div>        
-          	</div>
-
+          <!-- INDICATORS -->
+          <div class="carousel-indicators text-center">
+            <button class="btn btn-indicator active"></button>
+            <button class="btn btn-indicator" ></button>
+            <button class="btn btn-indicator" ></button>
           </div>
 
-          <div class="carousel-indicator text-center">
-            <button class="btn btn-indicator active" data-indicator="1"></button>
-            <button class="btn btn-indicator" data-indicator="2"></button>            
-          </div>
-        </article>
-
-      </section>
-
-
-      <!-- FEATURED MINI -->
-      <section class="container">
-        <div class="col-xs-12 col-sm-4 col-md-4 featured-mini">
-          <img src="images/folha-pindureta.png" alt="Pindureta" alt="Pindureta - Folha" class="img-responsive">
-          <h4>PINDURETA</h4>
-        </div>
-
-        <div class="col-xs-12 col-sm-4 col-md-4 featured-mini">
-          <img src="images/folha-bolis.png" alt="Bolis" alt="Bolis - Folha" class="img-responsive">
-          <h4>BOLIS</h4>
-        </div>
-
-        <div class="col-xs-12 col-sm-4 col-md-4 featured-mini">
-          <img src="images/folha-sapien.png" alt="Sapien" alt="Sapien - Folha" class="img-responsive">
-          <h4>SAPIEN</h4>
         </div>
       </section>
 
-      <!-- TITLE SIMPLE -->
-      <section class="container clear-both" >
-        <h1>Divoltis porris</h1>
-      </section>
 
-      <!-- FEATURED -->
-      <section class="container clear-both featured" >
+      <!-- MINI FEATURE -->
+      <section class="container feature-mini">
+
+        <div class="row">
+          <h1>Top cacilds</h1>
+        </div>
         
-        <div class="col-xs-12 col-sm-12 col-md-8">
+        <div class="row">
+          <article class="col-xs-12 col-sm-4 col-md-4">
+            <img src="images/folha-pindureta.png" alt="Pindureta" title="Pindureta - Folha" class="img-responsive">
+            <h4>PINDURETA</h4>
+          </article>
 
-          <div class="col-xs-12 col-sm-6 col-md-6">
-            <img src="images/folha-mussum.png" alt="Mussum" title="Mussum - Folha" class="img-responsive" >
-            <h3>CONSETIS</h3>
-            <h4>Manduma pindureta quium dia</h4>
-          </div>
+          <article class="col-xs-12 col-sm-4 col-md-4">
+            <img src="images/folha-bolis.png" alt="Bolis" title="Bolis - Folha" class="img-responsive">
+          <h4>BOLIS</h4>
+          </article>
 
-          <div class="col-xs-12 col-sm-6 col-md-6">
-            <img src="images/folha-seriado-cadeia.png" alt="Seriado Cadeia" title="Seriado Cadeia - Folha" class="img-responsive" >
-            <h3>AENEAN</h3>
-            <h4>Manduma pindureta quium dia. Manduma pindureta quium dia</h4>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-6">
-            <img src="images/folha-adam-sandler.png" alt="Adam Sandler" title="Adam Sandler - Folha" class="img-responsive" >
-            <h3>MATIS</h3>
-            <h4>Manduma pindureta quium dia. Manduma pindureta quium dia</h4>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-6">
-            <img src="images/folha-cabecao.png" alt="Cabeção" title="Cabeção - Folha" class="img-responsive" >
-            <h3>DIVINIS</h3>
-            <h4>Manduma pindureta quium dia. Manduma pindureta quium dia</h4>
-          </div>
-
+          <article class="col-xs-12 col-sm-4 col-md-4">
+            <img src="images/folha-sapien.png" alt="Sapien" title="Sapien - Folha" class="img-responsive">
+            <h4>SAPIEN</h4>
+          </article>
         </div>
+      </section>
 
-        <div class="hidden-xs hidden-sm col-md-4 text-right">
-          <small>Publicidade</small>
-          <br>
-          <a href=".">
-            <img src="images/ads-esser.png" alt="Esser" title="Esser - Folha" class="img-responsive" >
-          </a>
+      
+      <!-- FEATURE -->
+      <section class="container feature">
+
+        <div class="row">
+          <h1>Divoltis porris</h1>
         </div>
-
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-9">
+              <article class="col-xs-12 col-sm-6 col-md-6 feature-self">
+                <img src="images/folha-mussum.png" alt="Mussum" title="Mussum - Folha" >
+                <a href="#">
+                  <h3>CONSETIS</h3>
+                  <h4>Manduma pindureta quium dia</h4>
+                </a>                
+              </article>
+    
+              <article class="col-xs-12 col-sm-6 col-md-6 feature-self">
+                <img src="images/folha-seriado-cadeia.png" alt="Seriado Cadeia" title="Seriado Cadeia - Folha" >
+                <a href="#">
+                  <h3>AENEAN</h3>
+                  <h4>Manduma pindureta quium dia. <wbr>Manduma pindureta quium dia</h4>
+                </a>
+              </article>
+    
+              <article class="col-xs-12 col-sm-6 col-md-6 feature-self">
+                <img src="images/folha-adam-sandler.png" alt="Adam Sandler" title="Adam Sandler - Folha" >
+                <a href="#">
+                  <h3>MATIS</h3>
+                  <h4>Manduma pindureta quium dia. <wbr>Manduma pindureta quium dia</h4>
+                </a>
+              </article>
+    
+              <article class="col-xs-12 col-sm-6 col-md-6 feature-self">
+                <img src="images/folha-cabecao.png" alt="Cabeção" title="Cabeção - Folha" >
+                <a href="#">
+                  <h3>DIVINIS</h3>
+                  <h4>Manduma pindureta quium dia. <wbr>Manduma pindureta quium dia</h4>
+                </a>
+              </article>
+            </div>
+  
+            <aside class="hidden-xs hidden-sm col-md-3 text-center">              
+              <a href="." class="publicidade">
+                <img src="images/ads-esser.png" alt="Esser" title="Esser - Folha" class="img-responsive-full" >
+              </a>
+            </aside>
+        </div> <!--/.row -->
       </section>
 
 
+      <section class="container">
+        
+        <div class="row">
+          <article class="col-xs-12 col-sm-6 col-md-4 excerpt-text">
+            <h1>paisis, filhis, espiritis santis</h1>
+            <ul>
+              <li>
+                <h3>Mussum ipsum cacilds, vidis litro abertis. <wbr>Consetis adipiscings elitis</h3>
+              </li>
+              <li>
+                <h3>Mussum ipsum cacilds, vidis litro abertis. <wbr>Consetis adipiscings elitis</h3>
+              </li>
+              <li>
+                <h3>Mussum ipsum cacilds, vidis litro abertis. <wbr>Consetis adipiscings elitis</h3>
+              </li>
+              <li>
+                <h3>Mussum ipsum cacilds, vidis litro abertis. <wbr>Consetis adipiscings elitis</h3>
+              </li>
+              <li>
+                <h3>Mussum ipsum cacilds, vidis litro abertis. <wbr>Consetis adipiscings elitis</h3>
+              </li>
+            </ul>
+          </article>
+
+          <article class="col-xs-12 col-sm-6 col-md-4 excerpt-with-image">
+            <div class="row"><h1>se pirulitá</h1> </div>
+            <div class="row">
+              <ul>
+                <li>
+                  <div><img src="images/folha-nam-liber.png" alt="Nam liber" title="Nam liber - Folha" class="img-responsive"> </div>
+                  <div><h4>NAM LIBER</h4> <h4>Casamnetis faiz malandris se pirulitá</h4></div>
+                </li>
+                <li>
+                  <div><img src="images/folha-gostis.png" alt="Gostis" title="Gostis - Folha" class="img-responsive"> </div>                  
+                  <div><h4>GOSTIS</h4> <h4>Aenean ut ante turpis. <wbr> Pellentesque laoreet mé</h4></div>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="col-xs-12 col-sm-6 col-md-4 excerpt-with-image">
+            <div class="row"><h1>suco de cevadiss</h1> </div>
+            <div class="row">
+              <ul>
+                <li>
+                  <div><img src="images/folha-interagi.png" alt="Nam liber" title="Nam liber - Folha" class="img-responsive"> </div>
+                  <div><h4>INTERAGI</h4> <h4>É um leite divinis, <wbr> qui tem lupuliz, <wbr> matis, aguis e fermentis </h4></div>
+                </li>
+                <li>
+                  <div><img src="images/folha-gostis-2.png" alt="Gostis" title="Gostis - Folha" class="img-responsive"> </div>                  
+                  <div><h4>GOSTIS</h4> <h4>Aenean ut ante turpis. <wbr> Pellentesque laoreet mé</h4></div>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="col-xs-12 col-sm-6 hidden-md excerpt-with-image text-center" >            
+            <a href="#" class="publicidade">
+              <img src="images/ads-folha.png" alt="Empreendedor" title="Empreendedor - Folha" class="img-responsive">
+            </a>            
+          </article>
+        </div>
+      </section>
     </main>
 
 
 
-  <script type="text/javascript" src="js/script.js"></script>    
+    <!-- FOOTER -->
+    <footer>
+      <div class="up-top text-right">        
+        <a href="#">
+          <h3>VOLTAR AO TOPO</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="18" height="18" viewBox="0 0 268.831 268.832" style="enable-background:new 0 0 268.831 268.832;" xml:space="preserve" class="detail convertSvgInline replaced-svg" data-id="66757" data-kw="up7" fill="#FFFFFF">
+            <g>
+              <path d="M223.255,83.659l-80-79.998c-4.881-4.881-12.797-4.881-17.678,0l-80,80c-4.883,4.882-4.883,12.796,0,17.678   c2.439,2.44,5.64,3.661,8.839,3.661s6.397-1.221,8.839-3.661l58.661-58.661v213.654c0,6.903,5.597,12.5,12.5,12.5   c6.901,0,12.5-5.597,12.5-12.5V42.677l58.661,58.659c4.883,4.881,12.797,4.881,17.678,0   C228.137,96.455,228.137,88.541,223.255,83.659z"></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <div class="row copyright">
+
+        <div class="hidden-xs hidden-sm col-md-2"> </div>
+
+        <div class="hidden-xs col-sm-3 col-md-3 text-right">
+          <img src="images/folha-footer.png" alt="Logo" title="Logo - Folha">
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-4 copyright-text">
+          <p>Copyright Folha de S.Paulo. <wbr> Todos os direitos reservadoros. É proibida a reprodução do conteúdo desta página em qualquer meio de comunicação, eletrônico ou impresso, sem autorização escrita da Folhapress (<a href="mailto:pesquisa@folhapress.com.br">pesquisa@folhapress.com.br</a>).</p>
+        </div>
+
+        <div class="hidden-xs hidden-sm col-md-2"> </div>
+
+      </div>
+    </footer>
+
+
+
+
+
+
+  <script type="text/javascript" src="js/vanilla.js"></script>
+  <scripttype="text/javascript">
+    
+  </script>
+
   </body>
 </html>
+

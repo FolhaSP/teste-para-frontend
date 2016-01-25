@@ -9,9 +9,13 @@
 
 //´<body>´
 body {
+	background-color: $body-bg;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	margin: $body-margin;
+}
 
+section {
+	padding-top: $container-padding * 2;	
 }
 
 //´<img>´ ´<a>´
@@ -19,6 +23,10 @@ img, a {
 	border:0;
 }
 
+//´<a>´
+a {
+	text-decoration: none;
+}
 
 //´<ul>´
 ul {
@@ -27,7 +35,7 @@ ul {
 	padding:0;	
 }
 
-h1, h2, h3, h4, h5 { font-weight: normal; }
+h1, h2, h3, h4, h5 { font-weight: normal; margin: 0; }
 
 h1 { font-size: $h1; }
 h2 { font-size: $h2; }
@@ -35,3 +43,9 @@ h3 { font-size: $h3; }
 h4 { font-size: $h4; }
 h5 { font-size: $h5; }
 p  { font-size: $p; }
+small {	font-size: $small;}
+
+
+footer {
+	margin-top: 100px;
+}

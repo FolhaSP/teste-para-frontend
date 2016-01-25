@@ -8,7 +8,7 @@
 @media (min-width: $media-col-md){
 	@include col("md");	
 
-	.hidden-md { display: none; }
+	.hidden-md { display: none  !important; }
 }
 
 
@@ -17,8 +17,9 @@
 //
 @media (min-width: $media-col-sm) and (max-width: $media-col-md) {
 	@include col("sm");	
+	@include carousel-responsive();
 
-	.hidden-sm { display: none; }
+	.hidden-sm { display: none !important; }
 
 	.btn-like-responsive {
 		height: 40px !important;
@@ -28,6 +29,7 @@
 			display: none;
 		}
 	}
+	
 }
 
 
@@ -36,26 +38,13 @@
 //
 @media (max-width: $media-col-xs) and (max-width: $media-col-sm) {
 	@include col("xs");	
+	@include carousel-responsive();
 
-	.hidden-xs { display: none; }
-
-	.carousel {
-		.carousel-slide {
-			padding: 0 0;
-		}
+	.hidden-xs { display: none !important; }
 
 
-		.carousel-legend {
-			bottom: 2px;
-			left:0;
-			
-			h4 {
-				font-size: 12px;
-			}
-		}	
-	}
-
-	
-
-
+	.feature-self {		
+		border-right-width: 0px !important;
+		border-left-width: 0px !important;				
+	}//.feature-self 
 }
