@@ -7,6 +7,7 @@
     <meta charset="utf-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
+    <meta name="theme-color" content="#3498DB">
             
     <link rel="stylesheet" href="css/vanilla.css">
   </head>
@@ -70,9 +71,11 @@
     <!-- MAIN -->
     <main>
       
-      <section class="container">        
-        <div class="carousel">
-          <div class="carousel-contents">
+      <section class="container">
+
+      <!-- Carousel -->       
+        <div class="carousel" id="carousel-folha-principal">
+          <div class="carousel-contents" role="listbox">
 
             <!-- SLIDES -->
             <div class="carousel-slide">
@@ -87,7 +90,7 @@
 
 
             <div class="carousel-slide">
-              <img src="images/folha-mussum-ipsum-cadilds.png" alt="Mussum ipsum cadilds" title="Mussum ipsum cadilds - Folha" >              
+              <img src="images/folha-mussum-ipsum-cadilds-2.png" alt="Mussum ipsum cadilds" title="Mussum ipsum cadilds - Folha" >              
                             
               <div class="carousel-legend">
                 <h4><b>MUSSUM IPSUM CADILDS</b></h4>
@@ -98,7 +101,7 @@
 
 
             <div class="carousel-slide">
-              <img src="images/folha-mussum-ipsum-cadilds.png" alt="Mussum ipsum cadilds" title="Mussum ipsum cadilds - Folha" >              
+              <img src="images/folha-mussum-ipsum-cadilds-3.png" alt="Mussum ipsum cadilds" title="Mussum ipsum cadilds - Folha" >              
                             
               <div class="carousel-legend">
                 <h4><b>MUSSUM IPSUM CADILDS</b></h4>
@@ -111,14 +114,16 @@
 
           <!-- ARROWS -->
           <div class="carousel-arrows">
-            <button class="btn btn-arrows btn-arrows-left">
+            <button class="btn btn-arrows btn-arrows-left" data-carousel-arrow="left" role="button" aria-hidden="true" >
+              <span class="sr-only hidden">Previous</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve" class="detail convertSvgInline replaced-svg" data-id="32542" data-kw="arrowhead7">
                 <g>
                   <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
                 </g>
               </svg>
             </button>
-            <button class="btn btn-arrows btn-arrows-right">
+            <button class="btn btn-arrows btn-arrows-right" data-carousel-arrow="right" role="button" aria-hidden="true" >
+             <span class="sr-only hidden">Next</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve" class="detail convertSvgInline replaced-svg" data-id="32542" data-kw="arrowhead7">
                 <g>
                   <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
@@ -129,12 +134,14 @@
 
           <!-- INDICATORS -->
           <div class="carousel-indicators text-center">
-            <button class="btn btn-indicator active"></button>
+            <!-- <button class="btn btn-indicator active"></button>
             <button class="btn btn-indicator" ></button>
-            <button class="btn btn-indicator" ></button>
+            <button class="btn btn-indicator" ></button> -->
           </div>
 
         </div>
+      <!-- ./Carousel -->
+
       </section>
 
 
@@ -142,7 +149,7 @@
       <section class="container feature-mini">
 
         <div class="row">
-          <h1>Top cacilds</h1>
+          <h1 class="color-silverblack">Top cacilds</h1>
         </div>
         
         <div class="row">
@@ -168,7 +175,7 @@
       <section class="container feature">
 
         <div class="row">
-          <h1>Divoltis porris</h1>
+          <h1 class="color-silverblack">Divoltis porris</h1>
         </div>
         
         <div class="row">
@@ -317,8 +324,18 @@
 
 
   <script type="text/javascript" src="js/vanilla.js"></script>
-  <scripttype="text/javascript">
-    
+  <script type="text/javascript">
+
+  window.onload = function()  {
+
+    carousel(
+      {
+        "id":"#carousel-folha-principal", 
+        "time": 8000
+      }      
+    );
+  };  
+
   </script>
 
   </body>

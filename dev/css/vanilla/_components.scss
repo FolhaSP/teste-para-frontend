@@ -57,6 +57,10 @@
 	.carousel-slide {
 		position: relative;
 
+		-ms-transition: left 1s cubic-bezier(0.53, 0.01, 0, 1.24);
+			-webkit-transition: left 1s cubic-bezier(0.53, 0.01, 0, 1.24);
+				transition: left 1s cubic-bezier(0.53, 0.01, 0, 1.24);
+
 		& > img {
 			height: auto;
 			width: 100%;
@@ -85,8 +89,7 @@
 	}
 
 	//Arrows
-	.carousel-arrows {
-		//background-color: red;
+	.carousel-arrows {		
 		height: 55px;
 		left: 0px;
 		position: absolute;
@@ -141,12 +144,14 @@
 			width: 100%;
 		}
 
+		border-right: 20px solid $body-bg;
+
 		&:nth-child(odd) {			
-			border-right: 20px solid $body-bg;
+			
 		}
 
 		&:not(:nth-child(odd)) {			
-			border-left: 20px solid $body-bg;
+			//border-left: 20px solid $body-bg;
 		}
 
 
@@ -273,6 +278,7 @@
 
 
 //Class
+.hidden { display: none; }
 .display-inline { display: inline-block; }
 .text-center { text-align: center; }
 .text-left { text-align: left; }

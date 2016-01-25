@@ -83,9 +83,10 @@
 	&.btn-indicator {
 		background-color: $carousel-indicator-color;
 		border-radius: $carousel-indicator-radius;
-		display: inline-block;		
-		height: $carousel-indicator-size;		
-		width: $carousel-indicator-size;
+		display: inline-block;
+		height: $carousel-indicator-size;
+		margin: 0 ($carousel-indicator-size / 2);
+		width: $carousel-indicator-size;		
 
 		&.active {
 			background-color: $carousel-indicator-active-color;

@@ -80,7 +80,10 @@ footer {
       font-size: 15px;
       width: 100%; }
   .carousel .carousel-slide {
-    position: relative; }
+    position: relative;
+    -ms-transition: left 1s cubic-bezier(0.53, 0.01, 0, 1.24);
+    -webkit-transition: left 1s cubic-bezier(0.53, 0.01, 0, 1.24);
+    transition: left 1s cubic-bezier(0.53, 0.01, 0, 1.24); }
     .carousel .carousel-slide > img {
       height: auto;
       width: 100%; }
@@ -120,18 +123,16 @@ footer {
 
 .feature * {
   vertical-align: top; }
-.feature .feature-self > img {
-  width: 100%; }
-.feature .feature-self:nth-child(odd) {
+.feature .feature-self {
   border-right: 20px solid #EBF0F1; }
-.feature .feature-self:not(:nth-child(odd)) {
-  border-left: 20px solid #EBF0F1; }
-.feature .feature-self:after {
-  content: '';
-  display: block;
-  height: 1px;
-  background-color: #d3d3d3;
-  margin: 25px 0; }
+  .feature .feature-self > img {
+    width: 100%; }
+  .feature .feature-self:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #d3d3d3;
+    margin: 25px 0; }
 .feature h3 {
   color: #498BBD;
   margin: 5px 0; }
@@ -187,6 +188,9 @@ footer {
     color: #fff;
     padding: 15px;
     vertical-align: top; }
+
+.hidden {
+  display: none; }
 
 .display-inline, .carousel .carousel-contents > div, .carousel .carousel-legend h4, .excerpt-with-image li div, .up-top h3, .up-top svg {
   display: inline-block; }
@@ -266,6 +270,7 @@ footer {
     border-radius: 10px;
     display: inline-block;
     height: 10px;
+    margin: 0 5px;
     width: 10px; }
     .btn.btn-indicator.active {
       background-color: #1FA4E9; }
@@ -288,6 +293,9 @@ footer {
 
 .color-blue {
   color: #498BBD; }
+
+.color-silverblack {
+  color: #51606C; }
 
 @media (min-width: 991px) {
   .col-md-1 {
@@ -393,10 +401,6 @@ footer {
     padding: 15px 0; }
     .carousel .carousel-arrows {
       display: none; }
-    .carousel .carousel-indicators button {
-      height: 20px;
-      margin: 0 8px;
-      width: 20px; }
 
   .hidden-sm {
     display: none !important; }
@@ -405,7 +409,10 @@ footer {
     height: 40px !important;
     width: 40px !important; }
     .btn-like-responsive span {
-      display: none; } }
+      display: none; }
+
+  .feature .feature-self:not(:nth-child(odd)) {
+    border-right-width: 0px !important; } }
 @media (max-width: 768px) and (max-width: 768px) {
   .col-xs-1 {
     width: 8.33333%;
@@ -459,10 +466,6 @@ footer {
     padding: 15px 0; }
     .carousel .carousel-arrows {
       display: none; }
-    .carousel .carousel-indicators button {
-      height: 20px;
-      margin: 0 8px;
-      width: 20px; }
 
   .hidden-xs {
     display: none !important; }

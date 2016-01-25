@@ -29,7 +29,12 @@
 			display: none;
 		}
 	}
-	
+
+	.feature {
+		.feature-self:not(:nth-child(odd)) {			
+			border-right-width: 0px !important;
+		} 	
+	}
 }
 
 
