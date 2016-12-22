@@ -1,0 +1,97 @@
+//
+// Button
+// --------------------------------------------------
+
+
+// Button menu
+//
+.btn  {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	padding: 0;
+
+	
+	//Menu
+	&.btn-menu {
+		line-height: 30px;		
+		height: 30px;
+		margin-top: $nav-height/3;
+		width: 38px;
+
+		span {
+			background-color: #2c3e50;
+			border-radius: 4px;
+			display: block;
+			height: 4px;
+			margin-top: 8px;
+
+			&:nth-of-type(1) {
+				margin-top: -1px;
+			}
+		}
+	}	
+
+
+	//Like Facebook, Twitter
+	//88x32
+	&.btn-like {
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 0px 0px 6px #2D3033;		
+		font-size: 10px;
+		height: 32px;
+		margin-top: $nav-height/3;
+		width: 88px;
+		vertical-align: middle;
+
+		&.facebook {
+			color: #36528f;
+		}
+
+		&.twitter {
+			color: #00ADF2;
+		}
+
+		span {
+			float: right;
+			margin:6px 12px 0 0;
+		}
+	}
+
+
+	// Buttons arrows
+	//
+	&.btn-arrows {
+		background-color: #fff;
+		border-radius: 30px;
+		box-shadow: 0px 0px 6px #2D3033;
+		height: 55px;
+		width: 55px;
+
+
+		&.btn-arrows-left { float: left; margin-left: 5px; }
+		&.btn-arrows-right { float: right; margin-right: 5px; }
+
+		svg {
+			margin-top: 2px;
+		}
+	}
+
+	// Buttons indicator
+	//
+	&.btn-indicator {
+		background-color: $carousel-indicator-color;
+		border-radius: $carousel-indicator-radius;
+		display: inline-block;
+		height: $carousel-indicator-size;
+		margin: 0 ($carousel-indicator-size / 2);
+		width: $carousel-indicator-size;		
+
+		&.active {
+			background-color: $carousel-indicator-active-color;
+		}
+	}
+
+	
+}

@@ -1,0 +1,55 @@
+//
+// Media
+// --------------------------------------------------
+
+
+//== md
+//
+@media (min-width: $media-col-md){
+	@include col("md");	
+
+	.hidden-md { display: none  !important; }
+}
+
+
+
+//== sm
+//
+@media (min-width: $media-col-sm) and (max-width: $media-col-md) {
+	@include col("sm");	
+	@include carousel-responsive();
+
+	.hidden-sm { display: none !important; }
+
+	.btn-like-responsive {
+		height: 40px !important;
+		width: 40px !important;
+
+		span {
+			display: none;
+		}
+	}
+
+	.feature {
+		.feature-self:not(:nth-child(odd)) {			
+			border-right-width: 0px !important;
+		} 	
+	}
+}
+
+
+
+//== xs
+//
+@media (max-width: $media-col-xs) and (max-width: $media-col-sm) {
+	@include col("xs");	
+	@include carousel-responsive();
+
+	.hidden-xs { display: none !important; }
+
+
+	.feature-self {		
+		border-right-width: 0px !important;
+		border-left-width: 0px !important;				
+	}//.feature-self 
+}

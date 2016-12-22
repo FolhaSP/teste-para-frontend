@@ -1,0 +1,35 @@
+//
+// Etc
+// --------------------------------------------------
+
+
+
+// Logo image header
+.folha-logo {
+	margin-top: 35px;
+}
+
+.folha-slogan {
+	color: #fff;
+	margin-top: 65px;
+}
+
+.publicidade {
+	display: inline-block;	
+
+	&:before {
+		color: #999;
+		content: 'Publicidade';
+		display: block;		
+		font-size: 11px;
+		text-align: right;
+	}
+}
+
+.color-blue {
+	color: $featured-legend-title-color;
+}
+
+.color-silverblack {
+	color: #51606C;
+}

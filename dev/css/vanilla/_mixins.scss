@@ -1,0 +1,46 @@
+//
+// Mixins
+// --------------------------------------------------
+
+
+//== Column
+//
+@mixin col($type-col) {
+  $n: 13;
+  @for $i from (1) through 12 {
+    .col-#{$type-col}-#{$i} { 
+    	width: percentage(($i / 12));
+		
+    	//float: left;    	
+    	display: inline-block;
+    }
+  }
+}
+
+
+//== Carousel responsive 
+// xs && sm
+@mixin carousel-responsive() {
+	// Carousel responsive
+	//
+	.carousel {
+		padding: $container-padding 0;
+
+		.carousel-arrows {
+			display: none;
+		}
+
+		// .carousel-indicators {
+		// 	button {
+		// 		height: 20px;
+		// 		margin: 0 8px;
+		// 		width: 20px;
+		// 	}
+		// }
+	}
+}
+
+
+
+
+
