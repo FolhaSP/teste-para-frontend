@@ -1,0 +1,34 @@
+/* ==== NAVEGAÇÃO ==== */
+.nav 
+	background-color $color-one
+	width 100%
+	height 120px
+	
+.nav-wrapper 
+	height 100%
+	flexbox()
+	flexdirection(colunm)
+	justifycontent(space-between)
+	-webkit-align-items center
+	
+	> .nav-brand 
+		height 100%
+		
+.connect
+	min-width 40px
+	font-size: 0.7em
+	text-align center
+	text-transform uppercase
+	display: inline-block
+	margin-left $spacing-unit-small
+	@media (min-width $screen-medium) 
+		margin-left $spacing-unit-large
+		
+	&:before
+		font-size 1.2rem
+
+	&.--facebook
+		color #4267B2
+	&.--twitter
+		color #1DA1F2
+	

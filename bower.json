@@ -1,0 +1,21 @@
+{
+  "name": "front-end-test",
+  "homepage": "https://github.com/gasfu/front-end-test",
+  "authors": [
+    "Gabriel Furlan <gabrielfurlan05@gmail.com>"
+  ],
+  "description": "Teste para Front End na Folha de SP",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-grids-system": "*"
+  }
+}

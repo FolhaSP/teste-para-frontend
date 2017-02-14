@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-grids-system",
+  "version": "1.0.0",
+  "homepage": "https://github.com/gasfu/bootstrap-grid-system",
+  "authors": [
+    "Gabriel Furlan"
+  ],
+  "description": "Sistema de Grid do Bootstrap Customizado",
+  "keywords": [
+    "bootstrap",
+    "grid",
+    "bootstrap-grid",
+    "bootstrap-grids-system"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
