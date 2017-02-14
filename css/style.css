@@ -1,0 +1,17 @@
+* {
+  position: relative;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background: #4ec3ff;
+  width: 100%;
+  height: 50px;
+}
