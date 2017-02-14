@@ -1,7 +1,13 @@
 .container 
-	width 90%
+	width 100%
+	max-width: 1200px
 	margin-right auto
 	margin-left auto
+	padding $spacing-unit-medium
+	
+	@media (min-width $screen-medium)
+		padding $spacing-unit-medium $spacing-unit-large
+
 	
 .hidden 
 	display none !important

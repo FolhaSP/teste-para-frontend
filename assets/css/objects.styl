@@ -1,7 +1,16 @@
 /* ==== LOGO ==== */
 .brand 
-	margin-top 40px
+	margin-top 25px
 	line-height 0
+	
+	@media (min-width $screen-large)
+		margin-top 8px 
+	
+	
+	> .image
+		@media (min-width $screen-large)
+			height 98px
+			
 	
 	> .slogan	
 	> .image
@@ -21,4 +30,68 @@
 	&.--default
 		background-color #FFFFFF
 		color #color-three
+		
+
+/* ==== BANNER SLIDE ==== */
+.banner
+	width 100%
+	position relative
+	display block
+
+/* ===== HEADERS ===== */
+.title 
+	font-size 1.6rem
+	text-transform lowercase
+	
+	&.--text-primary 
+		color $color-one
+	
+	&.--text-secondary
+		color $color-two
+	
+	
+	&.--background
+		color #FFFFFF
+		padding  $spacing-unit-small ($spacing-unit-small * 2)
+		
+		&.--primary 
+			background-color rgba($color-one, .9)
+		
+		&.--secondary
+			background-color rgba($color-two, .9)
+			
+		&.--medium
+			@media (max-width $screen-medium-max)
+				width 33.33%
+		
+			@media (min-width $screen-medium) and (max-width $screen-large-max)
+				width 66.66%
+				
+		&.--large
+			@media (max-width $screen-medium-max)
+				width 45%
+				
+			@media (min-width $screen-medium) and (max-width $screen-large-max)
+				width 75%
+				
+		&.--auto
+			padding-right $spacing-unit-large * 2
+			display inline
+			
+				
+	&.--light
+	&.--background
+		font-size 0.8rem
+		text-transform uppercase
+		
+.description 
+	font-size 1.8rem
+	line-height 2.4rem
+	color #FFFFFF
+	-webkit-text-overflow "."
+	
+	&.--dark
+		color $color-three
+	
+
 			

@@ -1,4 +1,4 @@
-/* ==== NAVEGAÇÃO ==== */
+/* ==== NAV PAGE ==== */
 .nav 
 	background-color $color-one
 	width 100%
@@ -15,20 +15,66 @@
 		height 100%
 		
 .connect
-	min-width 40px
 	font-size: 0.7em
 	text-align center
 	text-transform uppercase
 	display: inline-block
 	margin-left $spacing-unit-small
+	
 	@media (min-width $screen-medium) 
 		margin-left $spacing-unit-large
 		
-	&:before
-		font-size 1.2rem
+	> .icon
+		font-size 1.1rem
 
 	&.--facebook
 		color #4267B2
 	&.--twitter
 		color #1DA1F2
 	
+/* ==== HEADER PAGE ==== */
+.banner-wrapper
+	width 100%
+	margin-top $spacing-unit-large
+	
+	@media (min-width $screen-large)
+		margin-top $spacing-unit-large * 1.5
+		
+	> .indicator
+		margin-left auto
+		margin-right auto
+		
+		> .item
+			
+			display inline-block
+	
+.banner 
+	position relative
+	
+	> .image
+		display block
+		width 100%
+		position relative
+		background-color #F1F1F1
+		background-position center
+		z-index -1
+		cover()
+		
+		height 215px
+		
+		
+		@media (min-width $screen-small) and (max-width $screen-large)
+			height 310px
+		
+		@media (min-width $screen-large)
+			height 450px
+	
+	.title 
+		position absolute
+		bottom $spacing-unit-medium
+	
+	.description
+		padding-top $spacing-unit-medium
+		padding-bottom $spacing-unit-medium
+		font-weight: 700 
+		
