@@ -38,31 +38,53 @@ section
             margin 0 auto
     &#Part2
         .wrapper
+            h1
+                color #2c3e50
+                margin 0 0 10px 0
+            
             .highlight
                 display flex
                 justify-content space-between
+                
+                li
+                    position relative
+                    
+                    p
+                        position absolute
+                        top 70%
+                        left 0
+                        color #fff
+                        background:rgba(219,91,71, 0.9);
+                        padding 10px
+                        text-transform uppercase;
+
     &#Part3
         .wrapper
             display flex
             justify-content space-between
+            align-items flex-end
             
-            .destaques
-                width 100%
-                max-width 755px
+            h1
+                color #2c3e50
+                margin 0 0 10px 0
+            
+            .destaques-item
+                margin 0 0 20px 0
                 
-                .ditem
-                    width 100%
-                    max-width 335px
-                    float left
-                    padding 10px 30px 10px 0
-                                    
-                    p
-                        padding 20px 0
-                        border-bottom 1px solid #ccc
+            p
+                padding 20px 0
+                border-bottom 1px solid #ccc
+                font-size 14px
+                background #f1f1f1
+                margin -5px 0 0 0
+
+                .title
+                    color #498bbd
+                    font-size 16px
+                    font-weight bold
+
             .ads
-                width 100%
-                max-width 300px
-                margin 20px 30px 0 0
+                align-self center
                 
                 h3
                     font-size 12px
@@ -73,20 +95,34 @@ section
         .wrapper
             display flex
             justify-content space-between
+            align-items baseline
             
             .list
-            .ultimasNot
+            .ultimas-noticias
             .ultimosDest
-                width 100%
-                max-width 310px
+                //width 100%
+                //max-width 310px
                 
+                .title
+                    font-size 18px
             .list
                 li
                     border-bottom 1px solid #ccc
-                    margin 20px 0
+                    
+                    p
+                        margin 25px 0
                 
-                li:first-child
-                    margin-top 0
+                        .title
+                            color #498bbd
+                            font-weight bold
+            
+            .ultimas-noticias
+            .ultimosDest
+                
+                .title
+                    color #e74c3c
+                    font-weight bold
+                    
     &#Part5
         background #3498db
         
@@ -99,11 +135,12 @@ section
             
             p
                 color #ffffff
+                text-transform uppercase
+                font-weight bold
 
 
 footer
     background #2c3e50
-    overflow hidden
     .wrapper
         display flex
         justify-content flex-start
@@ -118,3 +155,4 @@ footer
             color #ffffff
             width 100%
             max-width 650px
+            font-size 12px
