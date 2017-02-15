@@ -21,7 +21,7 @@
 	display: inline-block
 	margin-left $spacing-unit-small
 	
-	@media (min-width $screen-medium) 
+	@media (min-width $screen-large) 
 		margin-left $spacing-unit-large
 		
 	> .icon
@@ -34,6 +34,7 @@
 	
 /* ==== HEADER PAGE ==== */
 .banner-wrapper
+	position relative
 	width 100%
 	margin-top $spacing-unit-large
 	
@@ -41,14 +42,42 @@
 		margin-top $spacing-unit-large * 1.5
 		
 	> .indicator
-		margin-left auto
-		margin-right auto
+		text-align center
+		
+		@media (min-width $screen-small)
+			margin-top $spacing-unit-large
 		
 		> .item
-			
 			display inline-block
+			background-color #999999
+			width 10px 
+			height 10px
+			border-radius 50%
+			
+		> .item + .radio + .item 
+			margin-left $spacing-unit-small 
+		
+		> .radio 
+			display none
 	
-.banner 
+		> .radio:checked + .item
+			background-color $color-one	
+			
+	> .control //Controles de next e prev
+		position absolute
+		top 38%
+		background-color #FFFFFF
+		padding $spacing-unit-medium ($spacing-unit-medium * 1.5)  
+		border-radius 50%
+		shadow()
+		
+		&.--prev 
+			left -37.5px
+		
+		&.--next 
+			right -37.5px
+					
+.banner //Banner
 	position relative
 	
 	> .image
@@ -62,19 +91,49 @@
 		
 		height 215px
 		
-		
 		@media (min-width $screen-small) and (max-width $screen-large)
 			height 310px
 		
 		@media (min-width $screen-large)
 			height 450px
+			
+		> .header-group
+			position absolute
+			bottom $spacing-unit-medium
+			width 100%
+			@media (min-width $screen-small) and (max-width $screen-large)
+				left $spacing-unit-medium
+			
+			@media (min-width $screen-large)
+				bottom $spacing-unit-large * 1.5
+				left $spacing-unit-large * 1.5
+			
+			> .title + .description
+				margin-top $spacing-unit-medium
+				
+			> .description
+				font-weight: 700
+				width 60%
 	
-	.title 
-		position absolute
-		bottom $spacing-unit-medium
-	
-	.description
+	> .description
 		padding-top $spacing-unit-medium
 		padding-bottom $spacing-unit-medium
 		font-weight: 700 
+		
+/* ==== TOP LIST ==== */
+.top-list
+	> .item
+		position relative
+		
+		> .title
+			position absolute
+			bottom $spacing-unit-medium * 2
+			
+		> .image	
+			background-color #F1F1F1
+			background-position center
+			margin-bottom $spacing-unit-medium
+			height 215px
+			cover()
+		
 		

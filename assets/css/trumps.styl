@@ -1,3 +1,4 @@
+/* ==== HELPERS DE CONTAINER ==== */
 .container 
 	width 100%
 	max-width: 1200px
@@ -5,10 +6,11 @@
 	margin-left auto
 	padding $spacing-unit-medium
 	
-	@media (min-width $screen-medium)
+	@media (min-width $screen-large)
 		padding $spacing-unit-medium $spacing-unit-large
 
 	
+/* ==== HELPERS DE HIDE ==== */
 .hidden 
 	display none !important
 	
@@ -21,10 +23,30 @@
 		display none !important
 
 .hidden-medium 
-	@media (max-width $screen-medium-max)
+	@media (max-width $screen-large-max)
 		display none !important
-	
+
 .hidden-large 
 	@media (min-width $screen-large)
 		display none !important
+		
+/* ==== HELPERS DE VISIBLE ==== */
+.visible-xsmall 
+	@media (min-width $screen-xsmall-max)
+		display none !important
+		
+.visible-small 
+	@media (max-width $screen-small)
+		display none !important
+
+.visible-medium 
+	@media (max-width $screen-medium)
+		display none !important
+
+.visible-large 
+	@media (max-width $screen-large)
+		display none !important
+
+	
+
 		

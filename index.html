@@ -1,56 +1,105 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Folha de S.Paulo</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- STYLESHEETS -->
-        <link rel="stylesheet" href="dist/stylesheets/all.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Folha de S.Paulo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="dist/stylesheets/all.min.css">
 
-    </head>
-    <body>
-        <!-- NAVBAR -->
-        <nav class="nav">
-            <div class="nav-wrapper container">
-                <a href="#" class="nav-toggle"><img src="dist/images/menu-icon.png" alt="Icone para acesso a navegação"></a>
-                <div class="nav-brand">
-                    <div class="brand">
-                        <img class="image" src="dist/images/logo.png" alt="Logo Folha">
-                        <p class="slogan hidden-small">O site teste para <strong>novos webs</strong></p>
-                    </div>
-                </div>
-                <div class="nav-connect">
-                    <a href="#" class="button --default connect --facebook hidden-small">
-                        <i class="icon  icon-facebook"></i>
-                        <span class="hidden-medium">curtir</span>
-                    </a>
-                    <a href="#" class="button --default connect --twitter hidden-small">
-                        <i class="icon icon-twitter"></i>
-                        <span class="hidden-medium">seguir</span>
-                    </a>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="nav-wrapper container">
+            <a href="#" class="nav-toggle"><img src="dist/images/menu-icon.png" alt="Icone para acesso a navegação"></a>
+            <div class="nav-brand">
+                <div class="brand">
+                    <img class="image" src="dist/images/logo.png" alt="Logo Folha">
+                    <p class="slogan hidden-xsmall">O site teste para <strong>novos webs</strong></p>
                 </div>
             </div>
-        </nav>
+            <div class="nav-connect">
+                <a href="#" class="button --default connect --facebook hidden-xsmall">
+                    <i class="icon  icon-facebook"></i>
+                    <span class="visible-large">curtir</span>
+                </a>
+                <a href="#" class="button --default connect --twitter hidden-xsmall">
+                    <i class="icon icon-twitter"></i>
+                    <span class="visible-large">seguir</span>
+                </a>
+            </div>
+        </div>
+    </nav>
 
-        <!-- HEADER -->
-        <header class="banner-wrapper container">
-            <div class="banner">
+    <!-- HEADER -->
+    <header class="container">
+
+        <!-- BANNERS -->
+        <ul class="banner-wrapper">
+
+            <li class="banner">
                 <div class="image" style="background-image: url('dist/images/image_rotate.png')">
-                    <h1 class="title --background --primary --auto">Mussum ipsum cacilds</h1>
+                    <hgroup class="header-group">
+                        <h1 class="title --background --primary --auto">Mussum ipsum cacilds</h1>
+                        <p class="description hidden-xsmall">Mais vale um bebadis conhecidiss.</p>
+                        <p class="description hidden-xsmall">Iec orci ornare consequat.</p>
+                    </hgroup>
                 </div>
-                <p class="description --dark">Mais vale um bebadis conhecidiss.</p>
-            </div>
-            <section class="idicator">
+                <p class="description --dark visible-xsmall">Mais vale um bebadis conhecidiss.</p>
+            </li>
 
-                <label class="item" for="1"><input class="radio" type="radio" name="banner-indicator" id="1"></label>
-                <label class="item" for="2"><input class="radio" type="radio" name="banner-indicator" id="2"></label>
-                <label class="item" for="3"><input class="radio" type="radio" name="banner-indicator" id="3"></label>
+            <!-- SELETORES DO BANNER -->
+            <section class="indicator">
+
+                <input class="radio" type="radio" name="banner-indicator" id="1" checked>
+                <label class="item" for="1"></label> 
+
+                <input class="radio" type="radio" name="banner-indicator" id="2">
+                <label class="item" for="2"></label>
+
+                <input class="radio" type="radio" name="banner-indicator" id="3">
+                <label class="item" for="3"></label>
                 
-            </section>           
-        </header>
-    </body>
+            </section> 
+            
+            <!-- CONTORLE DO BANNER -->
+            <span class="control --prev visible-large"><img src="dist/images/arrow_left-icon.png" alt="Passe para a imagem anterior"></span>
+            <span class="control --next visible-large"><img src="dist/images/arrow_right-icon.png" alt="Passe para a próxima imagem"></span>
+
+
+        </ul>
+
+    </header>
+
+    <!-- TOPS ACESSOS -->
+    <section id="top-list" class="container">
+        <h1 class="title">top cacildis</h1>
+        <div class="row top-list">
+
+            <div class="col-xs-12 col-sm-4 col-md-4 item">
+                <div class="image" style="background-image: url(dist/images/highlight-01.png)"></div>
+                <h1 class="title --background --secondary">pindureta</h1>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 item">
+                <div class="image" style="background-image: url(dist/images/highlight-02.png)"></div>
+                <h1 class="title --background --secondary">pindureta</h1>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 item">
+                <div class="image" style="background-image: url(dist/images/highlight-03.png)"></div>
+                <h1 class="title --background --secondary">pindureta</h1>
+            </div>    
+
+        </div>
+
+    </section>
+
+</body>
 </html>
+

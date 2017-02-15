@@ -41,7 +41,9 @@
 /* ===== HEADERS ===== */
 .title 
 	font-size 1.6rem
+	font-weight 400
 	text-transform lowercase
+	
 	
 	&.--text-primary 
 		color $color-one
@@ -53,13 +55,19 @@
 	&.--background
 		color #FFFFFF
 		padding  $spacing-unit-small ($spacing-unit-small * 2)
+		display inline
 		
 		&.--primary 
 			background-color rgba($color-one, .9)
 		
 		&.--secondary
 			background-color rgba($color-two, .9)
-			
+		
+
+		&.--medium
+		&.--large
+			display block
+				
 		&.--medium
 			@media (max-width $screen-medium-max)
 				width 33.33%
@@ -76,19 +84,17 @@
 				
 		&.--auto
 			padding-right $spacing-unit-large * 2
-			display inline
 			
 				
 	&.--light
 	&.--background
-		font-size 0.8rem
+		font-size 1rem
 		text-transform uppercase
 		
 .description 
 	font-size 1.8rem
-	line-height 2.4rem
+	line-height 2rem
 	color #FFFFFF
-	-webkit-text-overflow "."
 	
 	&.--dark
 		color $color-three
