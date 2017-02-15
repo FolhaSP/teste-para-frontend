@@ -1,15 +1,3 @@
-/* ==== HELPERS DE CONTAINER ==== */
-.container 
-	width 100%
-	max-width: 1200px
-	margin-right auto
-	margin-left auto
-	padding $spacing-unit-medium
-	
-	@media (min-width $screen-large)
-		padding $spacing-unit-medium $spacing-unit-large
-
-	
 /* ==== HELPERS DE HIDE ==== */
 .hidden 
 	display none !important
@@ -46,7 +34,33 @@
 .visible-large 
 	@media (max-width $screen-large)
 		display none !important
-
+		
+/* ==== HELPERS PARA FLOATS ==== */
+.right 
+	float right
 	
+.left
+	float left
+
+.center 
+	margin-right auto
+	margin-left auto
+	
+.vwrapper
+	display table
+	
+	> .valign
+		display table-cell
+		vertical-align middle
+		
+/* ==== HELPERS PARA ALINHAMENTOS DE TEXTO ==== */
+.text-left
+	text-align left
+
+.text-right
+	text-align right
+
+.text-center
+	text-align center
 
 		

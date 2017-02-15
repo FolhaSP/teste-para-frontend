@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../../../font/fontello.eot?51489428');
-  src: url('../../../font/fontello.eot?51489428#iefix') format('embedded-opentype'),
-       url('../../../font/fontello.woff2?51489428') format('woff2'),
-       url('../../../font/fontello.woff?51489428') format('woff'),
-       url('../../../font/fontello.ttf?51489428') format('truetype'),
-       url('../../../font/fontello.svg?51489428#fontello') format('svg');
+  src: url('../../../font/fontello.eot?32301526');
+  src: url('../../../font/fontello.eot?32301526#iefix') format('embedded-opentype'),
+       url('../../../font/fontello.woff2?32301526') format('woff2'),
+       url('../../../font/fontello.woff?32301526') format('woff'),
+       url('../../../font/fontello.ttf?32301526') format('truetype'),
+       url('../../../font/fontello.svg?32301526#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?51489428#fontello') format('svg');
+    src: url('../font/fontello.svg?32301526#fontello') format('svg');
   }
 }
 */
@@ -25,29 +25,15 @@
   font-style: normal;
   font-weight: normal;
  
+  display: inline-block;
+  text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
- 
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
 
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+
 }
  
+.icon-up:before { content: '\e800'; } /* '' */
 .icon-facebook:before { content: '\f052'; } /* '' */
 .icon-twitter:before { content: '\f058'; } /* '' */

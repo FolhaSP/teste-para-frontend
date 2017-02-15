@@ -1,3 +1,9 @@
 *Thumbs.db
+
 node_modules
+slices
+layout
+
+.gitignore
+instrucoes-leia_me.txt
 npm-debug.log.2463383494

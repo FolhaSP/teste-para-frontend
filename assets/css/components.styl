@@ -3,6 +3,11 @@
 	background-color $color-one
 	width 100%
 	height 120px
+
+	@media (max-width $screen-medium-max)
+		position fixed
+		top 0
+		z-index 4
 	
 .nav-wrapper 
 	height 100%
@@ -115,25 +120,80 @@
 				font-weight: 700
 				width 60%
 	
-	> .description
+	> .subtitle
 		padding-top $spacing-unit-medium
 		padding-bottom $spacing-unit-medium
 		font-weight: 700 
 		
 /* ==== TOP LIST ==== */
 .top-list
+		
 	> .item
 		position relative
+		margin-bottom $spacing-unit-medium
 		
 		> .title
 			position absolute
-			bottom $spacing-unit-medium * 2
+			bottom $spacing-unit-medium
 			
 		> .image	
-			background-color #F1F1F1
-			background-position center
-			margin-bottom $spacing-unit-medium
-			height 215px
-			cover()
+			width 100%
+			height auto
+			max-heigth 215px
+			
+		>.description
+			@media (min-width $screen-madium)
+				font-size 1.3rem
 		
+/* ==== MORE ==== */
+.more
+	clear both
+	padding-top $spacing-unit-large 
+	table-layout fixed
+	
+	@media (min-width $screen-small)
+		padding-top $spacing-unit-large * 2
+		
+		
+	> .more-news 
+		margin-bottom $spacing-unit-large 
+
+/* ==== FOOTER ==== */
+.footer-page
+	clear both
+	padding 0
+	
+	.back-top 
+		width 100%
+		background-color $color-one
+		padding $spacing-unit-medium
+		text-transform uppercase
+		
+		> .top
+			color #FFFFFF
+		
+	.copy
+		paddin-bottom spacing-unit-medium
+		background-color $color-three
+		color #FFF
+		font-size 0.8em
+		display table
+		width 100%
+		
+		.brand
+		.terms
+			display inline-block
+			vertical-align middle
+		
+		.brand
+			margin-right $spacing-unit-large
+			
+		.terms 
+			@media (min-width $screen-small)
+				width calc(100% - 192px)
+			
+		
+			
+			
+			
 		

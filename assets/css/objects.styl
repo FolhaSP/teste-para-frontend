@@ -1,3 +1,14 @@
+/* ==== HELPERS DE CONTAINER ==== */
+.container 
+	width 100%
+	max-width: 1200px
+	margin-right auto
+	margin-left auto
+	padding $spacing-unit-medium
+	
+	@media (min-width $screen-large)
+		padding $spacing-unit-medium $spacing-unit-large
+		
 /* ==== LOGO ==== */
 .brand 
 	margin-top 25px
@@ -42,6 +53,7 @@
 .title 
 	font-size 1.6rem
 	font-weight 400
+	margin-bottom $spacing-unit-medium
 	text-transform lowercase
 	
 	
@@ -69,18 +81,20 @@
 			display block
 				
 		&.--medium
-			@media (max-width $screen-medium-max)
+			@media (max-width $screen-xsmall-max)
 				width 33.33%
+				
+			@media (min-width $screen-small) and (max-width $screen-small-max)
+				width 60%
 		
-			@media (min-width $screen-medium) and (max-width $screen-large-max)
-				width 66.66%
+			
 				
 		&.--large
-			@media (max-width $screen-medium-max)
+			@media (max-width $screen-xsmall-max)
 				width 45%
 				
-			@media (min-width $screen-medium) and (max-width $screen-large-max)
-				width 75%
+			@media (min-width $screen-small) and (max-width $screen-small-max)
+				width 70%
 				
 		&.--auto
 			padding-right $spacing-unit-large * 2
@@ -88,16 +102,89 @@
 				
 	&.--light
 	&.--background
-		font-size 1rem
+		font-size 1.3rem
 		text-transform uppercase
-		
-.description 
+
+.subtitle
 	font-size 1.8rem
 	line-height 2rem
 	color #FFFFFF
 	
+	@media (min-width $screen-medium)
+		font-size 1.2rem
+	
 	&.--dark
 		color $color-three
-	
+		
+.description 
+	font-size 1.2rem
+	line-height 1.6rem
 
+/* ==== MAIN ==== */
+.main
+	clear both
+	padding-top $spacing-unit-large
+	margin-bottom $spacing-unit-large * 1.5
+
+/* ==== CARDS ==== */
+.card 
+	border-bottom solid 1px #CCCCCC
+	padding-bottom $spacing-unit-large
+	padding-right 0
+	padding-left 0
+	margin-bottom $spacing-unit-medium
+	
+	@media (min-width $screen-large)
+		background-color #F2F2F2
+	
+	> .image
+		width 100%
+		height 215px
+	
+	.title
+		padding-top $spacing-unit-small * 4
+		
+	.description 
+		font-weight 400
+		
+	&.--inline
+		background-color transparent
+		border-bottom none
+		
+		> .image
+			width 50%
+			display inline-block
 			
+		> .hgroup
+			width 40%
+			display inline-block
+			padding-left $spacing-unit-medium
+			vertical-align top
+			padding-bottom $spacing-unit-small * 4			
+			
+			> .title 
+				margin-bottom $spacing-unit-small
+			
+/* ==== LISTA ==== */
+.list
+	list-style none
+	
+	.item
+		display block
+		padding-top $spacing-unit-small * 4.4
+		padding-bottom $spacing-unit-small * 4.4
+		padding-right $spacing-unit-large * 2
+		border-bottom solid 1px #CCCCCC
+		
+/* ==== PUBLICIDADE ==== */
+.advertising
+	@media (max-width $screen-xsmall-max)
+		margin-bottom $spacing-unit-large * 2
+	&:before
+		content "Publicidade"
+		display block
+		font-size 0.9rem
+		color #B6B6B6
+		margin 0
+		padding-top 0
+		padding-bottom $spacing-unit-small
