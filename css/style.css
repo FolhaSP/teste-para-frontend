@@ -8,15 +8,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+body {
+  font-family: Arial;
+}
 .wrapper {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
 }
 header {
-  background: #4ec3ff;
+  background: #3498db;
   width: 100%;
-  height: auto;
+  height: 98px;
 }
 header .listMenu {
   display: flex;
@@ -32,7 +35,6 @@ section#Part1 .wrapper {
 section#Part2 .wrapper .highlight {
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
 }
 section#Part3 .wrapper {
   display: flex;
@@ -80,7 +82,7 @@ section#Part4 .wrapper .list li:first-child {
   margin-top: 0;
 }
 section#Part5 {
-  background: #4ec3ff;
+  background: #3498db;
 }
 section#Part5 .wrapper {
   display: flex;
@@ -88,6 +90,9 @@ section#Part5 .wrapper {
   width: 100%;
   height: 50px;
   align-items: center;
+}
+section#Part5 .wrapper p {
+  color: #fff;
 }
 footer {
   background: #2c3e50;
@@ -102,4 +107,9 @@ footer .wrapper .logoFooter {
   width: 100%;
   max-width: 132px;
   padding: 20px;
+}
+footer .wrapper p {
+  color: #fff;
+  width: 100%;
+  max-width: 650px;
 }
