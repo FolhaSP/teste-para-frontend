@@ -69,7 +69,7 @@ section
                 margin 0 0 10px 0
             
             .destaques-item
-                margin 0 0 20px 0
+                margin 0 0 24px 0
                 
             p
                 padding 20px 0
@@ -94,18 +94,18 @@ section
     &#Part4
         .wrapper
             display flex
+            align-items center
             justify-content space-between
-            align-items baseline
             
             .list
             .ultimas-noticias
             .ultimosDest
-                //width 100%
-                //max-width 310px
                 
                 .title
                     font-size 18px
             .list
+                flex 1
+
                 li
                     border-bottom 1px solid #ccc
                     
@@ -117,7 +117,15 @@ section
                             font-weight bold
             
             .ultimas-noticias
-            .ultimosDest
+                display flex
+                align-items center
+                justify-content space-around
+                flex-wrap wrap
+                flex 1
+                
+                img
+                    flex-grow 0
+                    flex-shrink 0
                 
                 .title
                     color #e74c3c

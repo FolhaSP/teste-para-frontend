@@ -62,7 +62,7 @@ section#Part3 .wrapper h1 {
   margin: 0 0 10px 0;
 }
 section#Part3 .wrapper .destaques-item {
-  margin: 0 0 20px 0;
+  margin: 0 0 24px 0;
 }
 section#Part3 .wrapper p {
   padding: 20px 0;
@@ -86,13 +86,16 @@ section#Part3 .wrapper .ads h3 {
 }
 section#Part4 .wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: baseline;
 }
 section#Part4 .wrapper .list .title,
 section#Part4 .wrapper .ultimas-noticias .title,
 section#Part4 .wrapper .ultimosDest .title {
   font-size: 18px;
+}
+section#Part4 .wrapper .list {
+  flex: 1;
 }
 section#Part4 .wrapper .list li {
   border-bottom: 1px solid #ccc;
@@ -104,8 +107,18 @@ section#Part4 .wrapper .list li p .title {
   color: #498bbd;
   font-weight: bold;
 }
-section#Part4 .wrapper .ultimas-noticias .title,
-section#Part4 .wrapper .ultimosDest .title {
+section#Part4 .wrapper .ultimas-noticias {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex: 1;
+}
+section#Part4 .wrapper .ultimas-noticias img {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+section#Part4 .wrapper .ultimas-noticias .title {
   color: #e74c3c;
   font-weight: bold;
 }
