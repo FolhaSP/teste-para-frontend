@@ -32,6 +32,31 @@ section {
 section#Part1 .wrapper {
   margin: 0 auto;
 }
+section#Part1 .wrapper .banner {
+  position: relative;
+}
+section#Part1 .wrapper .text-banner {
+  position: absolute;
+  top: 79%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+}
+section#Part1 .wrapper .text-banner .title-banner {
+  color: #fff;
+  background: rgba(50,141,201,0.9);
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 15px 0;
+}
+section#Part1 .wrapper .text-banner p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+section#Part1 .wrapper .text-banner a {
+  display: inline-block;
+}
 section#Part2 .wrapper h1 {
   color: #2c3e50;
   margin: 0 0 10px 0;
@@ -86,41 +111,52 @@ section#Part3 .wrapper .ads h3 {
 }
 section#Part4 .wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-section#Part4 .wrapper .list .title,
-section#Part4 .wrapper .ultimas-noticias .title,
-section#Part4 .wrapper .ultimosDest .title {
-  font-size: 18px;
-}
 section#Part4 .wrapper .list {
-  flex: 1;
+  width: 500px;
 }
 section#Part4 .wrapper .list li {
   border-bottom: 1px solid #ccc;
 }
 section#Part4 .wrapper .list li p {
   margin: 25px 0;
+  font-size: 14px;
 }
 section#Part4 .wrapper .list li p .title {
   color: #498bbd;
   font-weight: bold;
+  font-size: 17px;
 }
 section#Part4 .wrapper .ultimas-noticias {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
   flex-wrap: wrap;
-  flex: 1;
+  justify-content: space-around;
 }
-section#Part4 .wrapper .ultimas-noticias img {
+section#Part4 .wrapper .ultimas-noticias .noticias-item {
+  display: flex;
+  align-items: center;
+  margin: 3px;
+  padding: 10px 0 0 0;
+}
+section#Part4 .wrapper .ultimas-noticias .noticias-item img {
   flex-grow: 0;
   flex-shrink: 0;
 }
-section#Part4 .wrapper .ultimas-noticias .title {
+section#Part4 .wrapper .ultimas-noticias .noticias-item p {
+  font-size: 14px;
+  padding-left: 10px;
+}
+section#Part4 .wrapper .ultimas-noticias .noticias-item .title {
+  font-size: 17px;
   color: #e74c3c;
   font-weight: bold;
+}
+section#Part4 .wrapper .ultimas-noticias .noticias-item .noticias-title {
+  padding-left: 10px;
+  color: #e74c3c;
 }
 section#Part5 {
   background: #3498db;

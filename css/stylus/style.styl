@@ -29,6 +29,7 @@ header
         display flex
         justify-content space-between
         align-items center
+            
     
 section
     margin-top 60px
@@ -36,6 +37,32 @@ section
     &#Part1
         .wrapper
             margin 0 auto
+            
+            .banner
+                position relative
+                
+            .text-banner
+                position absolute
+                top 79%
+                left 18%
+                transform translate(-50%, -50%)
+                
+                .title-banner
+                    color #fff
+                    background rgba(50,141,201, 0.9)
+                    padding 8px
+                    text-transform uppercase
+                    font-size 17px
+                    margin 15px 0
+                
+                p
+                    color #fff
+                    font-size 20px
+                    font-weight bold
+            
+                a
+                    display: inline-block;
+
     &#Part2
         .wrapper
             h1
@@ -54,9 +81,9 @@ section
                         top 70%
                         left 0
                         color #fff
-                        background:rgba(219,91,71, 0.9);
+                        background rgba(219,91,71, 0.9)
                         padding 10px
-                        text-transform uppercase;
+                        text-transform uppercase
 
     &#Part3
         .wrapper
@@ -94,42 +121,52 @@ section
     &#Part4
         .wrapper
             display flex
-            align-items center
             justify-content space-between
             
             .list
-            .ultimas-noticias
-            .ultimosDest
-                
-                .title
-                    font-size 18px
-            .list
-                flex 1
+                width 500px
 
                 li
                     border-bottom 1px solid #ccc
                     
                     p
                         margin 25px 0
+                        font-size 14px
                 
                         .title
                             color #498bbd
                             font-weight bold
+                            font-size 17px
             
             .ultimas-noticias
                 display flex
+                flex-direction row
                 align-items center
-                justify-content space-around
                 flex-wrap wrap
-                flex 1
-                
-                img
-                    flex-grow 0
-                    flex-shrink 0
-                
-                .title
-                    color #e74c3c
-                    font-weight bold
+                justify-content space-around
+
+                .noticias-item
+                    display flex
+                    align-items center
+                    margin 3px
+                    padding 10px 0 0 0
+                    
+                    img
+                        flex-grow 0
+                        flex-shrink 0
+
+                    p
+                        font-size 14px
+                        padding-left 10px
+
+                    .title
+                        font-size 17px
+                        color #e74c3c
+                        font-weight bold
+                    
+                    .noticias-title
+                        padding-left 10px;
+                        color #e74c3c
                     
     &#Part5
         background #3498db
