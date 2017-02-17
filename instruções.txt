@@ -1,0 +1,13 @@
+Olá!
+
+Caso queria brincar um pouco com o projeto (Front End Teste), estou deixando as intruções a baixo:
+
+- É preciso ter instalado o NodeJS (Você encontra o instalador aqui --> nodejs.org/en/), é necessario para executar o processo de Build e gerenciar os pacotes com NPM;
+
+- Com ele instalado apenas rode no terminar o comando "npm install" na raiz do projeto, ele irá ler o arquivo package.json e instalar as depencias do Node;
+
+- Como não estou ignorando as dependencias de desenvolvimento, não será necessário fazer a instalação;
+
+- Para fazer o processo de Build automaticamente, rode o comando "Gulp" na raiz do projeto, deixando um observe no arquivo "/assets/css/main.styl" realizando toda a parte de compilamento, concatenação e minificação dos arquivos de estilo.
+
+Apenas isso, obrigado pela experiencia!

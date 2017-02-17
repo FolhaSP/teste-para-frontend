@@ -1,0 +1,30 @@
+{
+  "name": "front-end-test",
+  "version": "1.0.0",
+  "description": "```\r  _            _   _         _     _  __  \r | |_    ___  | | | |  ___  | |   (_) \\ \\ \r | ' \\  / -_) | | | | / _ \\ |_|    _   | |\r |_||_| \\___| |_| |_| \\___/ (_)   ( )  | |\r                                  |/  /_/ \r ```\r # Teste para candidatos à vaga de desenvolvedor Front-end",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.0.2",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-stylus": "^2.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gasfu/front-end-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gasfu/front-end-test/issues"
+  },
+  "homepage": "https://github.com/gasfu/front-end-test#readme"
+}

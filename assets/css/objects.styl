@@ -12,6 +12,7 @@
 /* ==== LOGO ==== */
 .brand 
 	margin-top 25px
+	display block
 	line-height 0
 	
 	@media (min-width $screen-large)
@@ -133,6 +134,7 @@
 	padding-right 0
 	padding-left 0
 	margin-bottom $spacing-unit-medium
+	cursor pointer
 	
 	@media (min-width $screen-large)
 		background-color #F2F2F2
@@ -178,8 +180,11 @@
 		
 /* ==== PUBLICIDADE ==== */
 .advertising
-	@media (max-width $screen-xsmall-max)
+	cursor pointer
+		
+	@media (max-width $screen-small-max)
 		margin-bottom $spacing-unit-large * 2
+
 	&:before
 		content "Publicidade"
 		display block
@@ -188,3 +193,7 @@
 		margin 0
 		padding-top 0
 		padding-bottom $spacing-unit-small
+		
+	> .image 
+		width auto
+		max-width 100%
