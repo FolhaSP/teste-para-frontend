@@ -10,6 +10,7 @@ img {
 }
 body {
   font-family: Arial;
+  background: #ecf0f1;
 }
 .wrapper {
   width: 100%;
@@ -21,10 +22,18 @@ header {
   width: 100%;
   height: 98px;
 }
-header .listMenu {
+header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header .wrapper .logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+header .wrapper .logo .slogan {
+  margin: 20px 0 0 0;
 }
 section {
   margin-top: 60px;
@@ -37,9 +46,10 @@ section#Part1 .wrapper .banner {
 }
 section#Part1 .wrapper .text-banner {
   position: absolute;
-  top: 79%;
-  left: 18%;
-  transform: translate(-50%, -50%);
+  top: 100%;
+  left: 0%;
+  transform: translate(0%, -110%);
+  padding: 16px 32px;
 }
 section#Part1 .wrapper .text-banner .title-banner {
   color: #fff;
@@ -53,9 +63,6 @@ section#Part1 .wrapper .text-banner p {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
-}
-section#Part1 .wrapper .text-banner a {
-  display: inline-block;
 }
 section#Part2 .wrapper h1 {
   color: #2c3e50;
@@ -172,6 +179,14 @@ section#Part5 .wrapper p {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
+}
+@media screen and (max-width: 1040px) {
+  section#Part3 .wrapper {
+    justify-content: space-around;
+  }
+  section#Part3 .wrapper .ads {
+    display: none;
+  }
 }
 footer {
   background: #2c3e50;
