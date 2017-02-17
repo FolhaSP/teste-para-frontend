@@ -70,7 +70,7 @@ section
                     font-weight bold
 
     &#Part2
-        .wrapper
+        .wrapper                
             h1
                 color #2c3e50
                 margin 0 0 10px 0
@@ -81,15 +81,20 @@ section
                 
                 li
                     position relative
+                    padding-right 20px
                     
                     p
                         position absolute
-                        top 70%
+                        top 80%
                         left 0
                         color #fff
                         background rgba(219,91,71, 0.9)
+                        transform: translate(0%,-80%)
                         padding 10px
                         text-transform uppercase
+                    
+                li:last-child
+                    padding-right 0
 
     &#Part3
         .wrapper
@@ -103,6 +108,7 @@ section
             
             .destaques-item
                 margin 0 0 24px 0
+                padding-right 20px
                 
             p
                 padding 20px 0
@@ -128,51 +134,63 @@ section
         .wrapper
             display flex
             justify-content space-between
+            flex-flow wrap
             
             .list
-                width 500px
+                margin-bottom  80px
 
                 li
                     border-bottom 1px solid #ccc
+                    padding 25px 0
+                    
+                li:first-child
+                    padding 0
+                    border none
                     
                     p
-                        margin 25px 0
                         font-size 14px
                 
                         .title
                             color #498bbd
                             font-weight bold
-                            font-size 17px
+                            font-size 21px
             
             .ultimas-noticias
-                display flex
-                flex-direction row
-                align-items center
-                flex-wrap wrap
-                justify-content space-around
+                h1
+                    font-size 21px
+                    color #e74c3c
+                    font-weight bold
+                    margin-bottom 25px
 
                 .noticias-item
-                    display flex
-                    align-items center
-                    margin 3px
-                    padding 10px 0 0 0
+                    display table
+                    width 100%
+                    max-width 300px
                     
-                    img
-                        flex-grow 0
-                        flex-shrink 0
+                    .image
+                        display table-cell
+                        width 165px
+                        height 166px
 
-                    p
-                        font-size 14px
+                    .text
+                        display table-cell
+                        width 200px
+                        vertical-align top
                         padding-left 10px
 
-                    .title
-                        font-size 17px
-                        color #e74c3c
-                        font-weight bold
-                    
                     .noticias-title
-                        padding-left 10px;
+                        font-weight bold
                         color #e74c3c
+                        font-size 14px
+                        
+            .ads-mobile
+                display none
+                margin-top 40px
+                
+                h3
+                    font-size 12px
+                    color #c6c6c6
+                    text-align right
                     
     &#Part5
         background #3498db
@@ -189,13 +207,22 @@ section
                 text-transform uppercase
                 font-weight bold
                 
-    @media screen and (max-width: 1040px)
+    @media (max-width: 1040px)
         &#Part3
             .wrapper
                 justify-content space-around
 
                 .ads
                     display none
+
+    @media (max-width: 768px)
+            
+        &#Part4
+            .wrapper
+                justify-content space-around
+                
+                .ads-mobile
+                    display block
 
 
 footer
