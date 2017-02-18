@@ -35,6 +35,19 @@ header .wrapper .logo {
 header .wrapper .logo .slogan {
   margin: 20px 0 0 0;
 }
+header .wrapper .sociais-mobile {
+  display: none;
+  width: 100%;
+  max-width: 102px;
+}
+@media (max-width: 911px) {
+  header .wrapper .sociais {
+    display: none;
+  }
+  header .wrapper .sociais-mobile {
+    display: block;
+  }
+}
 section {
   margin-top: 60px;
 }
@@ -224,7 +237,7 @@ section#Part5 .wrapper img {
     display: block;
   }
 }
-@media (max-width: 738px) {
+@media (max-width: 736px) {
   section#Part2 .wrapper .highlight {
     justify-content: center;
     flex-flow: wrap;
@@ -239,7 +252,7 @@ footer {
 }
 footer .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 footer .wrapper .logoFooter {

@@ -38,6 +38,20 @@ header
             
             .slogan
                 margin 20px 0 0 0
+                
+        .sociais-mobile
+            display none
+            width 100%
+            max-width 102px
+            
+@media (max-width: 911px)
+        header
+            .wrapper
+                .sociais
+                    display none
+                    
+                .sociais-mobile
+                    display block
     
 section
     margin-top 60px
@@ -235,7 +249,7 @@ section
                 .ads-mobile
                     display block
                     
-    @media (max-width: 738px)
+    @media (max-width: 736px)
         &#Part2
             .wrapper
                 .highlight
@@ -251,7 +265,7 @@ footer
     background #2c3e50
     .wrapper
         display flex
-        justify-content space-between
+        justify-content flex-start
         align-items center
         
         .logoFooter
