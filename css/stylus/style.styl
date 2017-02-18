@@ -70,7 +70,8 @@ section
                     font-weight bold
 
     &#Part2
-        .wrapper                
+        .wrapper
+            
             h1
                 color #2c3e50
                 margin 0 0 10px 0
@@ -101,6 +102,7 @@ section
             display flex
             justify-content space-between
             align-items flex-end
+            flex-flow wrap
             
             h1
                 color #2c3e50
@@ -207,29 +209,49 @@ section
                 text-transform uppercase
                 font-weight bold
                 
-    @media (max-width: 1040px)
+                a
+                    text-decoration none
+                    color #ffffff
+                
+            img
+                margin-left 8px
+                
+    @media (max-width: 1140px)
         &#Part3
             .wrapper
                 justify-content space-around
+                
+                .destaques-item
+                    padding-right 0
 
                 .ads
                     display none
 
-    @media (max-width: 768px)
-            
+    @media (max-width: 911px)
         &#Part4
             .wrapper
                 justify-content space-around
-                
+
                 .ads-mobile
                     display block
-
+                    
+    @media (max-width: 738px)
+        &#Part2
+            .wrapper
+                .highlight
+                    justify-content center
+                    flex-flow wrap
+                    align-content space-between
+                        
+                    li
+                        padding 10px 0
+            
 
 footer
     background #2c3e50
     .wrapper
         display flex
-        justify-content flex-start
+        justify-content space-between
         align-items center
         
         .logoFooter
