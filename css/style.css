@@ -20,7 +20,7 @@ body {
 header {
   background: #3498db;
   width: 100%;
-  height: 98px;
+  height: auto;
 }
 header .wrapper {
   display: flex;
@@ -46,6 +46,14 @@ header .wrapper .sociais-mobile {
   }
   header .wrapper .sociais-mobile {
     display: block;
+  }
+}
+@media (max-width: 500px) {
+  header .wrapper .slogan {
+    display: none;
+  }
+  header .wrapper .sociais-mobile img {
+    display: none;
   }
 }
 section {
@@ -76,6 +84,9 @@ section#Part1 .wrapper .text-banner p {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+}
+section#Part1 .wrapper .txt-mobile {
+  display: none;
 }
 section#Part2 .wrapper h1 {
   color: #2c3e50;
@@ -229,7 +240,7 @@ section#Part5 .wrapper img {
     display: none;
   }
 }
-@media (max-width: 911px) {
+@media (max-width: 890px) {
   section#Part4 .wrapper {
     justify-content: space-around;
   }
@@ -237,7 +248,7 @@ section#Part5 .wrapper img {
     display: block;
   }
 }
-@media (max-width: 736px) {
+@media (max-width: 600px) {
   section#Part2 .wrapper .highlight {
     justify-content: center;
     flex-flow: wrap;
@@ -245,6 +256,22 @@ section#Part5 .wrapper img {
   }
   section#Part2 .wrapper .highlight li {
     padding: 10px 0;
+  }
+}
+@media (max-width: 500px) {
+  section#Part1 .wrapper .text-banner {
+    top: 80%;
+  }
+  section#Part1 .wrapper .txt {
+    display: none;
+  }
+  section#Part1 .wrapper .txt-mobile {
+    display: block;
+    padding-bottom: 0;
+  }
+  section#Part1 .wrapper .txt-mobile p {
+    padding: 0 20px 0 40px;
+    font-weight: bold;
   }
 }
 footer {
@@ -265,4 +292,12 @@ footer .wrapper p {
   width: 100%;
   max-width: 650px;
   font-size: 12px;
+}
+@media (max-width: 500px) {
+  .wrapper .logoFooter {
+    display: none;
+  }
+  .wrapper p {
+    padding: 20px;
+  }
 }
