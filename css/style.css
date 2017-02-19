@@ -124,7 +124,7 @@ section#Part3 .wrapper h1 {
   margin: 0 0 10px 0;
 }
 section#Part3 .wrapper .destaques-item {
-  margin: 0 0 24px 0;
+  margin: 0 10px 24px 0;
   padding-right: 20px;
 }
 section#Part3 .wrapper p {
@@ -240,7 +240,7 @@ section#Part5 .wrapper img {
     display: none;
   }
 }
-@media (max-width: 890px) {
+@media (max-width: 894px) {
   section#Part4 .wrapper {
     justify-content: space-around;
   }
@@ -290,7 +290,7 @@ footer .wrapper .logoFooter {
 footer .wrapper p {
   color: #fff;
   width: 100%;
-  max-width: 650px;
+  max-width: 658px;
   font-size: 12px;
 }
 @media (max-width: 500px) {
