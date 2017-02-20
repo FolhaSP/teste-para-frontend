@@ -10,6 +10,10 @@ content-center()
     max-width 1140px
     margin 0 auto
 
+responsive-layout()
+    display flex
+    justify-content space-between
+
 img
     max-width 100%
     height auto
@@ -27,8 +31,7 @@ header
     height auto
     
     .wrapper
-        display flex
-        justify-content space-between
+        responsive-layout()
         align-items center
         
         .logo
@@ -105,8 +108,7 @@ section
                 margin 0 0 10px 0
             
             .highlight
-                display flex
-                justify-content space-between
+                responsive-layout()
                 
                 li
                     position relative
@@ -127,8 +129,7 @@ section
 
     &#Part3
         .wrapper
-            display flex
-            justify-content space-between
+            responsive-layout()
             align-items flex-end
             flex-flow wrap
             
@@ -162,8 +163,7 @@ section
                     
     &#Part4
         .wrapper
-            display flex
-            justify-content space-between
+            responsive-layout()
             flex-flow wrap
             
             .list
@@ -291,8 +291,6 @@ section
                             padding 0 20px 0 40px
                             font-weight bold
                     
-            
-
 footer
     background #2c3e50
     .wrapper
