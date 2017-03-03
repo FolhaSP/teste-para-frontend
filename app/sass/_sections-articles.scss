@@ -1,0 +1,32 @@
+.sections-articles {
+  width: 100%;
+}
+
+.paisis {
+  width: 30.5%;
+}
+
+.title-paises {
+  font-family: $name-font;
+  font-size: em(26px, $fontsize-context);
+  color: $color-blue-light;
+}
+
+.list-paises {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 22px 0;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  li a{
+    font-family: $name-font;
+    font-size: em(15px, $fontsize-context);
+    line-height: em(20px, 15px);
+    color: $color-grey;
+    text-decoration: none;
+  }
+}

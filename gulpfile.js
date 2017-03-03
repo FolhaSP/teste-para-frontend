@@ -9,7 +9,7 @@ var uglify = require('gulp-uglify');
 var clean = require('gulp-clean');
 var wiredep = require('wiredep').stream;
 
-gulp.task('serve', ['wiredep'], function () {
+gulp.task('serve', ['wiredep', 'sass'], function () {
   browserSync.init({
     server: {
       baseDir: './app',
@@ -23,7 +23,9 @@ gulp.task('serve', ['wiredep'], function () {
 
 gulp.task('sass', function () {
   return gulp.src('./app/sass/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+      outputStyle: 'expanded'
+    }).on('error', sass.logError))
     .pipe(gulp.dest('./app/css'))
     .pipe(browserSync.stream());
 });

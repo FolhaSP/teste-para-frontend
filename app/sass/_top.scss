@@ -1,0 +1,32 @@
+.section-top {
+  width: 100%;
+}
+
+.highlights-center {
+  margin: 0 3% !important;
+}
+
+.highlights{
+  width: 31%;
+  margin: 0 auto;
+  display: inline-block;
+
+  .image-top {
+    width: 360px;
+    height: 216px;
+  }
+
+  .subtitle-top {
+    background-color: rgba(231, 76, 60, 0.7);
+    position: relative;
+    top: -35px;
+    padding: 5px 11px;
+    display: inline;
+
+    .subtitle-top-txt {
+      font-family: $name-font;
+      font-size: em(12px, $fontsize-context);
+      color: #ffffff;
+    }
+  }
+}

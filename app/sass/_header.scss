@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  min-height: 115px;
+  background-color: $color-blue-light;
+}
+
+.menu-icon {
+  background-image: url('../img/desktop/menu-icon.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 30px;
+  display: inline-block;
+}
+
+.logo-folha {
+  background-image: url('../img/desktop/logo.png');
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 214px;
+  height: 83px;
+  display: inline-block;
+  margin-left: 20%;
+}
+
+.title-header {
+  font-size: 12px;
+  color: #ffffff;
+  margin: 0 auto;
+  display: inline-block;
+}

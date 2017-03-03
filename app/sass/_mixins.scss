@@ -1,0 +1,25 @@
+@function remove-unit($number) {
+  $unit: unit($number);
+  $one: 1;
+
+  @if $unit == 'px' { $one: 1px; }
+  @if $unit == 'em' { $one: 1em; }
+  @if $unit == '%' { $one: 1%; }
+
+  @return $number / $one;
+}
+
+@function flex($target, $context: 16, $unit: 'em') {
+  $size: remove-unit($target) / remove-unit($context);
+
+  @if $unit == 'em' { @return #{$size}em; }
+  @if $unit == '%' { @return percentage($size); }
+}
+
+@function perc($target, $context) {
+  @return flex($target, $context, '%');
+}
+
+@function em($target, $context) {
+  @return flex($target, $context, 'em');
+}

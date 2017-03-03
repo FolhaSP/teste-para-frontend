@@ -1,2 +1,227 @@
-.classe {
-  background-color: blue; }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ir {
+  text-indent: -999999em;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-page {
+  margin: auto;
+  max-width: 96%;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  width: 100%;
+}
+
+.title-section {
+  font-family: "Helvetica";
+  font-size: 1.25em;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+
+.header {
+  width: 100%;
+  min-height: 115px;
+  background-color: #3498db;
+}
+
+.menu-icon {
+  background-image: url("../img/desktop/menu-icon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 30px;
+  display: inline-block;
+}
+
+.logo-folha {
+  background-image: url("../img/desktop/logo.png");
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 214px;
+  height: 83px;
+  display: inline-block;
+  margin-left: 20%;
+}
+
+.title-header {
+  font-size: 12px;
+  color: #ffffff;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.section-top {
+  width: 100%;
+}
+
+.highlights-center {
+  margin: 0 3% !important;
+}
+
+.highlights {
+  width: 31%;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.highlights .image-top {
+  width: 360px;
+  height: 216px;
+}
+
+.highlights .subtitle-top {
+  background-color: rgba(231, 76, 60, 0.7);
+  position: relative;
+  top: -35px;
+  padding: 5px 11px;
+  display: inline;
+}
+
+.highlights .subtitle-top .subtitle-top-txt {
+  font-family: "Helvetica";
+  font-size: 0.75em;
+  color: #ffffff;
+}
+
+.section-divoltis {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.highlights-center {
+  margin: 0 3% !important;
+}
+
+.itens-divoltis {
+  width: 68%;
+  float: left;
+  display: inline-block;
+}
+
+.itens-divoltis .divoltis-porris {
+  width: 45%;
+  margin: 0 auto;
+  display: inline-block;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 35px;
+  margin-right: 4.5%;
+}
+
+.itens-divoltis .divoltis-porris .image-top {
+  width: 360px;
+  height: 216px;
+}
+
+.itens-divoltis .divoltis-porris .subtitle-divoltis {
+  font-family: "Helvetica";
+  font-size: 0.875em;
+  color: #2C3E50;
+  margin: 0 0 35px 0;
+}
+
+.itens-divoltis .divoltis-porris .subtitle-divoltis span {
+  margin: 4px 0;
+  display: block;
+  text-transform: uppercase;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.sidebar {
+  width: 32%;
+  display: inline-block;
+  padding-bottom: 105px;
+}
+
+.sidebar .image-publicidade {
+  background-image: url("../img/desktop/ads-300x600.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 301px;
+  height: 589px;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar .txt-sidebar {
+  font-size: 0.625em;
+  font-family: "Helvetica";
+  color: #cccccc;
+  position: relative;
+  float: right;
+  top: -18px;
+  right: 33px;
+}
+
+.sections-articles {
+  width: 100%;
+}
+
+.paisis {
+  width: 30.5%;
+}
+
+.title-paises {
+  font-family: "Helvetica";
+  font-size: 1.625em;
+  color: #3498db;
+}
+
+.list-paises {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.list-paises li {
+  padding: 22px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.list-paises li a {
+  font-family: "Helvetica";
+  font-size: 0.9375em;
+  line-height: 1.33333em;
+  color: #2C3E50;
+  text-decoration: none;
+}
