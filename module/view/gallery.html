@@ -1,0 +1,34 @@
+<div id="gallery" class="gallery">
+
+    <!--controle esquerdo-->
+    <a href="#gallery" class="gallery-control left" role="button" data-slide="prev">
+        <span class="sr-only">Anterior</span>
+    </a>
+
+    <!--conteudo-->
+    <div class="gallery-inner" role="listbox" ng-repeat="g in gallery">
+        <!--item-->
+        <div class="item" id="{{g.id}}">
+            <!--imagem-->
+            <img src="{{g.img}}" alt="{{g.title}}">
+
+            <!--titulo-->
+            <h4 class="gallery-title">{{g.title}}</h4>
+
+            <!--texto-->
+            <h2 class="gallery-texto">{{g.text}}</h2>
+        </div>
+    </div>
+
+    <!--controle direito-->
+    <a href="#gallery" class="gallery-control right" role="button" data-slide="next">
+        <span class="sr-only">Próximo</span>
+    </a>
+</div>
+
+<!--indicadores-->
+<ol class="gallery-indicators" ng-repeat="g in gallery">
+    <li data-target="#gallery" data-slide-to="0" class="active"></li>
+    <li data-target="#gallery" data-slide-to="1"></li>
+    <li data-target="#gallery" data-slide-to="3"></li>
+</ol>

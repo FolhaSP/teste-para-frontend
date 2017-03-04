@@ -1,0 +1,137 @@
+body {
+    /* XS - tela muito pequena (320 -> 543px) */
+    @media screen and (min-width: 320px) {
+        .gallery {
+            position: relative;
+            margin: 40px auto 40px;
+            .gallery-control {
+                display: none;
+            }
+            .gallery-inner {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                position: relative;
+                margin-bottom: 30px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .gallery-title {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 0;
+                    line-height: 30px;
+                    padding: 0 16px;
+                    font-size: 1.3rem;
+                    color: @textLight;
+                    text-transform: uppercase;
+                    background-color: @primary;
+                }
+                .gallery-texto {
+                    position: absolute;
+                    bottom: -80px;
+                    font-size: 2rem;
+                    left: -16px;
+                    line-height: 30px;
+                    display: block;
+                    color: @second;
+                    text-transform: none;
+                    height: auto;
+                }
+            }
+            .gallery-inner > .item {
+                position: relative;
+                -webkit-transition: .6s ease-in-out left;
+                -o-transition: .6s ease-in-out left;
+                transition: .6s ease-in-out left;
+            }
+        }
+        .gallery-indicators {
+            position: static;
+            display: block;
+            width: 60%;
+            padding: 0;
+            margin: 0 auto 30px;
+            text-align: center;
+            list-style: none;
+            li {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                margin: 1px;
+                text-indent: -999px;
+                cursor: pointer;
+                background-color: #999;
+                border-radius: 10px;
+            }
+            .active {
+                background-color: #2980B9;
+            }
+        }
+    }
+    /* SM - tela pequena (544 -> 767px) */
+    @media screen and (min-width: 544px) {}
+    /* MD - tela média (768 -> 991px) */
+    @media screen and (min-width: 768px) {
+        .gallery {
+            margin: 40px auto 0;
+            .gallery-inner {
+                .gallery-title {
+                    bottom: 60px;
+                    left: 20px;
+                }
+                .gallery-texto {
+                    bottom: 0px;
+                    font-size: 2rem;
+                    left: 4px;
+                    color: @textLight;
+                    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+                }
+            }
+        }
+    }
+    /* XS-tela muito pequena (992 -> 1199px) */
+    @media screen and (min-width: 992px) {
+        .gallery {
+            margin: 80px auto 10px;
+            .gallery-control {
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                z-index: 9;
+                width: 60px;
+                height: 60px;
+                background-color: @default;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: auto;
+                border-radius: 400px;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+            }
+            .gallery-control.left {
+                left: -30px;
+                background-image: url(/img/arrow_left-icon.png);
+            }
+            .gallery-control.right {
+                right: -30px;
+                background-image: url(/img/arrow_right-icon.png);
+            }
+            .gallery-inner {
+                .gallery-title {
+                    bottom: 60px;
+                    left: 20px;
+                    font-size: 2rem;
+                }
+                .gallery-texto {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    /* XS-tela muito pequena (1200px -> n) */
+    @media screen and (min-width: 1200px) {}
+}

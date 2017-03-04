@@ -1,0 +1,106 @@
+/*importações*/
+
+@import '/module/css/gallery.less';
+@import '/module/css/header.less';
+@import '/module/css/home.less';
+@import '/module/css/footer.less';
+
+/*cores empregadas*/
+
+@primary: #2980B9;
+@second: #2C3E50;
+@default: #FFFFFF;
+@back: #ECF0F1;
+@textLight: #EDF1F2;
+@textDark: #2C3E50;
+@subtitle: #3498DB;
+@card: #F2F2F2;
+@label: #E74C3C;
+@border: #D4D4D4;
+
+/*resete*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+a:hover,
+a:link,
+a:active,
+a:visited,
+p,
+div,
+section,
+header,
+article,
+menu,
+span,
+nav,
+ul,
+li,
+body {
+    .noSpace;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/*funções*/
+
+.noSpace {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    .noSpace;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-transform: lowercase;
+    margin: 16px 0;
+    padding-left: 15px;
+}
+
+h3 {
+    .noSpace;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: @subtitle;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+
+h4 {
+    .noSpace;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    color: @textDark;
+}
+
+.borderBottom {
+    border-bottom: 1px solid @border;
+}
+
+
+/*geral*/
+
+body {
+    background-color: @back;
+    /* XS - tela muito pequena (320 -> 543px) */
+    @media screen and (min-width: 320px) {}
+    /* SM - tela pequena (544 -> 767px) */
+    @media screen and (min-width: 544px) {}
+    /* MD - tela média (768 -> 991px) */
+    @media screen and (min-width: 768px) {}
+    /* XS-tela muito pequena (992 -> 1199px) */
+    @media screen and (min-width: 992px) {}
+    /* XS-tela muito pequena (1200px -> n) */
+    @media screen and (min-width: 1200px) {}
+}

@@ -1,0 +1,83 @@
+body {
+    /* XS - tela muito pequena (320 -> 543px) */
+    @media screen and (min-width: 320px) {
+        .footer-div {
+            width: 100%;
+            height: auto;
+            .footer-top {
+                width: 100%;
+                height: 40px;
+                background-color: @primary;
+                .container {
+                    p {
+                        color: @textLight;
+                        line-height: 40px;
+                        padding: 0 20px 0 0;
+                        text-align: right;
+                        text-transform: uppercase;
+                        vertical-align: middle;
+                        background-image: url(/img/arrow_top-icon.png);
+                        background-repeat: no-repeat;
+                        background-size: 14px;
+                        background-position: right center;
+                        a:link,
+                        a:active,
+                        a:hover,
+                        a:visited {
+                            color: @textLight;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .footer-bottom {
+                width: 100%;
+                height: auto;
+                background-color: @second;
+                .footer-logo {
+                    display: none;
+                }
+                p {
+                    width: 100%;
+                    padding: 16px 0;
+                    color: @textLight;
+                    font-size: 1.1rem;
+                    a:link,
+                    a:active,
+                    a:hover,
+                    a:visited {
+                        color: @textLight;
+                        font-size: 1.1rem;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    /* SM - tela pequena (544 -> 767px) */
+    @media screen and (min-width: 544px) {}
+    /* MD - tela média (768 -> 991px) */
+    @media screen and (min-width: 768px) {
+        .footer-div {
+            .footer-bottom {
+                display: inline-block;
+                padding: 30px 0;
+                .footer-logo {
+                    float: left;
+                    display: block;
+                    width: 120px;
+                    margin-right: 60px;
+                }
+                p {
+                    max-width: 940px;
+                    color: @textLight;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+    /* XS-tela muito pequena (992 -> 1199px) */
+    @media screen and (min-width: 992px) {}
+    /* XS-tela muito pequena (1200px -> n) */
+    @media screen and (min-width: 1200px) {}
+}

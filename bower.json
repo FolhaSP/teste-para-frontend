@@ -1,0 +1,18 @@
+{
+  "name": "folha",
+  "authors": [
+    "Presidente <charles.presidente.br@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,156 @@
+body {
+    /* XS - tela muito pequena (320 -> 543px) */
+    @media screen and (min-width: 320px) {
+        article {
+            margin-top: 80px;
+            .container {
+                .row {
+                    .home-top {
+                        .row {
+                            h2 {
+                                display: none;
+                            }
+                            .home-top-card {
+                                position: relative;
+                                height: auto;
+                                margin: 10px auto;
+                                .home-top-img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                                h4 {
+                                    position: absolute;
+                                    bottom: 20px;
+                                    line-height: 25px;
+                                    font-size: 1.5rem;
+                                    padding: 0 16px;
+                                    left: inherit;
+                                    z-index: 9;
+                                    color: @textLight;
+                                    text-transform: uppercase;
+                                    background-color: @label;
+                                }
+                            }
+                        }
+                    }
+                    .home-divoltis {
+                        h2 {
+                            display: block;
+                        }
+                        .home-divoltis-card {
+                            position: relative;
+                            height: auto;
+                            margin: 0 auto 10px;
+                            padding-bottom: 30px;
+                            .home-divoltis-img {
+                                width: 100%;
+                                height: auto;
+                            }
+                            h4 {
+                                .borderBottom;
+                                padding-bottom: 40px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .home-ads-desktop {
+                        display: none;
+                    }
+                    .home-paisis {
+                        h2 {
+                            padding-left: 0;
+                            color: @subtitle;
+                        }
+                        h4 {
+                            .borderBottom;
+                            padding: 16px 0;
+                        }
+                    }
+                    .home-pirulita,
+                    .home-suco {
+                        h2 {
+                            color: @label;
+                        }
+                        .home-pirulita-img,
+                        .home-suco-img {
+                            width: 50%;
+                            height: auto;
+                            float: left;
+                            margin-bottom: 20px;
+                        }
+                        h3,
+                        h4 {
+                            float: left;
+                            width: 50%;
+                            padding-left: 16px;
+                        }
+                        h3 {
+                            color: @label;
+                        }
+                    }
+                    .home-ads-mobile {
+                        display: block;
+                        margin: 60px auto;
+                        height: auto;
+                        p {
+                            color: @border;
+                            text-align: right;
+                            font-size: 1.3rem;
+                        }
+                        .home-ads-desktop-img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* SM - tela pequena (544 -> 767px) */
+    @media screen and (min-width: 544px) {}
+    /* MD - tela média (768 -> 991px) */
+    @media screen and (min-width: 768px) {
+        article {
+            margin: 80px auto 30px;
+        }
+    }
+    /* XS-tela muito pequena (992 -> 1199px) */
+    @media screen and (min-width: 992px) {
+        article {
+            margin: 0 auto;
+            .container {
+                .row {
+                    .home-top {
+                        .row {
+                            h2 {
+                                display: block;
+                            }
+                            .home-top-card {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                    .home-ads-desktop {
+                        display: block;
+                        margin-top: 44px;
+                        height: auto;
+                        p {
+                            color: @border;
+                            text-align: right;
+                            font-size: 1.3rem;
+                        }
+                        .home-ads-desktop-img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .home-ads-mobile {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    /* XS-tela muito pequena (1200px -> n) */
+    @media screen and (min-width: 1200px) {}
+}

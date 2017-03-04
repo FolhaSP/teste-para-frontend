@@ -1,16 +1,36 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Folha de S.Paulo</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="pt" ng-app="app">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<head>
+    <meta charset="UTF-8">
+    <!--compatibilidade-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--estilos-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="module/css/app.less">
+    <!--fonte-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <title>Folha de S.Paulo</title>
+</head>
 
-    </head>
-    <body>
-      
-    </body>
+<body ng-controller="folhaCtrl">
+    <!--cabeçalho-->
+    <header ng-include="'module/view/header.html'"></header>
+
+    <!--conteúdo-->
+    <article ng-include="'module/view/home.html'"></article>
+
+    <!--rodapé-->
+    <footer ng-include="'module/view/footer.html'"></footer>
+
+    <!--bower-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/less/dist/less.min.js"></script>
+    <!--scripts internos-->
+    <script src="module/controller/app.controller.js"></script>
+</body>
+
 </html>

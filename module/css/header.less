@@ -1,0 +1,146 @@
+body {
+    /* XS - tela muito pequena (320 -> 543px) */
+    @media screen and (min-width: 320px) {
+        header {
+            width: 100%;
+            height: 80px;
+            background-color: @primary;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            .container {
+                .header-div {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    display: inline-flex;
+                    flex-direction: row;
+                    .header-menu {
+                        position: absolute;
+                        top: 27px;
+                        left: 0;
+                        width: 30px;
+                        height: 30px;
+                        background-image: url(/img/menu-icon.png);
+                        background-size: 30px;
+                        background-repeat: no-repeat;
+                    }
+                    .header-folha {
+                        flex: 1;
+                        text-align: center;
+                        .header-logo {
+                            height: 60px;
+                            width: auto;
+                            margin: 20px auto 0;
+                        }
+                        .header-text {
+                            display: none;
+                        }
+                    }
+                    .header-midia {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    /* SM - tela pequena (544 -> 767px) */
+    @media screen and (min-width: 544px) {}
+    /* MD - tela média (768 -> 991px) */
+    @media screen and (min-width: 768px) {
+        header {
+            .container {
+                .header-div {
+                    .header-folha {
+                        display: inline-flex;
+                        flex-direction: row;
+                        margin: 0 auto;
+                        justify-content: center;
+                        .header-text {
+                            display: block;
+                            color: @textLight;
+                            height: auto;
+                            margin: 50px 0 0;
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .header-midia {
+                        display: block;
+                        position: absolute;
+                        top: 25px;
+                        right: 0;
+                        width: auto;
+                        height: 30px;
+                        ul {
+                            a {
+                                display: inline-block;
+                                width: 30px;
+                                height: 30px;
+                                margin-left: 16px;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 30px;
+                            }
+                            a[href*='facebook'] {
+                                background-image: url(/img/facebook.png);
+                            }
+                            a[href*='twitter'] {
+                                background-image: url(/img/twitter.png);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* XS-tela muito pequena (992 -> 1199px) */
+    @media screen and (min-width: 992px) {
+        header {
+            height: 115px;
+            position: static;
+            z-index: 0;
+            .container {
+                .header-div {
+                    .header-menu {
+                        top: 37px;
+                        left: 0px;
+                        width: 40px;
+                        height: 40px;
+                        background-size: 40px;
+                    }
+                    .header-folha {
+                        .header-logo {
+                            height: 85px;
+                            width: auto;
+                            margin: 30px auto 0;
+                        }
+                        .header-text {
+                            margin: 70px 0 0;
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .header-midia {
+                        top: 40px;
+                        right: 0;
+                        width: auto;
+                        height: 40px;
+                        ul {
+                            a {
+                                display: inline-block;
+                                width: 40px;
+                                height: 40px;
+                                margin-left: 16px;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* XS-tela muito pequena (1200px -> n) */
+    @media screen and (min-width: 1200px) {}
+}

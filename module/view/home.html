@@ -1,0 +1,114 @@
+<div class="container">
+    <!--ancora-->
+    <a name="top"></a>
+
+    <!--rotate-->
+    <div ng-include="'module/view/gallery.html'"></div>
+
+    <div class="row">
+        <!--top-->
+        <div class="home-top col-xl-12 col-sm-12">
+            <div class="row">
+                <!--titulo-->
+                <h2 class="col-xs-12 col-sm-12">top cacildis</h2>
+
+                <!--conteudo-->
+                <div class="col-xs-12 col-sm-4 home-top-card" ng-repeat="t in top">
+                    <!--imagem-->
+                    <img src="{{t.img}}" alt="{{t.title}}" class="home-top-img">
+
+                    <!--titulo da imagem-->
+                    <h4>{{t.title}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!--divoltis-->
+        <div class="home-divoltis col-xs-12 col-sm-12 col-md-8">
+            <div class="row">
+                <!--titulo-->
+                <h2 class="col-xs-12 col-sm-12">divoltis porris</h2>
+
+                <!--conteudo-->
+                <div class="col-xs-12 col-sm-6 home-divoltis-card" ng-repeat="d in divoltis">
+                    <!--imagem-->
+                    <img src="{{d.img}}" alt="{{d.title}}" class="home-divoltis-img">
+
+                    <!--titulo da imagem-->
+                    <h3>{{d.title}}</h3>
+
+                    <h4>{{d.text}}</h4>
+                </div>
+            </div>
+        </div>
+
+        <!--ads desktop-->
+        <div class="home-ads-desktop col-sm-4">
+            <!--info-->
+            <p>Publicidade</p>
+
+            <!--ads-->
+            <a href="#"><img src="/img/ads-desktop.png" alt="publicidade" class="home-ads-desktop-img"></a>
+        </div>
+    </div>
+
+    <div class="row">
+        <!--paisis-->
+        <div class="home-paisis col-xs-12 col-sm-6 col-md-4">
+            <!--titulo-->
+            <h2 class="col-xs-12 col-sm-12">paisis, filhis, espiritis santis</h2>
+
+            <!--textos-->
+            <div ng-repeat="p in paisis">
+                <h4>{{p.text}}</h4>
+            </div>
+        </div>
+
+        <!--se pirulita-->
+        <div class="home-pirulita col-xs-12 col-sm-6 col-md-4">
+            <!--titulo-->
+            <h2 class="col-xs-12 col-sm-12">se pirulitá</h2>
+
+            <!--conteudo-->
+            <div class="col-xs-12 col-sm-12 home-pirulita-card" ng-repeat="p in pirulita">
+                <!--imagem-->
+                <img src="{{p.img}}" alt="{{p.title}}" class="home-pirulita-img">
+
+                <!--titulo da imagem-->
+                <h3>{{p.title}}</h3>
+
+                <!--texto da imagem-->
+                <h4>{{p.text}}</h4>
+            </div>
+        </div>
+
+        <!--suco-->
+        <div class="home-suco col-xs-12 col-sm-6 col-md-4">
+            <!--titulo-->
+            <h2 class="col-xs-12 col-sm-12">suco de cevadiss</h2>
+
+            <!--conteudo-->
+            <div class="col-xs-12 col-sm-12 home-suco-card" ng-repeat="s in suco">
+                <!--imagem-->
+                <img src="{{s.img}}" alt="{{s.title}}" class="home-suco-img">
+
+                <!--titulo da imagem-->
+                <h3>{{s.title}}</h3>
+
+                <!--texto da imagem-->
+                <h4>{{s.text}}</h4>
+            </div>
+        </div>
+
+        <!--ads mobile-->
+        <div class="home-ads-mobile col-xs-12 col-sm-6 col-md-4">
+            <!--info-->
+            <p>Publicidade</p>
+
+            <!--ads-->
+            <a href="#"><img src="/img/ads-mobile.png" alt="publicidade" class="home-ads-desktop-img"></a>
+        </div>
+    </div>
+</div>
