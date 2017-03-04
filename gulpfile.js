@@ -12,8 +12,11 @@ var wiredep = require('wiredep').stream;
 gulp.task('serve', ['wiredep', 'sass'], function () {
   browserSync.init({
     server: {
-      baseDir: './app',
-      index: 'index.html'
+      baseDir: 'app',
+      index: 'index.html',
+      routes: {
+        '/bower_components': 'bower_components'
+      }
     }
   });
 
@@ -67,10 +70,10 @@ gulp.task('clean', function () {
 });
 
 gulp.task('wiredep', function (){
-  gulp.src('./app/index.html')
+  gulp.src('./app/index.html', {base: './app'})
     .pipe(wiredep({
-      optional: 'configuration',
-      goes: 'here'
+      directory: 'bower_components',
+      exclude: ['modernizr']
     }))
     .pipe(gulp.dest('./app/'));
 });

@@ -1,0 +1,33 @@
+footer {
+  width: 100%;
+  min-height: 92px;
+  background-color: $color-blue-dark;
+
+  .content-page {
+    padding: 20px;
+  }
+}
+
+.logo-footer {
+  width: 118px;
+  height: 41px;
+  background-image: url('../img/desktop/logo_footer.png');
+  background-size: 100%;
+  margin-left: 8%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.text-footer {
+  font-family: $name-font;
+  font-size: em(12px, $fontsize-context);
+  color: #ffffff;
+  width: 60%;
+  margin-left: 7%;
+  display: inline-block;
+  vertical-align: middle;
+
+  a {
+    color: #ffffff;
+  }
+}
