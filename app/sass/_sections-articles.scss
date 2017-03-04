@@ -4,6 +4,7 @@
 
 .paisis {
   width: 30.5%;
+  display: inline-block;
 }
 
 .title-paises {
@@ -20,13 +21,37 @@
   li {
     padding: 22px 0;
     border-bottom: 1px solid #cccccc;
-  }
 
-  li a{
-    font-family: $name-font;
-    font-size: em(15px, $fontsize-context);
-    line-height: em(20px, 15px);
-    color: $color-grey;
-    text-decoration: none;
+    a {
+      font-family: $name-font;
+      font-size: em(15px, $fontsize-context);
+      line-height: em(20px, 15px);
+      color: $color-grey;
+      text-decoration: none;
+    }
   }
+}
+
+.pirulita {
+  width: 30.5%;
+  display: inline-block;
+}
+
+.list-itens {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+
+  li {
+
+    span {
+      width: 166px;
+      height: 166px;
+    }
+  }
+}
+
+.nam-liber {
+  background-image: url('./img/desktop/se_pirulita-01.png');
 }
