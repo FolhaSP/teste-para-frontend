@@ -3,16 +3,6 @@
 
     var app = angular.module('app', []).controller('folhaCtrl', function ($scope) {
 
-        //gallery
-        $scope.gallery = [
-            {
-                id: '1',
-                img: '/img/image_rotate-1.png',
-                title: 'Mussum ipsum cacilds',
-                text: 'Pra lá, depois divolts porris, paradis.'
-            }
-        ];
-
         //top
         $scope.top = [
             {

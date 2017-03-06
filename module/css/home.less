@@ -2,7 +2,7 @@ body {
     /* XS - tela muito pequena (320 -> 543px) */
     @media screen and (min-width: 320px) {
         article {
-            margin-top: 80px;
+            margin: 110px auto;
             .container {
                 .row {
                     .home-top {
@@ -50,6 +50,7 @@ body {
                                 .borderBottom;
                                 padding-bottom: 40px;
                                 width: 100%;
+                                height: 90px;
                             }
                         }
                     }
@@ -68,6 +69,7 @@ body {
                     }
                     .home-pirulita,
                     .home-suco {
+                        height: inherit;
                         h2 {
                             color: @label;
                         }
@@ -111,13 +113,13 @@ body {
     /* MD - tela média (768 -> 991px) */
     @media screen and (min-width: 768px) {
         article {
-            margin: 80px auto 30px;
+            margin: 110px auto;
         }
     }
     /* XS-tela muito pequena (992 -> 1199px) */
     @media screen and (min-width: 992px) {
         article {
-            margin: 0 auto;
+            margin: 60px auto;
             .container {
                 .row {
                     .home-top {

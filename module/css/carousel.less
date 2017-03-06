@@ -1,0 +1,120 @@
+body {
+    /* XS - tela muito pequena (320 -> 543px) */
+    @media screen and (min-width: 320px) {
+        .carousel {
+            height: auto;
+            position: relative;
+            margin-bottom: 40px;
+            .carousel-inner {
+                margin-bottom: 20px;
+                .item {
+                    .carousel-caption {
+                        text-align: left;
+                        width: 100%;
+                        max-width: 60%;
+                        margin: 0;
+                        left: 0;
+                        padding: 0;
+                        h3 {
+                            display: inline-block;
+                            background-color: @primary;
+                            margin: 0;
+                            font-size: 1.5rem;
+                            padding: 4px 8px;
+                            text-shadow: none;
+                            color: @textLight;
+                        }
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .carousel-control {
+                display: none;
+            }
+            .carousel-indicators {
+                position: absolute;
+                bottom: -60px;
+                left: 0;
+                right: 0;
+                margin: 20px auto;
+                li {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    margin: 1px;
+                    text-indent: -999px;
+                    cursor: pointer;
+                    background-color: #999;
+                    border-radius: 10px;
+                }
+                .active {
+                    background-color: @primary;
+                }
+            }
+        }
+    }
+    /* SM - tela pequena (544 -> 767px) */
+    @media screen and (min-width: 544px) {}
+    /* MD - tela média (768 -> 991px) */
+    @media screen and (min-width: 768px) {
+        .carousel {
+            .carousel-inner {
+                .item {
+                    .carousel-caption {
+                        left: 20px;
+                        h3 {
+                            padding: 8px 16px;
+                        }
+                        p {
+                            display: block;
+                            font-size: 3rem;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* XS-tela muito pequena (992 -> 1199px) */
+    @media screen and (min-width: 992px) {
+        .carousel {
+            .carousel-inner {
+                .item {
+                    .carousel-caption {
+                        h3 {}
+                        p {}
+                    }
+                }
+            }
+            .carousel-control {
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                z-index: 9;
+                width: 60px;
+                height: 60px;
+                background-color: @default;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: auto;
+                border-radius: 400px;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+            }
+            .carousel-control.left {
+                left: -30px;
+                background-image: url(/img/arrow_left-icon.png);
+            }
+            .carousel-control.right {
+                right: -30px;
+                background-image: url(/img/arrow_right-icon.png);
+            }
+        }
+    }
+    /* XS-tela muito pequena (1200px -> n) */
+    @media screen and (min-width: 1200px) {}
+}
