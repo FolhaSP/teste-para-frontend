@@ -1,19 +1,17 @@
 .section-top {
   width: 100%;
-}
-
-.highlights-center {
-  margin: 0 3% !important;
+  overflow: hidden;
 }
 
 .highlights{
-  width: 31%;
+  width: 30.5%;
   margin: 0 auto;
   display: inline-block;
+  vertical-align: top;
 
   .image-top {
-    width: 360px;
-    height: 216px;
+    width: 100%;
+    height: auto;
   }
 
   .subtitle-top {
@@ -29,4 +27,8 @@
       color: #ffffff;
     }
   }
+}
+
+.highlights-center {
+  margin: 0 3% !important;
 }

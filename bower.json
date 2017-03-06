@@ -18,6 +18,7 @@
   "dependencies": {
     "jquery": "^3.1.1",
     "normalize-css": "^5.0.0",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "Ionicons": "ionicons#^2.0.1"
   }
 }

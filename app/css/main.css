@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #ecf0f1;
 }
 
 *,
@@ -29,6 +30,11 @@ h2 {
 }
 
 h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -63,36 +69,107 @@ h3 {
   background-color: #3498db;
 }
 
-.menu-icon {
-  background-image: url("../img/desktop/menu-icon.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 30px;
-  display: inline-block;
+.header .content-page {
+  padding-top: 31px;
 }
 
-.logo-folha {
+.menu-container {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+.menu-container .menu-icon {
+  width: 40px;
+  height: 30px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: left;
+}
+
+.menu-container .menu-icon .icon {
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+.logo-container {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+}
+
+.logo-container .logo-folha {
   background-image: url("../img/desktop/logo.png");
   background-size: 100%;
-  background-position: center bottom;
+  background-position: left bottom;
   background-repeat: no-repeat;
   width: 214px;
   height: 83px;
   display: inline-block;
-  margin-left: 20%;
+  vertical-align: middle;
+  margin-left: 0;
 }
 
-.title-header {
-  font-size: 12px;
+.logo-container .title-header {
+  font-family: "Helvetica";
+  font-size: 0.875em;
   color: #ffffff;
-  margin: 0 auto;
   display: inline-block;
+  vertical-align: middle;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.social {
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+  margin-top: 15px;
+  float: right;
+}
+
+.social li {
+  display: inline;
+  list-style: none;
+  margin-left: 6%;
+  margin-top: 38%;
+}
+
+.social li a {
+  padding: 9px 10px;
+  box-shadow: 2px 2px 2px #2980b9;
+  border-radius: 5px;
+  background: #ffffff;
+  text-decoration: none;
+}
+
+.social li a .icon {
+  font-size: 1.375em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social li a .text-social {
+  font-family: "Helvetica";
+  font-size: 0.625em;
+  text-transform: uppercase;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social li .facebook {
+  color: #36528f;
+}
+
+.social li .twitter {
+  color: #00adf2;
 }
 
 .section-carrossel {
   width: 100%;
-  background-color: #ecf0f1;
 }
 
 .carrosel {
@@ -102,11 +179,36 @@ h3 {
 .carrosel .carrosel-item {
   width: 100%;
   height: 450px;
+  outline: none;
 }
 
 .carrosel .carrosel-item img {
   width: 100%;
   height: 100%;
+}
+
+.carrosel .carrosel-item figcaption {
+  padding: 8px 70px 8px 20px;
+  display: inline-block;
+  background-color: #3498db;
+  font-family: "Helvetica";
+  font-size: 0.875em;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+  top: -113px;
+  left: 3%;
+  text-transform: uppercase;
+}
+
+.carrosel .carrosel-item h1 {
+  font-size: 1.375em;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+  top: -100px;
+  left: 3%;
+  width: 50%;
 }
 
 .dots-carrossel {
@@ -165,21 +267,19 @@ h3 {
 
 .section-top {
   width: 100%;
-}
-
-.highlights-center {
-  margin: 0 3% !important;
+  overflow: hidden;
 }
 
 .highlights {
-  width: 31%;
+  width: 30.5%;
   margin: 0 auto;
   display: inline-block;
+  vertical-align: top;
 }
 
 .highlights .image-top {
-  width: 360px;
-  height: 216px;
+  width: 100%;
+  height: auto;
 }
 
 .highlights .subtitle-top {
@@ -196,13 +296,13 @@ h3 {
   color: #ffffff;
 }
 
+.highlights-center {
+  margin: 0 3% !important;
+}
+
 .section-divoltis {
   margin-top: 60px;
   width: 100%;
-}
-
-.highlights-center {
-  margin: 0 3% !important;
 }
 
 .itens-divoltis {
@@ -221,8 +321,8 @@ h3 {
 }
 
 .itens-divoltis .divoltis-porris .image-top {
-  width: 360px;
-  height: 216px;
+  width: 100%;
+  height: auto;
 }
 
 .itens-divoltis .divoltis-porris .subtitle-divoltis {
@@ -230,6 +330,12 @@ h3 {
   font-size: 0.875em;
   color: #2C3E50;
   margin: 0 0 35px 0;
+}
+
+@media only screen and (max-width: 1160px) {
+  .itens-divoltis .divoltis-porris .subtitle-divoltis {
+    font-size: 0.75em;
+  }
 }
 
 .itens-divoltis .divoltis-porris .subtitle-divoltis span {
@@ -256,6 +362,13 @@ h3 {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1160px) {
+  .sidebar .image-publicidade {
+    width: 228px;
+    height: 456px;
+  }
+}
+
 .sidebar .txt-sidebar {
   font-size: 0.625em;
   font-family: "Helvetica";
@@ -268,17 +381,27 @@ h3 {
 
 .sections-articles {
   width: 100%;
+  min-height: 550px;
+  overflow: hidden;
 }
 
 .paisis {
   width: 30.5%;
+  margin-right: 3%;
   display: inline-block;
+  vertical-align: top;
 }
 
 .title-paises {
   font-family: "Helvetica";
   font-size: 1.625em;
   color: #3498db;
+}
+
+@media only screen and (max-width: 1160px) {
+  .title-paises {
+    font-size: 1.5em;
+  }
 }
 
 .list-paises {
@@ -300,25 +423,100 @@ h3 {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1160px) {
+  .list-paises li a {
+    font-size: 0.8125em;
+  }
+}
+
+.title-lists {
+  font-family: "Helvetica";
+  font-size: 1.625em;
+  color: #e74c3c;
+}
+
+@media only screen and (max-width: 1160px) {
+  .title-lists {
+    font-size: 1.5em;
+  }
+}
+
 .pirulita {
   width: 30.5%;
+  margin-right: 1%;
   display: inline-block;
+  vertical-align: top;
+}
+
+.suco-cevadiss {
+  background-color: transparent !important;
 }
 
 .list-itens {
   text-decoration: none;
   list-style: none;
   padding: 0;
+}
+
+.list-itens li {
+  display: inline-block;
+  margin: 2.5% 0;
+  background-color: #f1f1f1;
+}
+
+.list-itens li picture {
+  width: 166px;
+  height: 166px;
+  display: block;
+  float: left;
+}
+
+@media only screen and (max-width: 1160px) {
+  .list-itens li picture {
+    width: 126px;
+    height: 126px;
+  }
+}
+
+.list-itens li h3, .list-itens li p {
+  font-family: "Helvetica";
   display: inline-block;
 }
 
-.list-itens li span {
-  width: 166px;
-  height: 166px;
+.list-itens li h3 {
+  margin: 5% 0 1% 2%;
+  font-size: 0.875em;
+  font-weight: bold;
+  color: #e74c3c;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1160px) {
+  .list-itens li h3 {
+    font-size: 0.75em;
+  }
+}
+
+.list-itens li p {
+  font-size: 0.875em;
+  margin: 0 2%;
+  width: 45%;
 }
 
 .nam-liber {
-  background-image: url("./img/desktop/se_pirulita-01.png");
+  background-image: url("../img/desktop/se_pirulita-01.png");
+}
+
+.gotis {
+  background-image: url("../img/desktop/se_pirulita-02.png");
+}
+
+.interagi {
+  background-image: url("../img/desktop/suco_de_cevadiss-01.png");
+}
+
+.gotis-02 {
+  background-image: url("../img/desktop/suco_de_cevadiss-02.png");
 }
 
 .section-backtop {

@@ -3,10 +3,6 @@
   width: 100%;
 }
 
-.highlights-center {
-  margin: 0 3% !important;
-}
-
 .itens-divoltis {
   width: 68%;
   float: left;
@@ -21,8 +17,13 @@
     margin-right: 4.5%;
 
     .image-top {
-      width: 360px;
-      height: 216px;
+      width: 100%;
+      height: auto;
+
+      // @media only screen and (max-width: 1160px) {
+      //   width: 275px;
+      //   height: 165px;
+      // }
     }
 
     .subtitle-divoltis {
@@ -30,6 +31,10 @@
       font-size: em(14px, $fontsize-context);
       color: $color-grey;
       margin: 0 0 35px 0;
+
+      @media only screen and (max-width: 1160px) {
+        font-size: em(12px, $fontsize-context);
+      }
 
       span {
         margin: 4px 0;
@@ -55,6 +60,11 @@
     height: 589px;
     display: block;
     margin: 0 auto;
+
+    @media only screen and (max-width: 1160px) {
+      width: 228px;
+      height: 456px;
+    }
   }
 
   .txt-sidebar {

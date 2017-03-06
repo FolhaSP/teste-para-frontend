@@ -1,6 +1,5 @@
 .section-carrossel {
   width: 100%;
-  background-color: #ecf0f1;
 }
 
 .carrosel {
@@ -9,10 +8,35 @@
   .carrosel-item {
     width: 100%;
     height: 450px;
+    outline: none;
 
     img {
       width: 100%;
       height: 100%;
+    }
+
+    figcaption {
+      padding: 8px 70px 8px 20px;
+      display: inline-block;
+      background-color: $color-blue-light;
+      font-family: $name-font;
+      font-size: em(14px, $fontsize-context);
+      font-weight: 600;
+      color: #ffffff;
+      position: relative;
+      top: -113px;
+      left: 3%;
+      text-transform: uppercase;
+    }
+
+    h1{
+      font-size: em(22px, $fontsize-context);
+      font-weight: 600;
+      color: #ffffff;
+      position: relative;
+      top: -100px;
+      left: 3%;
+      width: 50%;
     }
   }
 }
