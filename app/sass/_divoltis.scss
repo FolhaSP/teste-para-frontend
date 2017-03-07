@@ -1,5 +1,5 @@
 .section-divoltis {
-  margin-top: 60px;
+  margin-top: 2%;
   width: 100%;
 }
 
@@ -7,6 +7,10 @@
   width: 68%;
   float: left;
   display: inline-block;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 
   .divoltis-porris{
     width: 45%;
@@ -16,14 +20,13 @@
     margin-bottom: 35px;
     margin-right: 4.5%;
 
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+    }
+
     .image-top {
       width: 100%;
       height: auto;
-
-      // @media only screen and (max-width: 1160px) {
-      //   width: 275px;
-      //   height: 165px;
-      // }
     }
 
     .subtitle-divoltis {
@@ -51,6 +54,10 @@
   width: 32%;
   display: inline-block;
   padding-bottom: 105px;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 
   .image-publicidade {
     background-image: url('../img/desktop/ads-300x600.png');

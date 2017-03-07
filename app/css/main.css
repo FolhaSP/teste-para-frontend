@@ -74,10 +74,22 @@ p {
 }
 
 .menu-container {
-  width: 25%;
+  width: 20%;
   display: inline-block;
   vertical-align: top;
   margin-top: 5px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .menu-container {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-container {
+    width: 5%;
+  }
 }
 
 .menu-container .menu-icon {
@@ -94,10 +106,28 @@ p {
   color: #2c3e50;
 }
 
+@media only screen and (max-width: 480px) {
+  .menu-container .menu-icon .icon {
+    font-size: 2em;
+  }
+}
+
 .logo-container {
   display: inline-block;
-  width: 45%;
+  width: 59%;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-container {
+    width: 78%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo-container {
+    width: 90%;
+  }
 }
 
 .logo-container .logo-folha {
@@ -112,6 +142,12 @@ p {
   margin-left: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .logo-container .logo-folha {
+    width: 180px;
+  }
+}
+
 .logo-container .title-header {
   font-family: "Helvetica";
   font-size: 0.875em;
@@ -122,12 +158,43 @@ p {
   margin-left: 1%;
 }
 
+@media only screen and (max-width: 768px) {
+  .logo-container .title-header {
+    font-size: 0.75em;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo-container .title-header {
+    display: none;
+  }
+}
+
 .social {
   display: inline-block;
   height: 100%;
   width: 20%;
   margin-top: 15px;
   float: right;
+}
+
+@media only screen and (max-width: 1160px) {
+  .social {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .social {
+    width: 16%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .social {
+    display: none;
+  }
 }
 
 .social li {
@@ -138,17 +205,33 @@ p {
 }
 
 .social li a {
-  padding: 9px 10px;
+  padding: 3% 4%;
   box-shadow: 2px 2px 2px #2980b9;
   border-radius: 5px;
   background: #ffffff;
   text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .social li a {
+    padding: 5px 0;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
 .social li a .icon {
   font-size: 1.375em;
   display: inline-block;
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  .social li a .icon {
+    font-size: 1.125em;
+  }
 }
 
 .social li a .text-social {
@@ -158,6 +241,12 @@ p {
   margin-left: 10px;
   display: inline-block;
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  .social li a .text-social {
+    display: none;
+  }
 }
 
 .social li .facebook {
@@ -170,24 +259,35 @@ p {
 
 .section-carrossel {
   width: 100%;
+  height: auto;
+  padding: 10px;
 }
 
 .carrosel {
   width: 100%;
+  height: 350px;
+  margin-top: 4%;
+  background-image: url("../img/desktop/image_rotate.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.carrosel .carrosel-item {
-  width: 100%;
-  height: 450px;
-  outline: none;
+@media only screen and (max-width: 768px) {
+  .carrosel {
+    font-size: 80%;
+  }
 }
 
-.carrosel .carrosel-item img {
-  width: 100%;
-  height: 100%;
+@media only screen and (max-width: 480px) {
+  .carrosel {
+    height: 350px;
+    background-position: top;
+    background-size: auto 270px;
+  }
 }
 
-.carrosel .carrosel-item figcaption {
+.carrosel p {
   padding: 8px 70px 8px 20px;
   display: inline-block;
   background-color: #3498db;
@@ -195,20 +295,44 @@ p {
   font-size: 0.875em;
   font-weight: 600;
   color: #ffffff;
-  position: relative;
-  top: -113px;
-  left: 3%;
+  margin: 170px 0 10px 3%;
   text-transform: uppercase;
 }
 
-.carrosel .carrosel-item h1 {
+@media only screen and (max-width: 768px) {
+  .carrosel p {
+    margin-top: 240px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .carrosel p {
+    margin-top: 222px;
+    margin-left: 0;
+  }
+}
+
+.carrosel h1 {
   font-size: 1.375em;
   font-weight: 600;
   color: #ffffff;
-  position: relative;
-  top: -100px;
-  left: 3%;
-  width: 50%;
+  margin-left: 3%;
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .carrosel h1 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .carrosel h1 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    color: #2c3e50;
+  }
 }
 
 .dots-carrossel {
@@ -233,11 +357,11 @@ p {
   cursor: pointer;
 }
 
-.dots-carrossel .slick-active button {
+.dots-carrossel .active {
   background-color: #29a8e9;
 }
 
-.slick-prev, .slick-next {
+.prev, .next {
   width: 58px;
   height: 58px;
   border-radius: 50%;
@@ -248,21 +372,29 @@ p {
   font-size: 0;
   outline: none;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   position: relative;
   z-index: 10;
 }
 
-.slick-prev {
-  background-image: url("../img/desktop/arrow_left-icon.png");
-  top: 273px;
+@media only screen and (max-width: 768px) {
+  .prev, .next {
+    display: none;
+  }
 }
 
-.slick-next {
+.prev {
+  background-image: url("../img/desktop/arrow_left-icon.png");
+  top: 147px;
+  left: -30px;
+}
+
+.next {
   background-image: url("../img/desktop/arrow_right-icon.png");
   float: right;
-  top: -267px;
+  top: 87px;
+  right: -30px;
 }
 
 .section-top {
@@ -277,6 +409,12 @@ p {
   vertical-align: top;
 }
 
+@media only screen and (max-width: 480px) {
+  .highlights {
+    width: 100%;
+  }
+}
+
 .highlights .image-top {
   width: 100%;
   height: auto;
@@ -286,7 +424,7 @@ p {
   background-color: rgba(231, 76, 60, 0.7);
   position: relative;
   top: -35px;
-  padding: 5px 11px;
+  padding: 1% 4%;
   display: inline;
 }
 
@@ -297,11 +435,17 @@ p {
 }
 
 .highlights-center {
-  margin: 0 3% !important;
+  margin: 0 3%;
+}
+
+@media only screen and (max-width: 480px) {
+  .highlights-center {
+    margin: 0 auto;
+  }
 }
 
 .section-divoltis {
-  margin-top: 60px;
+  margin-top: 2%;
   width: 100%;
 }
 
@@ -311,6 +455,12 @@ p {
   display: inline-block;
 }
 
+@media only screen and (max-width: 768px) {
+  .itens-divoltis {
+    width: 100%;
+  }
+}
+
 .itens-divoltis .divoltis-porris {
   width: 45%;
   margin: 0 auto;
@@ -318,6 +468,12 @@ p {
   border-bottom: 1px solid #cccccc;
   margin-bottom: 35px;
   margin-right: 4.5%;
+}
+
+@media only screen and (max-width: 480px) {
+  .itens-divoltis .divoltis-porris {
+    width: 100%;
+  }
 }
 
 .itens-divoltis .divoltis-porris .image-top {
@@ -350,6 +506,12 @@ p {
   width: 32%;
   display: inline-block;
   padding-bottom: 105px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 .sidebar .image-publicidade {
@@ -385,11 +547,29 @@ p {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 480px) {
+  .sections-articles {
+    min-height: 1332px;
+  }
+}
+
 .paisis {
   width: 30.5%;
   margin-right: 3%;
   display: inline-block;
   vertical-align: top;
+}
+
+@media only screen and (max-width: 768px) {
+  .paisis {
+    width: 47.5%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .paisis {
+    width: 100%;
+  }
 }
 
 .title-paises {
@@ -415,6 +595,12 @@ p {
   border-bottom: 1px solid #cccccc;
 }
 
+@media only screen and (max-width: 1160px) {
+  .list-paises li {
+    padding: 16px 0;
+  }
+}
+
 .list-paises li a {
   font-family: "Helvetica";
   font-size: 0.9375em;
@@ -426,6 +612,7 @@ p {
 @media only screen and (max-width: 1160px) {
   .list-paises li a {
     font-size: 0.8125em;
+    line-height: 1em;
   }
 }
 
@@ -446,6 +633,25 @@ p {
   margin-right: 1%;
   display: inline-block;
   vertical-align: top;
+}
+
+@media only screen and (max-width: 768px) {
+  .pirulita {
+    width: 47.5%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .pirulita {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cevadiss {
+    margin-top: 5%;
+  }
 }
 
 .suco-cevadiss {
@@ -503,6 +709,31 @@ p {
   width: 45%;
 }
 
+@media only screen and (max-width: 1160px) {
+  .list-itens li p {
+    font-size: 0.75em;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .list-itens li p {
+    width: 43%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .list-itens li p {
+    width: 39%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .list-itens li p {
+    width: 54%;
+  }
+}
+
 .nam-liber {
   background-image: url("../img/desktop/se_pirulita-01.png");
 }
@@ -517,6 +748,45 @@ p {
 
 .gotis-02 {
   background-image: url("../img/desktop/suco_de_cevadiss-02.png");
+}
+
+.sidebar-768 {
+  width: 50%;
+  display: none;
+  vertical-align: top;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-768 {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 480PX) {
+  .sidebar-768 {
+    width: 100%;
+  }
+}
+
+.sidebar-768 .image-publicidade-768 {
+  background-image: url("../img/tablet/ads-300x250.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar-768 .txt-sidebar-768 {
+  font-size: 0.625em;
+  font-family: "Helvetica";
+  color: #cccccc;
+  position: relative;
+  float: right;
+  top: -18px;
+  right: 33px;
 }
 
 .section-backtop {
@@ -562,6 +832,12 @@ footer .content-page {
   vertical-align: middle;
 }
 
+@media only screen and (max-width: 480px) {
+  .logo-footer {
+    display: none;
+  }
+}
+
 .text-footer {
   font-family: "Helvetica";
   font-size: 0.75em;
@@ -570,6 +846,13 @@ footer .content-page {
   margin-left: 7%;
   display: inline-block;
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 480px) {
+  .text-footer {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .text-footer a {

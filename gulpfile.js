@@ -20,6 +20,7 @@ gulp.task('serve', ['wiredep', 'sass'], function () {
     }
   });
 
+  gulp.watch("app/js/*.js").on("change", browserSync.reload);
   gulp.watch("app/*.html").on("change", browserSync.reload);
   gulp.watch("app/sass/*.scss", ['sass'], browserSync.reload);
 });

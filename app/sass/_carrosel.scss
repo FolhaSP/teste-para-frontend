@@ -1,43 +1,68 @@
 .section-carrossel {
   width: 100%;
+  height: auto;
+  padding: 10px;
 }
 
 .carrosel {
   width: 100%;
+  height: 350px;
+  margin-top: 4%;
+  background-image: url('../img/desktop/image_rotate.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-  .carrosel-item {
-    width: 100%;
-    height: 450px;
-    outline: none;
 
-    img {
+  @media only screen and (max-width: 768px) {
+    font-size: 80%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    height: 350px;
+    background-position: top;
+    background-size: auto 270px;
+  }
+
+  p {
+    padding: 8px 70px 8px 20px;
+    display: inline-block;
+    background-color: $color-blue-light;
+    font-family: $name-font;
+    font-size: em(14px, $fontsize-context);
+    font-weight: 600;
+    color: #ffffff;
+    margin: 170px 0 10px 3%;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 240px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      margin-top: 222px;
+      margin-left: 0;
+    }
+  }
+
+  h1{
+    font-size: em(22px, $fontsize-context);
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 3%;
+    width: 60%;
+
+    @media only screen and (max-width: 768px) {
+      width: 80%
+    }
+
+    @media only screen and (max-width: 480px) {
       width: 100%;
-      height: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+      color: $color-blue-dark;
     }
 
-    figcaption {
-      padding: 8px 70px 8px 20px;
-      display: inline-block;
-      background-color: $color-blue-light;
-      font-family: $name-font;
-      font-size: em(14px, $fontsize-context);
-      font-weight: 600;
-      color: #ffffff;
-      position: relative;
-      top: -113px;
-      left: 3%;
-      text-transform: uppercase;
-    }
-
-    h1{
-      font-size: em(22px, $fontsize-context);
-      font-weight: 600;
-      color: #ffffff;
-      position: relative;
-      top: -100px;
-      left: 3%;
-      width: 50%;
-    }
   }
 }
 
@@ -62,14 +87,12 @@
     }
   }
 
-  .slick-active {
-    button {
-      background-color: #29a8e9;
-    }
+  .active {
+    background-color: #29a8e9;
   }
 }
 
-.slick-prev, .slick-next {
+.prev, .next {
   width: 58px;
   height: 58px;
   border-radius: 50%;
@@ -80,19 +103,25 @@
   font-size: 0;
   outline: none;
   cursor: pointer;
-  display: inline-block;
+  display: block;;
   vertical-align: middle;
   position: relative;
-  z-index: 10
+  z-index: 10;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
-.slick-prev {
+.prev {
   background-image: url('../img/desktop/arrow_left-icon.png');
-  top: 273px;
+  top: 147px;
+  left: -30px;
 }
 
-.slick-next {
+.next {
   background-image: url('../img/desktop/arrow_right-icon.png');
   float: right;
-  top: -267px
+  top: 87px;
+  right: -30px;
 }

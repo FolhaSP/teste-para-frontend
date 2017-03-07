@@ -16,6 +16,10 @@ footer {
   margin-left: 8%;
   display: inline-block;
   vertical-align: middle;
+
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 }
 
 .text-footer {
@@ -26,6 +30,11 @@ footer {
   margin-left: 7%;
   display: inline-block;
   vertical-align: middle;
+
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    margin-left: 0;
+  }
 
   a {
     color: #ffffff;

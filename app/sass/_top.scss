@@ -9,6 +9,10 @@
   display: inline-block;
   vertical-align: top;
 
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+  }
+
   .image-top {
     width: 100%;
     height: auto;
@@ -18,7 +22,7 @@
     background-color: rgba(231, 76, 60, 0.7);
     position: relative;
     top: -35px;
-    padding: 5px 11px;
+    padding: 1% 4%;
     display: inline;
 
     .subtitle-top-txt {
@@ -30,5 +34,9 @@
 }
 
 .highlights-center {
-  margin: 0 3% !important;
+  margin: 0 3%;
+
+  @media only screen and (max-width: 480px) {
+    margin: 0 auto;
+  }
 }
