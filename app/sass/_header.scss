@@ -1,0 +1,166 @@
+.header {
+  width: 100%;
+  min-height: 115px;
+  background-color: $color-blue-light;
+
+  .content-page {
+    padding-top: 31px;
+  }
+}
+
+.menu-container {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+
+  @media only screen and (max-width: 1160px) {
+    width: 10%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 5%;
+  }
+
+  .menu-icon {
+    width: 40px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+
+    .icon {
+      font-size: em(40px, $fontsize-context);
+      color: #2c3e50;
+
+      @media only screen and (max-width: 480px) {
+        font-size: em(32px, $fontsize-context);
+      }
+    }
+  }
+}
+
+.logo-container {
+  display: inline-block;
+  width: 59%;
+  text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 78%;
+  }
+
+
+  @media only screen and (max-width: 480px) {
+    width: 90%;
+  }
+
+  .logo-folha {
+    background-image: url('../img/desktop/logo.png');
+    background-size: 100%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    width: 214px;
+    height: 83px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0;
+
+    @media only screen and (max-width: 768px) {
+      width: 180px;
+    }
+  }
+
+  .title-header {
+    font-family: $name-font;
+    font-size: em(14px, $fontsize-context);
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1%;
+    margin-left: 1%;
+
+    @media only screen and (max-width: 768px) {
+      font-size: em(12px, $fontsize-context);
+      margin-left: 0;
+    }
+
+    @media only screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+}
+
+.social {
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+  margin-top: 15px;
+  float: right;
+
+  @media only screen and (max-width: 1160px) {
+    width: 30%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 16%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
+
+  li {
+    display: inline;
+    list-style: none;
+    margin-left: 6%;
+    margin-top: 38%;
+
+    a {
+      padding: 3% 4%;
+      box-shadow: 2px 2px 2px #2980b9;
+      border-radius: 5px;
+      background: #ffffff;
+      text-decoration: none;
+
+      @media only screen and (max-width: 768px) {
+        padding: 5px 0;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .icon {
+        font-size: em(22px, $fontsize-context);
+        display: inline-block;
+        vertical-align: middle;
+
+        @media only screen and (max-width: 768px) {
+          font-size: em(18px, $fontsize-context);
+        }
+      }
+
+      .text-social {
+        font-family: $name-font;
+        font-size: em(10px, $fontsize-context);
+        text-transform: uppercase;
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    .facebook {
+      color: #36528f;
+    }
+
+    .twitter {
+      color: #00adf2;
+    }
+  }
+}

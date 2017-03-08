@@ -1,0 +1,214 @@
+.sections-articles {
+  width: 100%;
+  min-height: 550px;
+  overflow: hidden;
+
+  @media only screen and (max-width: 480px) {
+    min-height: 1332px;
+  }
+
+}
+
+.paisis {
+  width: 30.5%;
+  margin-right: 3%;
+  display: inline-block;
+  vertical-align: top;
+
+  @media only screen and (max-width: 768px) {
+    width: 47.5%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.title-paises {
+  font-family: $name-font;
+  font-size: em(26px, $fontsize-context);
+  color: $color-blue-light;
+
+  @media only screen and (max-width: 1160px) {
+    font-size: em(24px, $fontsize-context);
+  }
+}
+
+.list-paises {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 22px 0;
+    border-bottom: 1px solid #cccccc;
+
+    @media only screen and (max-width: 1160px) {
+      padding: 16px 0;
+    }
+
+    a {
+      font-family: $name-font;
+      font-size: em(15px, $fontsize-context);
+      line-height: em(20px, 15px);
+      color: $color-grey;
+      text-decoration: none;
+
+      @media only screen and (max-width: 1160px) {
+        font-size: em(13px, $fontsize-context);
+        line-height: em(15px, 15px);
+      }
+    }
+  }
+}
+
+.title-lists {
+  font-family: $name-font;
+  font-size: em(26px, $fontsize-context);
+  color: $color-red-ligth;
+
+  @media only screen and (max-width: 1160px) {
+    font-size: em(24px, $fontsize-context);
+  }
+}
+
+.pirulita {
+  width: 30.5%;
+  margin-right: 1%;
+  display: inline-block;
+  vertical-align: top;
+
+  @media only screen and (max-width: 768px) {
+    width: 47.5%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
+
+.cevadiss {
+  @media only screen and (max-width: 768px) {
+    margin-top: 5%;
+  }
+}
+
+.suco-cevadiss {
+  background-color: transparent !important;
+}
+
+.list-itens {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin: 2.5% 0;
+    background-color: #f1f1f1;
+
+    picture {
+      width: 166px;
+      height: 166px;
+      display: block;
+      float: left;
+
+      @media only screen and (max-width: 1160px) {
+        width: 126px;
+        height: 126px;
+      }
+    }
+
+    h3, p {
+      font-family: $name-font;
+      display: inline-block;
+    }
+
+    h3 {
+      margin: 5% 0 1% 2%;
+      font-size: em(14px, $fontsize-context);
+      font-weight: bold;
+      color: $color-red-ligth;
+      text-transform: uppercase;
+
+      @media only screen and (max-width: 1160px) {
+        font-size: em(12px, $fontsize-context);
+      }
+    }
+
+    p {
+      font-size: em(14px, $fontsize-context);
+      margin: 0 2%;
+      width: 45%;
+
+      @media only screen and (max-width: 1160px) {
+        font-size: em(12px, $fontsize-context);
+        width: 40%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 43%;
+      }
+
+      @media only screen and (max-width: 520px) {
+        width: 39%;
+      }
+
+      @media only screen and (max-width: 480px) {
+        width: 54%;
+      }
+    }
+  }
+}
+
+.nam-liber {
+  background-image: url('../img/desktop/se_pirulita-01.png');
+}
+
+.gotis {
+  background-image: url('../img/desktop/se_pirulita-02.png');
+}
+
+.interagi {
+  background-image: url('../img/desktop/suco_de_cevadiss-01.png');
+}
+
+.gotis-02 {
+  background-image: url('../img/desktop/suco_de_cevadiss-02.png');
+}
+
+.sidebar-768 {
+  width: 50%;
+  display: none;
+  vertical-align: top;
+  margin-top: 5%;
+
+  @media only screen and (max-width: 768px) {
+    display: inline-block;
+  }
+
+  @media only screen and (max-width: 480PX) {
+    width: 100%;
+  }
+
+  .image-publicidade-768 {
+    background-image: url('../img/tablet/ads-300x250.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .txt-sidebar-768 {
+    font-size: em(10px, $fontsize-context);
+    font-family: $name-font;
+    color: #cccccc;
+    position: relative;
+    float: right;
+    top: -18px;
+    right: 33px;
+  }
+}

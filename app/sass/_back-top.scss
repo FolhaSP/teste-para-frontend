@@ -1,0 +1,22 @@
+.section-backtop {
+  width: 100%;
+  min-height: 48px;
+  background-color: $color-blue-light;
+
+  .content-page {
+    padding-top: 15px;
+  }
+}
+
+.back-top {
+  font-family: $name-font;
+  font-size: em(18px, $fontsize-context);
+  background-image: url('../img/desktop/arrow_top-icon.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding-right: em(22px, $fontsize-context);
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  float: right;
+}
