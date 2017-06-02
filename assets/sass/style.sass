@@ -1,0 +1,137 @@
+@import "configs"
+
+.icon
+	background-image: url('../img/sprite-icons.png')
+body
+	background: $white
+	font-family: $Open-Sans
+	header
+		height: 182px
+		background: $white
+		+tablet
+			height: auto
+		#logos
+			.logo
+				float: left
+				width: 33.33%
+				height: 182px
+				position: relative
+				+tablet
+					float: none
+					+size(100% auto)
+					+margin(20px null)
+				img
+					+position(absolute, 50% null null 50%)
+					+transform(translate(-50%, -50%))
+					+tablet
+						+position(relative, auto null null auto)
+						+transform(translate(0, 0))
+						+margin(null auto)
+						display: block
+			&::after
+				@extend %clearfix
+	main
+		background: $yellow
+		section
+			&#title
+				padding-top: 60px
+				+tablet
+					padding-top: 30px
+				h1
+					font-size: em(45)
+					text-align: center
+					text-transform: uppercase
+					font-family: $Open-Sans-Bold
+					+tablet
+						font-size: em(25)
+				p
+					font-size: em(28)
+					display: block
+					background: $black
+					color: $yellow
+					text-transform: uppercase
+					+size(207px 57px)
+					line-height: 57px
+					text-align: center
+					@extend %blockCenter
+					margin-top: 15px
+					+tablet
+						font-size: em(15)
+						+size(150px 30px)
+						line-height: 30px
+			&#videos
+				h2
+					font-size: em(25)
+					text-align: center
+					padding-top: 40px
+					color: $black
+					+tablet
+						font-size: em(18)
+						padding-top: 20px
+				.videos
+					padding-top: 45px
+					+tablet
+						padding-top: 25px
+					.video
+						float: left
+						max-width: 460px
+						+margin(null 11px)
+						+tablet
+							float: none
+							max-width: 100%
+							+margin(null auto)
+							margin-bottom: 20px
+						img
+							max-width: 100%
+							height: auto
+							display: block
+							margin-left: auto
+							margin-right: auto
+						a
+							display: block
+							position: relative
+							max-width: 458px
+							max-height: 257px
+							+tablet
+								margin-left: auto
+								margin-right: auto
+							&::after
+								@extend %overlay
+								background: rgba($black, .5)
+								opacity: 1
+								+transition(.4s all linear)
+								z-index: 1
+							&::before
+								content: ' '
+								+size(69px 70px)
+								display: block
+								background: url('../img/icone-video.png') center center no-repeat
+								z-index: 2
+								+position(absolute, 50% null null 50%)
+								+transform(translate(-50%, -50%))
+							&:hover
+								&::after
+									background: rgba($black, .3)
+						.desc
+							h3
+								font-size: em(25)
+								color: $black
+								font-family: $Open-Sans-Bold
+								text-align: center
+							p
+								text-align: center
+								color: $black
+								font-size: em(18)
+					&::after
+						@extend %clearfix
+		.icones
+			margin-top: 30px
+			height: 195px
+			img
+				max-width: 100%
+				height: auto
+			+tablet
+				height: auto
+	footer
+		+size(100% 50px)
+		background: $black

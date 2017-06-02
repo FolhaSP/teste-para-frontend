@@ -1,0 +1,99 @@
+@import "components/bourbon/bourbon"
+@import "components/neat/neat"
+@import "components/font-awesome/font-awesome"
+@import "components/grid-responsive"
+
+/*
+ * HELP
+ */
+// @include item or +item
+// @extend %class or .class
+// $variable = items
+
+/*
+ * FONTS
+ */
++font-face("OpenSans", "fonts/OpenSans")
++font-face("OpenSans-Bold", "fonts/OpenSans-Bold")
+
+$Open-Sans: 'OpenSans', Arial, Sans-serif
+$Open-Sans-Bold: 'OpenSans-Bold', Arial, Sans-serif
+
+/*
+ * COLORS
+ */
+$white: #ffffff
+$black: #000000
+$yellow: #FECC13
+
+/*
+ * EXTENDS CLASSES
+ */
+
+%transDefault
+	@include transition(all .2s ease-out)
+%circle
+	@include border-top-radius(50%)
+	@include border-bottom-radius(50%)
+
+%blockCenter
+	margin-left: auto
+	margin-right: auto
+
+%overlay
+	+position(absolute, 0 0 0 0)
+	+size(100%)
+	content: ' '
+	display: block
+.clearfix
+	clear: both
+
+%clearfix
+	content: '.'
+	display: block
+	clear: both
+	height: 0
+	line-height: 0
+	font-size: 0
+	visibility: hidden
+	overflow: hidden
+/*
+ * RESPONSIVE GRID
+ */
+// +desktop-large - TAM: 1150px
+// +desktop-medium - TAM: 993px
+// +desktop-small - TAM: 840px
+// +tablet - TAM: 768px
+// +mobile-large - TAM: 480px
+// +mobile-medium - TAM: 375px
+// +mobile-small - TAM: 325px
+
+.gridE
+	width: 90%
+	@extend %blockCenter
+
+.gridD
+	max-width: 960px
+	@extend %blockCenter
+
+/*
+ * RESET
+ */
+
+@mixin box-sizing($box)
+	@include prefixer(box-sizing, $box, webkit moz spec)
+*
+	margin: 0
+	padding: 0
+html
+	height: 100%
+	object
+		display: none
+body
+	height: 100%
+	position: relative
+	overflow-x: hidden
+a
+	text-decoration: none
+a, button, input, textarea
+	outline: none

@@ -1,0 +1,52 @@
+﻿// MIXIN PREFIXES
+@mixin border-radius($x){
+	-webkit-border-radius: $x;
+	 -khtml-border-radius: $x;
+	   -moz-border-radius: $x;
+	    -ms-border-radius: $x;
+	     -o-border-radius: $x;
+	        border-radius: $x;
+}
+
+@mixin box-shadow($x:1px, $y:1px, $z:1px, $w:rgba(0,0,0,.5), $k:outset ){
+	-webkit-box-shadow: $x $y $z $w $k;
+	 -khtml-box-shadow: $x $y $z $w $k;
+	   -moz-box-shadow: $x $y $z $w $k;
+	    -ms-box-shadow: $x $y $z $w $k;
+	     -o-box-shadow: $x $y $z $w $k;
+	        box-shadow: $x $y $z $w $k;
+}
+
+@mixin opacity($x){
+	-webkit-opacity: $x;
+	 -khtml-opacity: $x;
+	   -moz-opacity: $x;
+	    -ms-opacity: $x;
+	     -o-opacity: $x;
+	        opacity: $x;
+}
+
+// MEDIA QUERIES 
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (max-width: #{$mobile-small-width}) {
+    @content;
+  }
+}

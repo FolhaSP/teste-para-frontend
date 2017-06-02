@@ -1,0 +1,36 @@
+$desktop-lg: 1150px
+$desktop-md: 993px
+$desktop-sm: 860px
+$tablet: 768px
+$mobile-lg: 480px
+$mobile-md: 375px
+$mobile-sm: 325px
+
+// MEDIA QUERIES 
+@mixin desktop-large
+	@media (min-width: #{$desktop-lg})
+		@content
+
+@mixin desktop-medium
+	@media (min-width: #{$desktop-md})
+		@content
+
+@mixin desktop-small
+	@media (max-width: #{$mobile-sm})
+		@content
+
+@mixin tablet
+	@media (max-width: #{$tablet})
+		@content
+
+@mixin mobile-large
+	@media (max-width: #{$mobile-lg})
+		@content
+
+@mixin mobile-medium
+	@media (max-width: #{$mobile-md})
+		@content
+
+@mixin mobile-small
+	@media (max-width: #{$mobile-sm})
+		@content
