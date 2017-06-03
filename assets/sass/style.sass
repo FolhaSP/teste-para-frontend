@@ -20,6 +20,7 @@ body
 			#navbar-main
 				justify-content: flex-start
 				position: relative
+				width: 15%
 				.icon-menu
 					font-size: 0px
 					+size(50px 50px)
@@ -37,6 +38,7 @@ body
 						color: $white
 			#box-logo 
 				justify-content: center
+				width: 60%
 				.content-logo
 					display: flex
 					align-items: flex-end
@@ -44,6 +46,7 @@ body
 					color: $white
 			#box-social-media	
 				justify-content: flex-end
+				width: 30%
 				.social-medias
 					li
 						display: inline-block
@@ -56,14 +59,13 @@ body
 							font-size: 14px
 							i 
 								margin: 0 5px
-
 			+tablet
 				height: auto
 	main
 		background: $perola
 		section
 			&#banner-top
-				margin: 50px auto
+				margin: 50px auto 20px
 				.item 
 					position : relative
 					img
@@ -86,3 +88,14 @@ body
 							color: $white
 							font-size: 20px
 							font-weight: 600
+			&#mini-articles
+				margin: 30px auto
+				.item-mini-article
+					width: 100%
+					height: auto
+					max-width: 100%
+					img 
+						margin: 0 auto
+						display: block
+						width: 100%
+						max-width: 100%

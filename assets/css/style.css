@@ -2397,6 +2397,11 @@ a {
 a, button, input, textarea {
   outline: none; }
 
+.title-section {
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 20px; }
+
 .icon {
   background-image: url("../img/sprite-icons.png"); }
 
@@ -2416,7 +2421,8 @@ body {
         flex-direction: row; }
       body header .flex-header #navbar-main {
         justify-content: flex-start;
-        position: relative; }
+        position: relative;
+        width: 15%; }
         body header .flex-header #navbar-main .icon-menu {
           font-size: 0px;
           height: 50px;
@@ -2434,14 +2440,16 @@ body {
           body header .flex-header #navbar-main .menu-nav a {
             color: #ffffff; }
       body header .flex-header #box-logo {
-        justify-content: center; }
+        justify-content: center;
+        width: 60%; }
         body header .flex-header #box-logo .content-logo {
           display: flex;
           align-items: flex-end;
           justify-content: center;
           color: #ffffff; }
       body header .flex-header #box-social-media {
-        justify-content: flex-end; }
+        justify-content: flex-end;
+        width: 30%; }
         body header .flex-header #box-social-media .social-medias li {
           display: inline-block;
           margin: 0 15px; }
@@ -2459,7 +2467,7 @@ body {
   body main {
     background: #ECF0F1; }
     body main section#banner-top {
-      margin: 50px auto; }
+      margin: 50px auto 20px; }
       body main section#banner-top .item {
         position: relative; }
         body main section#banner-top .item img {
@@ -2482,3 +2490,14 @@ body {
             color: #ffffff;
             font-size: 20px;
             font-weight: 600; }
+    body main section#mini-articles {
+      margin: 30px auto; }
+      body main section#mini-articles .item-mini-article {
+        width: 100%;
+        height: auto;
+        max-width: 100%; }
+        body main section#mini-articles .item-mini-article img {
+          margin: 0 auto;
+          display: block;
+          width: 100%;
+          max-width: 100%; }
