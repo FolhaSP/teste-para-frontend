@@ -2344,13 +2344,13 @@ html {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans.woff2") format("woff2"), url("fonts/OpenSans.woff") format("woff"), url("fonts/OpenSans.ttf") format("truetype"), url("fonts/OpenSans.svg#OpenSans") format("svg"); }
+  src: url("../fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("truetype"), url("../fonts/OpenSans.svg#OpenSans") format("svg"); }
 
 @font-face {
   font-family: "OpenSans-Bold";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Bold.woff2") format("woff2"), url("fonts/OpenSans-Bold.woff") format("woff"), url("fonts/OpenSans-Bold.ttf") format("truetype"), url("fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg"); }
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg"); }
 
 /*
  * COLORS
@@ -2358,33 +2358,12 @@ html {
 /*
  * EXTENDS CLASSES
  */
-.gridE, .gridD, body main section#title p {
+.gridE, .gridD {
   margin-left: auto;
   margin-right: auto; }
 
-body main section#videos .videos .video a::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  content: ' ';
-  display: block; }
-
 .clearfix {
   clear: both; }
-
-body header #logos::after, body main section#videos .videos::after {
-  content: '.';
-  display: block;
-  clear: both;
-  height: 0;
-  line-height: 0;
-  font-size: 0;
-  visibility: hidden;
-  overflow: hidden; }
 
 /*
  * RESPONSIVE GRID
@@ -2422,164 +2401,84 @@ a, button, input, textarea {
   background-image: url("../img/sprite-icons.png"); }
 
 body {
-  background: #ffffff;
+  background: #ECF0F1;
   font-family: "OpenSans", Arial, Sans-serif; }
   body header {
-    height: 182px;
-    background: #ffffff; }
-    @media (max-width: 768px) {
-      body header {
-        height: auto; } }
-    body header #logos .logo {
-      float: left;
-      width: 33.33%;
-      height: 182px;
-      position: relative; }
+    background: #3498DB; }
+    body header .flex-header {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body header .flex-header #navbar-main, body header .flex-header #box-logo, body header .flex-header #box-social-media {
+        width: 33.5%;
+        display: flex;
+        flex-direction: row; }
+      body header .flex-header #navbar-main {
+        justify-content: flex-start;
+        position: relative; }
+        body header .flex-header #navbar-main .icon-menu {
+          font-size: 0px;
+          height: 50px;
+          width: 50px;
+          background: url(../img/menu-icon.png) no-repeat center; }
+        body header .flex-header #navbar-main .menu-nav {
+          list-style: none;
+          display: none;
+          padding: 10px 20px;
+          width: 400px;
+          background: #2C3E50;
+          position: absolute;
+          top: 90px;
+          left: 0; }
+          body header .flex-header #navbar-main .menu-nav a {
+            color: #ffffff; }
+      body header .flex-header #box-logo {
+        justify-content: center; }
+        body header .flex-header #box-logo .content-logo {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          color: #ffffff; }
+      body header .flex-header #box-social-media {
+        justify-content: flex-end; }
+        body header .flex-header #box-social-media .social-medias li {
+          display: inline-block;
+          margin: 0 15px; }
+          body header .flex-header #box-social-media .social-medias li a {
+            padding: 10px 5px;
+            border-radius: 5px;
+            background: #ECF0F1;
+            color: #2980B9;
+            font-size: 14px; }
+            body header .flex-header #box-social-media .social-medias li a i {
+              margin: 0 5px; }
       @media (max-width: 768px) {
-        body header #logos .logo {
-          float: none;
-          height: auto;
-          width: 100%;
-          margin-top: 20px;
-          margin-bottom: 20px; } }
-      body header #logos .logo img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
-        @media (max-width: 768px) {
-          body header #logos .logo img {
-            position: relative;
-            top: auto;
-            left: auto;
-            -webkit-transform: translate(0, 0);
-            -moz-transform: translate(0, 0);
-            -ms-transform: translate(0, 0);
-            -o-transform: translate(0, 0);
-            transform: translate(0, 0);
-            margin-right: auto;
-            margin-left: auto;
-            display: block; } }
-  body main {
-    background: #FECC13; }
-    body main section#title {
-      padding-top: 60px; }
-      @media (max-width: 768px) {
-        body main section#title {
-          padding-top: 30px; } }
-      body main section#title h1 {
-        font-size: 2.8125em;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: "OpenSans-Bold", Arial, Sans-serif; }
-        @media (max-width: 768px) {
-          body main section#title h1 {
-            font-size: 1.5625em; } }
-      body main section#title p {
-        font-size: 1.75em;
-        display: block;
-        background: #000000;
-        color: #FECC13;
-        text-transform: uppercase;
-        height: 57px;
-        width: 207px;
-        line-height: 57px;
-        text-align: center;
-        margin-top: 15px; }
-        @media (max-width: 768px) {
-          body main section#title p {
-            font-size: 0.9375em;
-            height: 30px;
-            width: 150px;
-            line-height: 30px; } }
-    body main section#videos h2 {
-      font-size: 1.5625em;
-      text-align: center;
-      padding-top: 40px;
-      color: #000000; }
-      @media (max-width: 768px) {
-        body main section#videos h2 {
-          font-size: 1.125em;
-          padding-top: 20px; } }
-    body main section#videos .videos {
-      padding-top: 45px; }
-      @media (max-width: 768px) {
-        body main section#videos .videos {
-          padding-top: 25px; } }
-      body main section#videos .videos .video {
-        float: left;
-        max-width: 460px;
-        margin-right: 11px;
-        margin-left: 11px; }
-        @media (max-width: 768px) {
-          body main section#videos .videos .video {
-            float: none;
-            max-width: 100%;
-            margin-right: auto;
-            margin-left: auto;
-            margin-bottom: 20px; } }
-        body main section#videos .videos .video img {
-          max-width: 100%;
-          height: auto;
-          display: block;
-          margin-left: auto;
-          margin-right: auto; }
-        body main section#videos .videos .video a {
-          display: block;
-          position: relative;
-          max-width: 458px;
-          max-height: 257px; }
-          @media (max-width: 768px) {
-            body main section#videos .videos .video a {
-              margin-left: auto;
-              margin-right: auto; } }
-          body main section#videos .videos .video a::after {
-            background: rgba(0, 0, 0, 0.5);
-            opacity: 1;
-            -webkit-transition: 0.4s all linear;
-            -moz-transition: 0.4s all linear;
-            transition: 0.4s all linear;
-            z-index: 1; }
-          body main section#videos .videos .video a::before {
-            content: ' ';
-            height: 70px;
-            width: 69px;
-            display: block;
-            background: url("../img/icone-video.png") center center no-repeat;
-            z-index: 2;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
-          body main section#videos .videos .video a:hover::after {
-            background: rgba(0, 0, 0, 0.3); }
-        body main section#videos .videos .video .desc h3 {
-          font-size: 1.5625em;
-          color: #000000;
-          font-family: "OpenSans-Bold", Arial, Sans-serif;
-          text-align: center; }
-        body main section#videos .videos .video .desc p {
-          text-align: center;
-          color: #000000;
-          font-size: 1.125em; }
-    body main .icones {
-      margin-top: 30px;
-      height: 195px; }
-      body main .icones img {
-        max-width: 100%;
-        height: auto; }
-      @media (max-width: 768px) {
-        body main .icones {
+        body header .flex-header {
           height: auto; } }
-  body footer {
-    height: 50px;
-    width: 100%;
-    background: #000000; }
+  body main {
+    background: #ECF0F1; }
+    body main section#banner-top {
+      margin: 50px auto; }
+      body main section#banner-top .item {
+        position: relative; }
+        body main section#banner-top .item img {
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 100%;
+          height: auto; }
+        body main section#banner-top .item .text-content {
+          top: -150px;
+          position: relative;
+          margin: 0px 30px;
+          max-width: 350px; }
+          body main section#banner-top .item .text-content h3 {
+            padding: 5px 15px;
+            color: #ffffff;
+            background: #2980B9;
+            display: inline-block; }
+          body main section#banner-top .item .text-content h4 {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 600; }
