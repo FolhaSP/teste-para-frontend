@@ -2402,6 +2402,12 @@ a, button, input, textarea {
   color: #111;
   margin-bottom: 20px; }
 
+.seta {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background: url(../img/arrow_top-icon.png) no-repeat; }
+
 .icon {
   background-image: url("../img/sprite-icons.png"); }
 
@@ -2415,6 +2421,9 @@ body {
       display: flex;
       justify-content: center;
       align-items: center; }
+      @media (max-width: 768px) {
+        body header .flex-header {
+          justify-content: flex-start; } }
       body header .flex-header #navbar-main, body header .flex-header #box-logo, body header .flex-header #box-social-media {
         width: 33.5%;
         display: flex;
@@ -2447,9 +2456,15 @@ body {
           align-items: flex-end;
           justify-content: center;
           color: #ffffff; }
+          @media (max-width: 768px) {
+            body header .flex-header #box-logo .content-logo p {
+              display: none; } }
       body header .flex-header #box-social-media {
         justify-content: flex-end;
         width: 30%; }
+        @media (max-width: 768px) {
+          body header .flex-header #box-social-media {
+            display: none; } }
         body header .flex-header #box-social-media .social-medias li {
           display: inline-block;
           margin: 0 15px; }
@@ -2492,12 +2507,86 @@ body {
             font-weight: 600; }
     body main section#mini-articles {
       margin: 30px auto; }
-      body main section#mini-articles .item-mini-article {
-        width: 100%;
-        height: auto;
-        max-width: 100%; }
-        body main section#mini-articles .item-mini-article img {
+      body main section#mini-articles .item-mini-article h3 {
+        display: inline-block;
+        position: relative;
+        top: -50px;
+        background: #E74C3C;
+        color: #ffffff;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 5px 20px;
+        min-width: 120px;
+        font-size: 14px; }
+      body main section#mini-articles img {
+        margin: 0 auto;
+        width: 100%; }
+    body main section#middle-article {
+      margin: 30px auto; }
+      body main section#middle-article .item-middle-article {
+        background: #ffffff;
+        margin: 0px auto 30px;
+        min-height: 320px; }
+        body main section#middle-article .item-middle-article img {
           margin: 0 auto;
-          display: block;
-          width: 100%;
-          max-width: 100%; }
+          width: 100%; }
+        body main section#middle-article .item-middle-article .info-article {
+          padding: 10px 0px; }
+          body main section#middle-article .item-middle-article .info-article .title-article {
+            color: #2980B9;
+            font-size: 16px; }
+    body main section#publicity {
+      margin: 30px auto; }
+      @media (max-width: 768px) {
+        body main section#publicity {
+          display: none; } }
+      body main section#publicity h5 {
+        margin: 30px auto 0;
+        text-align: right; }
+      body main section#publicity img {
+        float: right; }
+        @media (max-width: 768px) {
+          body main section#publicity img {
+            float: none;
+            margin: 0 auto; } }
+    body main section#group-news {
+      margin: 30px auto; }
+      body main section#group-news .list-news .title-section {
+        color: #2980B9; }
+      body main section#group-news .list-news .item-news {
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc; }
+      body main section#group-news .list-news-image {
+        display: block; }
+        body main section#group-news .list-news-image .title-section {
+          color: #E74C3C; }
+        body main section#group-news .list-news-image .item-news {
+          display: flex;
+          margin: 20px auto; }
+          body main section#group-news .list-news-image .item-news .info-news {
+            margin-left: 15px; }
+            body main section#group-news .list-news-image .item-news .info-news h4 {
+              color: #E74C3C; }
+    body main section#publicity-mobile {
+      display: none; }
+      @media (max-width: 768px) {
+        body main section#publicity-mobile {
+          display: block; }
+          body main section#publicity-mobile img {
+            display: block;
+            margin: 0 auto; } }
+  body .scroll-top {
+    background: #2980B9;
+    padding: 10px 0; }
+    body .scroll-top a {
+      color: #ffffff;
+      font-weight: 600;
+      text-transform: uppercase; }
+  body footer {
+    background: #2C3E50;
+    color: #ffffff;
+    font-weight: 100; }
+    body footer .logo-footer {
+      padding: 10px 0; }
+    body footer .copyright {
+      padding: 20px 0; }

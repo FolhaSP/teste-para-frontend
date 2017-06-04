@@ -12,6 +12,8 @@ body
 			display: flex
 			justify-content: center
 			align-items: center
+			+tablet
+				justify-content: flex-start
 			#navbar-main, #box-logo, #box-social-media
 				width: 33.5%
 				display: flex
@@ -44,9 +46,14 @@ body
 					align-items: flex-end
 					justify-content: center
 					color: $white
+					+tablet 
+						p 
+							display: none
 			#box-social-media	
 				justify-content: flex-end
 				width: 30%
+				+tablet
+					display: none
 				.social-medias
 					li
 						display: inline-block
@@ -91,11 +98,87 @@ body
 			&#mini-articles
 				margin: 30px auto
 				.item-mini-article
+					h3
+						display: inline-block
+						position: relative
+						top: -50px
+						background: $salmon
+						color: $white
+						font-weight: 600
+						text-transform: uppercase
+						padding: 5px 20px
+						min-width: 120px
+						font-size: 14px
+				img 
+					margin: 0 auto
 					width: 100%
-					height: auto
-					max-width: 100%
-					img 
+			&#middle-article
+				margin: 30px auto
+				.item-middle-article
+					background: $white
+					margin: 0px auto 30px
+					min-height: 320px
+					img
 						margin: 0 auto
-						display: block
 						width: 100%
-						max-width: 100%
+					.info-article
+						padding: 10px 0px 
+						.title-article
+							color: $blue
+							font-size: 16px 
+
+			&#publicity
+				margin: 30px auto
+				+tablet
+					display: none
+				h5
+					margin: 30px auto 0
+					text-align: right
+				img 
+					float: right
+					+tablet
+						float: none
+						margin: 0 auto
+			&#group-news
+				margin: 30px auto
+					
+				.list-news
+					.title-section	
+						color: $blue
+					.item-news 
+						padding: 20px 0
+						border-bottom: 1px solid #ccc
+				.list-news-image
+					display: block
+					.title-section	
+						color: $salmon
+					.item-news
+						display: flex
+						margin: 20px auto
+						.info-news
+							margin-left: 15px
+							h4 
+								color: $salmon
+			&#publicity-mobile
+				display: none
+				+tablet
+					display: block
+					img
+						display: block
+						margin: 0 auto
+	.scroll-top
+		background: $blue
+		padding: 10px 0
+		a 
+			color: $white
+			font-weight: 600
+			text-transform: uppercase
+
+	footer
+		background: $dark-blue
+		color: $white
+		font-weight: 100
+		.logo-footer
+			padding: 10px 0 
+		.copyright
+			padding: 20px 0 
