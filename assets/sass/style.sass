@@ -129,7 +129,7 @@ body
 
 			&#publicity
 				margin: 30px auto
-				+tablet
+				+desktop-medium
 					display: none
 				h5
 					margin: 30px auto 0
@@ -161,8 +161,9 @@ body
 								color: $salmon
 			&#publicity-mobile
 				display: none
-				+tablet
+				+desktop-medium
 					display: block
+					margin: 30px auto
 					img
 						display: block
 						margin: 0 auto
@@ -180,5 +181,7 @@ body
 		font-weight: 100
 		.logo-footer
 			padding: 10px 0 
+			+tablet
+				display: none
 		.copyright
 			padding: 20px 0 

@@ -2537,7 +2537,7 @@ body {
             font-size: 16px; }
     body main section#publicity {
       margin: 30px auto; }
-      @media (max-width: 768px) {
+      @media (max-width: 993px) {
         body main section#publicity {
           display: none; } }
       body main section#publicity h5 {
@@ -2569,9 +2569,10 @@ body {
               color: #E74C3C; }
     body main section#publicity-mobile {
       display: none; }
-      @media (max-width: 768px) {
+      @media (max-width: 993px) {
         body main section#publicity-mobile {
-          display: block; }
+          display: block;
+          margin: 30px auto; }
           body main section#publicity-mobile img {
             display: block;
             margin: 0 auto; } }
@@ -2588,5 +2589,8 @@ body {
     font-weight: 100; }
     body footer .logo-footer {
       padding: 10px 0; }
+      @media (max-width: 768px) {
+        body footer .logo-footer {
+          display: none; } }
     body footer .copyright {
       padding: 20px 0; }
