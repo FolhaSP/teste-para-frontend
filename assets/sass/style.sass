@@ -7,6 +7,11 @@ body
 	font-family: $Open-Sans
 	header
 		background: $light-blue
+		+desktop-medium
+			position: fixed
+			top: 0
+			width: 100%
+			z-index: 10
 		.flex-header
 			height: 100px
 			display: flex
@@ -58,14 +63,29 @@ body
 					li
 						display: inline-block
 						margin: 0 15px
+						+desktop-medium
+							margin: 0 0 0 5px
 						a 
 							padding: 10px 5px 
 							border-radius: 5px
 							background: $perola
 							color: $blue
 							font-size: 14px
+							+desktop-medium
+								font-size: 0px
+								padding: 0px 0
+								margin-top: 10px
 							i 
 								margin: 0 5px
+								+desktop-medium
+									font-size: 16px
+									padding: 12px 0px
+									border-radius: 5px
+									width: 40px
+									height: 40px
+									background: $white
+									text-align: center
+
 			+tablet
 				height: auto
 	main
@@ -73,6 +93,12 @@ body
 		section
 			&#banner-top
 				margin: 50px auto 20px
+				// max-height: 500px
+				+desktop-large
+					// max-height: 400px
+				+desktop-medium
+					// max-height: 350px
+					margin-top: 150px
 				.item 
 					position : relative
 					img
@@ -82,8 +108,8 @@ body
 						max-width: 100%
 						height: auto
 					.text-content 
-						top: -150px
-						position: relative		
+						bottom: 50px
+						position: absolute		
 						margin: 0px 30px
 						max-width: 350px
 						h3 
@@ -98,6 +124,8 @@ body
 			&#mini-articles
 				margin: 30px auto
 				.item-mini-article
+					max-width: 400px 
+					margin: auto
 					h3
 						display: inline-block
 						position: relative
@@ -115,6 +143,7 @@ body
 			&#middle-article
 				margin: 30px auto
 				.item-middle-article
+					max-width: 400px
 					background: $white
 					margin: 0px auto 30px
 					min-height: 320px
@@ -161,6 +190,9 @@ body
 								color: $salmon
 			&#publicity-mobile
 				display: none
+				.block-publicity
+					max-width: 300px
+					margin: 0 auto
 				+desktop-medium
 					display: block
 					margin: 30px auto

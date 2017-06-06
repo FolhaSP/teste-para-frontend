@@ -7,15 +7,19 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-        <!-- Custom Style -->
-        <link rel="stylesheet" href="assets/css/style.min.css">
         <!-- Grid Bootstrap -->
         <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+
+        <!-- Slick Style -->
+        <link rel="stylesheet" href="assets/css/lib/slick.css">
+
+        <!-- Theme Custom Style -->
+        <link rel="stylesheet" href="assets/css/style.min.css">
     </head>
     <body>
         <!-- HEADER -->
-        <header class="header-top">
+        <div id="top"></div>
+        <header class="header-top" >
             <div class="container flex-header">
                 <!-- Menu -->
                 <nav id="navbar-main">
@@ -50,7 +54,7 @@
         <!-- ENDHEADER -->
 
         <!-- MAIN CONTENT -->
-        <main>
+        <main id="main">
             <div class="container">
                 <!-- Section BANNER -->
                 <section class="row" id="banner-top">
@@ -60,8 +64,14 @@
                             <h3>Mussum Ipsum Cacilds</h3>
                             <h4>Pra lá, depois divoltis porris, paradis. Paisis, filhis, ispiritis santis</h4>
                         </div>
-                    </article>
-                        
+                    </article>                       
+                    <article class="item">
+                        <img src="assets/img/desktop/image_rotate.png" alt="image banner">
+                        <div class="text-content">
+                            <h3>Mussum Ipsum Cacilds</h3>
+                            <h4>Pra lá, depois divoltis porris, paradis. Paisis, filhis, ispiritis santis</h4>
+                        </div>
+                    </article>                        
                 </section>
                 <!-- END Section BANNER  -->
 
@@ -152,19 +162,19 @@
                         <section class="list-news" id="list-news-first">
                             <h3 class="title-section">Paisis, filhis, espiritis santis</h3>
                             <article class="item-news">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quos pariatur quod, provident dolorum deserunt possimus veniam. </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing. </p>
                             </article>
                             <article class="item-news">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quos pariatur quod, provident dolorum deserunt possimus veniam. </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus </p>
                             </article>
                             <article class="item-news">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quos pariatur quod, provident dolorum deserunt possimus veniam. </p>
+                                <p>Lorem ipsum dolor sit amet</p>
                             </article>
                             <article class="item-news">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quos pariatur quod, provident dolorum deserunt possimus veniam. </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                             </article>
                             <article class="item-news">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quos pariatur quod, provident dolorum deserunt possimus veniam. </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur . </p>
                             </article>
                         </section>
                     </div>
@@ -206,12 +216,14 @@
                             </article>
                         </section>
                     </div>
-                </section>
-                <section class="col-sm-6" id="publicity-mobile">
-                    <h5>Publicidade</h5>
-                    <article class="publicidade">
-                        <img src="assets/img/mobile/ads-300x250.png" alt="" class="img-responsive">
-                    </article>
+                    <section class="col-sm-6" id="publicity-mobile">
+                        <div class="block-publicity">
+                            <h5>Publicidade</h5>
+                            <article class="publicidade">
+                                <img src="assets/img/mobile/ads-300x250.png" alt="" class="img-responsive">
+                            </article>
+                        </div>
+                    </section>
                 </section>
             </div>
         </main>
@@ -237,6 +249,8 @@
         <!-- ENDMAIN CONTENT -->
     <!-- jQuery -->
     <script src="assets/js/lib/jquery-3.2.1.min.js"></script>
+    <!-- SLICK JS -->
+    <script src="assets/js/lib/slick.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/min/script.min.js"></script>
     </body>
