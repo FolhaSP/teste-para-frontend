@@ -1,0 +1,40 @@
+@media screen and (max-width:425px){
+    .hidden-on-phone{
+        display:none;
+    }
+    
+    /************************************************************/
+    #fsp-header{
+        width:100%;
+        height:90px;
+    }
+    
+    #fsp-header-home-link{
+        margin-left:20px;
+    }
+    
+    #fsp-header-home-link img{
+        width: 32px;
+    }
+    
+    #fsp-header-center-container{
+        float:left;
+        margin:0;
+    }
+
+    #fsp-header-center-container img{
+        margin-top:20px;
+        margin-left:50px;
+        width:170px;
+    }
+    
+    #fsp-main{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    #fsp-main section{
+        width: inherit;
+    }
+}

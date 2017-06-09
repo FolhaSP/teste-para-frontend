@@ -1,0 +1,62 @@
+@media screen and (min-width:426px) and (max-width:768px){
+    .hidden-on-tablet{
+        display:none;
+    }
+
+    /************************************************************/
+    #fsp-header{
+        width:100%;
+        height:90px;
+    }
+
+    #fsp-header-home-link{
+        margin-left:32px;
+    }
+
+    #fsp-header-home-link img{
+        width: 32px;
+    }
+
+    #fsp-header-center-container{
+        float:left;
+        margin:0;
+    }
+
+    #fsp-header-center-container p{
+        margin-top:55px;
+    }
+
+    #fsp-header-center-container img{
+        margin-top:20px;
+        margin-left:90px;
+        width:170px;
+    }
+
+    #fsp-header-social-links{
+        margin-left:70px;
+    }
+
+    #fsp-header-social-links-facebook, #fsp-header-social-links-twitter{
+        float:left;
+        width: auto;
+        margin-top:36px;
+    }
+
+    #fsp-header-social-links-twitter{
+        margin-left:15px;
+    }
+
+    #fsp-header-social-links-facebook i, #fsp-header-social-links-twitter i{
+        margin:0;
+    }
+
+    #fsp-main{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    #fsp-main section{
+        width: inherit;
+    }
+}

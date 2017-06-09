@@ -1,0 +1,12 @@
+{
+    "name": "campos_sergio_folhasp",
+    "version": "1.0.0",
+    "description": "Sérgio Campos Silvério, teste front-end developer 06/06/2017",
+    "homepage": "https://github.com/FolhaSP/front-end-test#readme",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "3.3.x",
+        "font-awesome": "4.7.x"
+    }
+}
