@@ -1,0 +1,445 @@
+@charset "utf-8";
+
+html, body {
+    margin : 0;
+    border : 0;
+    padding : 0;
+    width : 100%;
+    height : 100%;
+    font-family : 'Helvetica', Arial, sans-serif;
+    font-size : 12px;
+    background : #ecf0f1;
+}
+* {
+    box-sizing : border-box;
+}
+a {
+    outline : none;
+}
+img {
+    border : 0;
+}
+.clearfix::after {
+    content : '.';
+    width : 0;
+    height : 0;
+    font-size : 0;
+    display : block;
+    visibility : hidden;
+    clear : both;
+}
+.text-nowrap {
+    white-space : nowrap;
+}
+header {
+    background : #3498dd;
+}
+.header-wrap {
+    width : 100%;
+    height : 115px;
+    background : #3498dd;
+    position : relative;
+    padding-top : 25px;
+    max-width : 1200px;
+    margin : 0 auto;
+}
+.header-menu-icone {
+    position : absolute;
+    top : 50%;
+    left : 25px;
+    transform : translateY(-50%);
+}
+.header-logo {
+    text-align : center;
+}
+.header-logo a {
+    text-decoration : none;
+}
+.header-redessocial {
+    position : absolute;
+    top : 50%;
+    right : 20px;
+    transform : translateY(-50%);
+}
+.header-redessocial a {
+    text-decoration : none;
+}
+.header-redessocial img {
+    border-radius : 5px;
+    margin : 0 5px;
+}
+.wrap {
+    padding : 0 15px;
+    max-width : 1200px;
+    margin : 0 auto;
+}
+.home-banner-wrap {
+    position : relative;
+}
+.home-banner {
+    width : 100%;
+    position : relative;
+    margin : 50px 0 0;
+}
+.home-banner .item {
+    width : 100%;
+    display : block;
+    height : auto;
+    text-decoration : none;
+}
+.home-banner .item img {
+    width : 100%;
+    height : auto;
+    display : block;
+}
+.home-banner .item .legenda {
+    position : absolute;
+    top : 50%;
+    left : 0;
+    width : 80%;
+    height : 30px;
+    line-height : 30px;
+    background : #1c94d2;
+    color : #fff;
+    text-transform : uppercase;
+    font-weight : bold;
+    font-size : 16px;
+    padding : 0 10px;
+}
+.home-banner .item .titulo {
+    width : 100%;
+    height : 100px;
+    display : block;
+    font-size : 30px;
+    color : #2c3e50;
+    text-decoration : none;
+    padding : 10px 0;
+}
+.home-banner-pager {
+    text-align : center;
+    padding : 0;
+    margin-bottom : 50px;
+}
+.home-banner-pager span {
+    width : 12px;
+    height : 12px;
+    display : inline-block;
+    vertical-align : middle;
+    background : #9a9a9a;
+    border-radius : 50%;
+    font-size : 0;
+    margin : 0 5px;
+    cursor : pointer;
+}
+.home-banner-pager .cycle-pager-active {
+    background : #1fa4e9;
+}
+.home-banner-left, .home-banner-right {
+    width : 60px;
+    height : 60px;
+    text-align : center;
+    padding : 10px 0;
+    background : #fff;
+    border-radius : 50%;
+    position : absolute;
+    z-index : 101;
+    top : 50%;
+    cursor : pointer;
+}
+.home-banner-left {
+    left : 0;
+    transform : translate(-50%,-50%);
+}
+.home-banner-right {
+    right : 0;
+    transform : translate(50%,-50%);
+}
+.home-highlight-item {
+    display : block;
+    width : 100%;
+    height : auto;
+    position : relative;
+    text-decoration : none;
+    margin-bottom : 25px;
+}
+.home-highlight-item img {
+    display : block;
+    width : 100%;
+    height : auto;
+}
+.home-highlight-item span {
+    position : absolute;
+    bottom : 20px;
+    left : 0;
+    height : 30px;
+    line-height : 30px;
+    padding : 0 20px;
+    background : #e05341;
+    color : #fff;
+    text-transform : uppercase;
+    font-weight : bold;
+    font-size : 16px;
+}
+.home-divoltis {
+    margin-top : 60px;
+}
+.home-divoltis-titulo {
+    font-size : 20px;
+    color : #2c3e50;
+    margin : 0 0 15px;
+}
+.home-divoltis-item {
+    display : block;
+    width : 100%;
+    text-decoration : none;
+    border-bottom : 1px solid #d3d3d3;
+    margin-bottom : 20px;
+}
+.home-divoltis-item img {
+    display : block;
+    width : 100%;
+    height : auto;
+}
+.home-divoltis-item .categoria {
+    color : #77adcf;
+    font-size : 14px;
+    text-transform : uppercase;
+    display : block;
+    margin-top : 15px;
+}
+.home-divoltis-item .titulo {
+    font-size : 18px;
+    color : #2c3e50;
+    margin : 15px 0;
+    display : block;
+}
+.home-lista {
+    margin-top : 55px;
+}
+.home-lista-titulo {
+    font-size : 20px;
+    color : #1fa4e9;
+    margin : 0;
+}
+.home-lista-item {
+    font-size : 16px;
+    color : #2c3e50;
+    text-decoration : none;
+    margin : 15px 0;
+    display : block;
+    padding : 5px 0 15px;
+    border-bottom : 1px solid #d3d3d3;
+}
+.home-lista-item:last-child {
+    border-bottom : 0;
+}
+.home-box-titulo {
+    font-size : 24px;
+    color : #e74c3c;
+    margin : 30px 0 30px 0;
+}
+.home-box-item {
+    margin : 0 0 30px 0;
+    display : block;
+}
+.home-box-item img {
+    float : left;
+    width : 50%;
+    height : auto;
+}
+.home-box-item div {
+    float : right;
+    width : 50%;
+    padding : 5px 0 5px 30px;
+}
+.home-box-item .categoria {
+    font-size : 16px;
+    color : #e74c3c;
+    text-transform : uppercase;
+    display : block;
+    margin-bottom : 20px;
+}
+.home-box-item .titulo {
+    font-size : 16px;
+    color : #2c3e50;
+    display : block;
+}
+.home-publicidade {
+    margin : 100px auto 150px;
+}
+.home-publicidade span {
+    display : block;
+    max-width : 300px;
+    margin : 0 auto;
+    text-align : right;
+    font-size : 12px;
+    color : #999999;
+}
+.home-publicidade img {
+    max-width : 100%;
+    margin : 0 auto;
+    height : auto;
+    display : block;
+}
+.footer-aoTopo-wrap {
+    background : #3498db;
+}
+.footer-aoTopo {
+    height : 50px;
+    line-height : 50px;
+    text-align : right;
+    padding : 0 10px;
+    max-width : 1200px;
+    margin : 0 auto;
+}
+.footer-aoTopo a {
+    text-decoration : none;
+}
+.footer-aoTopo span {
+    color : #fff;
+    font-size : 20px;
+    display : inline-block;
+    margin-right : 5px;
+    vertical-align : middle;
+}
+.footer-aoTopo img {
+    vertical-align : middle;
+}
+footer {
+    background : #2c3e50;
+}
+.footer-copyright {
+    color : #fff;
+    font-size : 14px;
+    padding : 20px 10px;
+    background : #2c3e50;
+    max-width : 1200px;
+    margin : 0 auto;
+}
+.footer-copyright p {
+    margin : 0;
+}
+.footer-copyright a {
+    color : #fff;
+}
+
+
+@media screen and (max-width:767px) {
+    .noMobile {
+        display : none !important ;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .header-wrap {
+        padding-top : 35px;
+    }
+    .header-slogan {
+        display : inline-block;
+        margin : 45px 0 0 10px;
+        color : #fff;
+        vertical-align : top;
+        font-size : 14px;
+    }
+    .home-banner .item .titulo {
+        position : absolute;
+        bottom : 5px;
+        color : #fff;
+        padding-left : 10px;
+    }
+    .home-banner .item .legenda {
+        top : initial;
+        bottom : 110px;
+        left : 10px;
+        width : auto;
+        padding : 0 40px;
+    }
+    .home-banner-pager {
+        margin-top : 20px;
+    }
+    .home-highlight {
+        width : calc(100% + 30px);
+        margin-left : -15px;
+    }
+    .home-highlight-item {
+        width : 33.333%;
+        float : left;
+        padding : 0 15px;
+    }
+    .home-highlight-item span {
+        left : 15px;
+    }
+    .home-divoltis {
+        width : calc(100% + 30px);
+        margin-left : -15px;
+    }
+    .home-divoltis-titulo {
+        padding-left : 15px;
+    }
+    .home-divoltis-item {
+        width : calc(50% - 30px);
+        float : left;
+        margin-left : 15px;
+        margin-right : 15px;
+    }
+    .home-divoltis-item:nth-of-type(odd) {
+        clear : both;
+    }
+    .home-noticias {
+        width : calc(100% + 30px);
+        margin-left : -15px;
+    }
+    .home-lista {
+        margin-top : 35px;
+        float : left;
+        width : 50%;
+        padding : 0 15px;
+    }
+    .home-box-coluna {
+        float : left;
+        width : 50%;
+        padding : 0 15px;
+    }
+    .home-publicidade {
+        float : left;
+        width : 50%;
+        padding : 0 15px;
+    }
+    .footer-copyright {
+        display : table;
+        width : 100%;
+    }
+    .footer-copyright div {
+        padding-right : 50px;
+    }
+    .footer-copyright p, .footer-copyright div {
+        display : table-cell;
+        vertical-align : middle;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .noTablet {
+        display : none !important ;
+    }
+}
+@media screen and (min-width:992px) {
+    .noDesktop {
+        display : none !important ;
+    }
+    .header-wrap {
+        height : 125px;
+        padding-top : 27px;
+    }
+    .home-divoltis {
+        float : left;
+        width : calc(66.666% + 20px);
+    }
+    .home-publicidade {
+        width : 32.5%;
+        float : right;
+    }
+    .home-lista, .home-box-coluna {
+        width : 33.333%;
+    }
+} 
