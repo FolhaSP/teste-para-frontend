@@ -1,0 +1,48 @@
+.teste + [class~="col-xs-2"] {
+  width: calc((2 * 100% / 12) - 20px);
+  margin-left: 20px;
+}
+.teste + [class~="col-xs-3"] {
+  width: calc((3 * 100% / 12) - 20px);
+  margin-left: 20px;
+}
+.teste + [class~="col-xs-4"] {
+  width: calc((4 * 100% / 12) - 20px);
+  margin-left: 20px;
+}
+.teste + [class~="col-xs-5"] {
+  width: calc((5 * 100% / 12) - 20px);
+  margin-left: 20px;
+}
+.teste + [class~="col-xs-6"] {
+  width: calc((6 * 100% / 12) - 20px);
+  margin-left: 20px;
+}
+.teste + [class~="col-xs-7"] {
+  width: calc((7 * 100% / 12) - 20px);
+  margin-left: 20px;
+}
+.teste + [class~="col-xs-8"] {
+  width: calc((8 * 100% / 12) - 20px);
+  margin-left: 20px;
+}
+.teste + [class~="col-xs-9"] {
+  width: calc((9 * 100% / 12) - 20px);
+  margin-left: 20px;
+}
+.teste + [class~="col-xs-10"] {
+  width: calc((10 * 100% / 12) - 20px);
+  margin-left: 20px;
+}
+.teste + [class~="col-xs-11"] {
+  width: calc((11 * 100% / 12) - 20px);
+  margin-left: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */
