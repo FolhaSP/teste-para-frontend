@@ -1,0 +1,35 @@
+// Ads
+    #ad {
+        text-align: right;
+        display: none;
+
+        .text-title {
+            display: block;
+            font-size: 12px;
+            color: @cl-grey;
+            text-transform: none;
+        }
+
+        &-skycrapper:extend(#ad) {
+            @media @min-large-desktops {
+                display: block;
+            }
+
+            .text-title:extend(#ad .text-title) {
+            }
+        }
+
+        &-arroba:extend(#ad) {
+            @media @max-large-desktops {
+                display: block;
+                text-align: center;
+            }
+
+            @media @min-tablets {
+                text-align: right;
+            }
+
+            .text-title:extend(#ad .text-title) {}
+        }
+    }
+

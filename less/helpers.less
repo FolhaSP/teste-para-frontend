@@ -1,0 +1,122 @@
+// Helpers
+    @radius:                                                                        0px;
+
+    .drop-shadow(@h-shadow: 1px, @v-shadow: 1px, @blur: 3px, @spread: 0px, @color: @cl-black, @fade: 10) {
+        -webkit-box-shadow+_: @h-shadow @v-shadow @blur @spread fade(@color, @fade);
+        -moz-box-shadow+_:    @h-shadow @v-shadow @blur @spread fade(@color, @fade);
+        box-shadow+_:         @h-shadow @v-shadow @blur @spread fade(@color, @fade);
+    }
+
+    .drop-shadow2(@h-shadow: 1px, @v-shadow: 1px, @blur: 3px, @spread: 0px, @color: @cl-black, @fade: 10) {
+        -webkit-box-shadow+: @h-shadow @v-shadow @blur @spread fade(@color, @fade);
+        -moz-box-shadow+:    @h-shadow @v-shadow @blur @spread fade(@color, @fade);
+        box-shadow+:         @h-shadow @v-shadow @blur @spread fade(@color, @fade);
+    }
+
+    .transition(@duration: 200ms, @timing: linear, @property: all, @delay: 0s) {
+        -webkit-transition: @property @duration @timing @delay;
+        transition: @property @duration @timing @delay;
+    }
+
+    .rotate(@angle) {
+        -ms-transform+_: rotate(~'@{angle}deg');
+        -webkit-transform+_: rotate(~'@{angle}deg');
+        transform+_: rotate(~'@{angle}deg');
+    }
+
+    .translate(@axis: '', @value: 0) {
+        -ms-transform+_: ~'translate@{axis}(@{value})';
+        -webkit-transform+_: ~'translate@{axis}(@{value})';
+        transform+_: ~'translate@{axis}(@{value})';
+    }
+
+    .transform-origin(@x-axis, @y-axis) {
+        -ms-transform-origin: @x-axis @y-axis;
+        -webkit-transform-origin: @x-axis @y-axis;
+        transform-origin: @x-axis @y-axis;
+    }
+
+    .clear-float() {
+        clear: both;
+
+        &::before,
+        &::after {
+            display: table;
+            content: ' ';
+        }
+
+        &::after { clear: both; }
+    }
+
+    .btn {
+        display: inline-block;
+        font-family: inherit;
+        font-size: 10px;
+        text-transform: uppercase;
+        background-color: @cl-white;
+        padding: 5px 2px;
+        border-radius: 5px;
+        border: 1px solid @cl-btns-bd;
+        cursor: pointer;
+        .drop-shadow();
+        .transition();
+
+        &:hover { color: @cl-white; }
+
+        @media @min-large-desktops {
+            padding: 5px 14px 5px 6px;
+        }
+
+        & + [class*='btn-'] {
+            @media @min-large-desktops {
+                margin-left: 25px;
+            }
+        }
+
+        i {
+            @media @max-large-desktops {
+                margin: 0 !important;
+            }
+        }
+
+        span {
+            display: none;
+
+            @media @min-large-desktops {
+                display: inline;
+            }
+        }
+    }
+
+    .clear {
+        .clear-float();
+    }
+
+    // Generate columns based on @viewport variable
+        .add-cols(@recurrence: 12, @increment: 1) when (@increment =< @recurrence) {
+            .col-@{viewport}-@{increment} {
+                width: ((@increment * 100%) / @recurrence);
+            }
+            .offset-left-@{viewport}-@{increment} {
+                margin-left: ((@increment * 100%) / @recurrence) !important;
+            }
+            .offset-right-@{viewport}-@{increment} {
+                margin-right: ((@increment * 100%) / @recurrence) !important;
+            }
+            .add-cols(@recurrence, (@increment + 1));
+        }
+
+    // .touch-action values:
+        // auto, none, pan-x, pan-left, pan-right, pan-y, pan-up, pan-down, pinch-zoom, manipulation
+        .touch-action(@touch-value: manipulation) {
+            -ms-touch-action: @touch-value;
+            touch-action: @touch-value;
+        }
+
+    // Controla a seleção do usuário
+        // none, text, all
+        .user-select(@user-select: none) {
+            -moz-user-select: @user-select;
+            -webkit-user-select: @user-select;
+            -ms-user-select: @user-select;
+        }

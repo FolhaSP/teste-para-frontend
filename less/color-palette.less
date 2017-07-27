@@ -1,0 +1,22 @@
+// Color Palette
+
+    // According to the supplied palette
+        @cl-base:                                                                       #2C3E50;
+        @cl-complementary:  lighten(saturate(spin(@cl-base, 155.7), 49), 32.7);       //#E74C3C;
+        @cl-neutral:        lighten(desaturate(spin(@cl-base, -18), 13.88), 69);      //#ECF0F1;
+        @cl-secondary:      lighten(saturate(spin(@cl-base, -6), 40.84), 28.82);      //#3498DB;
+        @cl-tertiary:       lighten(saturate(spin(@cl-base, -6.25), 34.68), 20);      //#2980B9;
+
+    // Identified in the template
+        @cl-white:                                                                      #FFFFFF;
+        @cl-black:                                                                      #000000;
+        @cl-logo:           lighten(saturate(spin(@cl-base, -13.75), 70.96), 66.27);  //#CFF2FF;
+        @cl-neutral2:       lighten(desaturate(@cl-base, 100), 70);                   //#F1F1F1;
+        @cl-lightgrey:      lighten(desaturate(@cl-base, 100), 58.5);                 //#D3D3D3;
+        @cl-grey:           lighten(desaturate(@cl-base, 100), 35.7);                 //#999999;
+        @cl-btns-bd:        lighten(saturate(spin(@cl-base, -6.25), 34.68), 20);      //#2980B9;
+        @cl-facebook:                                                                   #36528F;
+        @cl-twitter:                                                                    #00ADF2;
+
+    // Elements
+        @cl-topbar:                                                                     @cl-secondary;

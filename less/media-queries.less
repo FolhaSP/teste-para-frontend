@@ -1,0 +1,20 @@
+// Media Queries
+    @phones: 320px;
+    @tablets: 768px;
+    @large-desktops: 1200px;
+
+    @phones-: (@phones - 1);
+    @tablets-: (@tablets - 1);
+    @large-desktops-: (@large-desktops - 1);
+
+    @min-phones: ~'screen and (min-width: @{phones})';
+    @min-tablets: ~'screen and (min-width: @{tablets})';
+    @min-large-desktops: ~'screen and (min-width: @{large-desktops})';
+
+    @max-phones: ~'screen and (max-width: @{phones-})';
+    @max-tablets: ~'screen and (max-width: @{tablets-})';
+    @max-large-desktops: ~'screen and (max-width: @{large-desktops-})';
+
+    @only-phones: ~'screen and (max-width: @{tablets-})';
+    @only-tablets: ~'screen and (min-width: @{tablets}) and (max-width: @{large-desktops-})';
+    @only-large-desktops: ~'screen and (min-width: @{large-desktops})';
