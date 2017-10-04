@@ -39,6 +39,7 @@
 * Paleta de cores usadas no layout: https://color.adobe.com/pt/teste-folha-web-color-theme-6584765/
 * Mussum Ipsum (gerador de lorem ipsum do Mussum): http://mussumipsum.com/
 
-Ao terminar o teste, solicite um pull request.
+Ao terminar o teste, solicite um pull request. 
+Em caso de dúvidas, envie e-mail para l-tec-recrutamento-frontend@grupofolha.com.br.
 
 **Boa sorte!**
