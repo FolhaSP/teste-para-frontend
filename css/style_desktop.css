@@ -1,0 +1,314 @@
+@media screen and (min-width: 1024px)
+{
+    main {
+        display: block; /* IE9 & IE10 não reconhecem a tag main como display: block. Não efetivava padding e margin por causa disso!!! zzzzz */
+        padding: 150px 6rem;
+        margin: auto 3%;
+    }
+
+    section {
+        margin: 1rem 0;
+    }
+    
+    /* ---- menu superior ---- */
+    .menu {
+        width: 90%;
+        display: block;
+        position: absolute;
+        margin: 0 5%;
+    }
+
+    .menu__burger {
+        width: 3.5%;
+        height: 30%;
+    }
+
+    .menu__logo {
+        top: calc(120px - 95px);
+        left: 250px;
+    }
+    
+    .menu__phrase, .menu__social {
+        display: inline-block;
+    }
+    
+    .menu__phrase {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+    }
+    
+    .menu__social {
+        display: table;
+        position: absolute;
+        width: 160px;
+        left: 80%;
+        top: 50%;
+        transform: translateY(-50%);
+        list-style: none;
+        border-spacing: 10px;
+    }
+
+    .menu__social li {
+        display: table-cell;
+        vertical-align: middle;
+        height: 20px;
+        width: 60px;
+        padding: 5px;
+        margin: 0 .5rem;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, .40);
+        background: white;
+    }
+
+    .menu__social-facebook {
+        
+        text-decoration: none;
+        width: 50px;
+        color: #324EA2; /* facebook blue */
+    }
+
+    .menu__social-twitter {
+        text-decoration: none;
+        color: #46B4E3; /* twitter blue */
+    }
+
+    .menu__social-facebook::after {
+        font-size: 0.65rem;
+        font-family: Helvetica;
+        content: 'CURTIR';
+    }
+
+    .menu__social-twitter::after {
+        font-size: 0.65rem;
+        font-family: Helvetica;
+        content: 'SEGUIR';
+    }
+    
+    /* ---- breaking news ---- */
+    .breaking-news {
+        margin-bottom: 2rem;
+    }
+
+    /* breaking article */
+    .breaking {
+        position: relative;
+    }
+
+    .breaking__figure {
+        height: 450px;
+    }
+
+    .breaking__figure img::after {
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.65) 0%,rgba(0, 0, 0, 0) 100%);
+    }
+    
+    .breaking__figure img {
+        height: 100%;
+    }
+    
+    .breaking__caption {
+        max-width: 35%;
+        bottom: 60px;
+        font-size: 1rem;
+    }
+    
+    .breaking__title {
+        position: absolute;
+        bottom: 20px;
+        left: 12px;
+        font-size: 1.5rem;
+        color: #EBEFF0;
+    }
+    /* ---- pseudo-carousel ---- */
+    .pseudo-carousel__left, .pseudo-carousel__right {
+        display: inline-block;
+        position: relative;
+        bottom: 225px; /* 450 / 2 (img/2) */
+        padding: 5px 12px;
+        border-radius: 50%;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, .40);
+        background-color: white;
+    }
+
+    .pseudo-carousel__left {
+        float: left;
+        right: 24px;
+    }
+
+    .pseudo-carousel__right {
+        float: right;
+        left: 24px;
+    }
+
+    /* ---- highlights ---- */
+    .highlights {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .highlights figure {
+        margin: 0;
+    }
+
+    .highlights figure:nth-of-type(2) {
+        margin: 0 3%;
+    }
+
+    /* figure highlight */
+    .highlight {
+        display: inline-block;
+        width: calc((100% / 3) - 3%);
+        vertical-align: bottom;
+        margin-right: -4px;
+    }
+    
+    .highlight__caption {
+        font-size: 1rem;
+    }
+    
+    /* ---- recommended-news ---- */
+    .recommended-news {
+        display: inline-block;
+        width: 60%;
+    }
+
+    .recommended-news__title {
+        margin-bottom: 0;
+    }
+
+    .recommended { /* recommended article */
+        display: inline-block;
+        width: calc((100% / 2) - 2.5%);
+        height: 300px;
+        margin: 1rem -4px 0 0;
+    }
+
+    .recommended__image {
+        width: 100%;
+        height: 210px;
+    }    
+
+    /* ---- google-ads ---- */
+    .google-ads {
+        float: right;
+        display: inline-block;
+        max-width: 300px;
+        height: 100%;
+        margin: 3rem 1rem 0 0;
+        vertical-align: top;
+    }
+
+    .google-ads img {
+        width: 280px; /* adaptação específica para o IE9 & IE10 */
+    }
+
+    /* ---- fast-news ---- */
+    .fast-news {
+        display: inline-block;
+        width: 33%;
+        height: 100%;
+        margin: 2rem 0 0 0;
+        vertical-align: top;
+    }
+
+    .fast-news__list li {
+        padding: 1.5rem 0;
+    }
+
+    .fast-news__list li a {
+        font-size: 1.1rem;
+        font-weight: lighter;
+        text-decoration: none;
+        color: #2C3E50;
+    }
+    
+    /* ---- arts ---- */
+    .arts-one {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        margin: 0 -4px 0 2rem;
+    }
+
+    .arts-two {
+        display: inline-block;
+        width: 30%;
+        margin: 0;
+        vertical-align: top;
+    }
+    
+    .art {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    /* ---- ads ---- */
+    .ads, .ad {
+        display: none;
+    }
+
+    /* ---- voltar ao topo ---- */
+    .voltar-ao-topo {
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    /* ---- footer ---- */
+    footer {
+        position: sticky;
+        padding: 0;
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+
+/* adaptação básica para monitores FULL HD  */
+@media screen and (min-width: 1680px)
+{
+    main {
+        padding: 150px 20rem;
+    }
+
+    .menu {
+        width: 70%;
+        margin: 0 15%;
+    }
+
+    .voltar-ao-topo {
+        width: 70%;
+        margin: 0 15%;
+    }
+
+    footer {
+        width: 70%;
+        margin: 0 15%;
+    }
+}
+
+/* adaptação básica para monitores ULTRA WIDE  */
+@media screen and (min-width: 2000px)
+{
+    main {
+        padding: 150px 40rem;
+    }
+
+    .menu {
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    .voltar-ao-topo {
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    footer {
+        width: 50%;
+        margin: 0 25%;
+    }
+}
