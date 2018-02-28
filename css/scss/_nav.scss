@@ -15,6 +15,13 @@ nav {
         padding-top: 30px;
     }
     
+    @include media-breakpoint-down(sm) {
+        padding-top: 15px;
+        height: 65px;
+
+
+    }
+    
     .container{
         @include media-breakpoint-down(md){
             max-width: initial;
@@ -49,6 +56,15 @@ nav {
                 margin-left: 10px;
             }
         }
+        
+        @include media-breakpoint-down(sm){
+            #logo{
+                max-width: 150px;
+                margin-bottom: -33px;
+                margin-top: -19px;
+            }
+        }
+        
     }
     
     .social{
