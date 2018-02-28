@@ -1,22 +1,53 @@
-nav {
+nav {    
     margin: 0 auto;
     max-width: 1300px;
+    height: 115px;
     background-color: $azul-claro;
     padding: 40px;
     color: $background-color;
     
+    @include media-breakpoint-down(md) {
+        position: fixed;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        height: 85px;
+        padding-top: 30px;
+    }
+    
+    .container{
+        @include media-breakpoint-down(md){
+            max-width: initial;
+        }
+    }
+    
     .heading {
+        
+        margin-left: -30px;
         
         #logo{
             position: relative;
-            margin-bottom: -79px;
+            margin-bottom: -67px;
             margin-top: -40px;
         }
         
         p{
             position: absolute;
-            top: 30px;
+            top: 25px;
             margin-left: 10px;
+        }
+        
+        @include media-breakpoint-down(md){
+            #logo{
+                margin-bottom: -25px;
+                margin-top: -19px;
+                max-width: 180px;
+            }
+
+            p{
+                top: 20px;
+                margin-left: 10px;
+            }
         }
     }
     
@@ -27,19 +58,38 @@ nav {
         
         .botao-social{
             @include align-vertical-center();
+            @include box-shadow(0px 0px 2px 1px rgba(0, 0, 0, 0.3));
             border-radius: 3px;
             background: white;
-            height: 35px;
-            min-width: 90px;
+            padding: 7px;
+            height: 30px;
+            width: 90px;
             font-size: .65em;
+            
+            @include media-breakpoint-down(md) {
+                -webkit-justify-content: center;
+                justify-content: center;
+                width: 40px;
+                height: 35px;
+                padding: 5px;
+                text-align: center;
+                margin-right: 15px;
+            }
             &:first-child{
                 margin-right: 40px;
+                @include media-breakpoint-down(md) {
+                    margin-right: 15px;
+                }
             }
-            
+            span{
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
         }
         
         #fb{
-            color: #335190;
+            color: #335190; //this part could have been better
         }
         
         #tt{
@@ -49,6 +99,9 @@ nav {
         svg{
             font-size: 1.75em;
             margin: 0 8px 0 5px;
+            @include media-breakpoint-down(md) {
+                margin: 0;
+            }
         }
     }
 }

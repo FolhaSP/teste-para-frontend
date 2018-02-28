@@ -1499,11 +1499,12 @@ html {
 body {
   background-color: #ECF0F1;
   font-family: 'Helvetica', 'Arial', sans-serif;
+  box-sizing: border-box;
 }
 
 @media (max-width: 991.98px) {
   body {
-    background-color: #3498DB;
+    background-color: #2980B9;
   }
 }
 
@@ -1516,21 +1517,55 @@ body {
 nav {
   margin: 0 auto;
   max-width: 1300px;
+  height: 115px;
   background-color: #3498DB;
   padding: 40px;
   color: #ECF0F1;
 }
 
+@media (max-width: 991.98px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    height: 85px;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  nav .container {
+    max-width: initial;
+  }
+}
+
+nav .heading {
+  margin-left: -30px;
+}
+
 nav .heading #logo {
   position: relative;
-  margin-bottom: -79px;
+  margin-bottom: -67px;
   margin-top: -40px;
 }
 
 nav .heading p {
   position: absolute;
-  top: 30px;
+  top: 25px;
   margin-left: 10px;
+}
+
+@media (max-width: 991.98px) {
+  nav .heading #logo {
+    margin-bottom: -25px;
+    margin-top: -19px;
+    max-width: 180px;
+  }
+  nav .heading p {
+    top: 20px;
+    margin-left: 10px;
+  }
 }
 
 nav .social {
@@ -1547,15 +1582,43 @@ nav .social .botao-social {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   background: white;
-  height: 35px;
-  min-width: 90px;
+  padding: 7px;
+  height: 30px;
+  width: 90px;
   font-size: .65em;
+}
+
+@media (max-width: 991.98px) {
+  nav .social .botao-social {
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 40px;
+    height: 35px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 15px;
+  }
 }
 
 nav .social .botao-social:first-child {
   margin-right: 40px;
+}
+
+@media (max-width: 991.98px) {
+  nav .social .botao-social:first-child {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  nav .social .botao-social span {
+    display: none;
+  }
 }
 
 nav .social #fb {
@@ -1569,4 +1632,10 @@ nav .social #tt {
 nav .social svg {
   font-size: 1.75em;
   margin: 0 8px 0 5px;
+}
+
+@media (max-width: 991.98px) {
+  nav .social svg {
+    margin: 0;
+  }
 }

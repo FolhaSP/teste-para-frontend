@@ -10,3 +10,10 @@ $azul-medio: #2980B9;
     -webkit-align-items: center;
     align-items: center;
 }
+
+@mixin box-shadow($shadow... ) {
+     -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+     box-shadow: $shadow;
+    
+}
