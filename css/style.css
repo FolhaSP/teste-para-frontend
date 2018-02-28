@@ -1498,6 +1498,7 @@ html {
 
 body {
   background-color: #ECF0F1;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 @media (max-width: 991.98px) {
@@ -1510,4 +1511,62 @@ body {
   body {
     background-color: #E74C3C;
   }
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 1300px;
+  background-color: #3498DB;
+  padding: 40px;
+  color: #ECF0F1;
+}
+
+nav .heading #logo {
+  position: relative;
+  margin-bottom: -79px;
+  margin-top: -40px;
+}
+
+nav .heading p {
+  position: absolute;
+  top: 30px;
+  margin-left: 10px;
+}
+
+nav .social {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+nav .social .botao-social {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 3px;
+  background: white;
+  height: 35px;
+  min-width: 90px;
+  font-size: .65em;
+}
+
+nav .social .botao-social:first-child {
+  margin-right: 40px;
+}
+
+nav .social #fb {
+  color: #335190;
+}
+
+nav .social #tt {
+  color: #00aff3;
+}
+
+nav .social svg {
+  font-size: 1.75em;
+  margin: 0 8px 0 5px;
 }

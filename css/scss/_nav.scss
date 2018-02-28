@@ -1,0 +1,54 @@
+nav {
+    margin: 0 auto;
+    max-width: 1300px;
+    background-color: $azul-claro;
+    padding: 40px;
+    color: $background-color;
+    
+    .heading {
+        
+        #logo{
+            position: relative;
+            margin-bottom: -79px;
+            margin-top: -40px;
+        }
+        
+        p{
+            position: absolute;
+            top: 30px;
+            margin-left: 10px;
+        }
+    }
+    
+    .social{
+        @include align-vertical-center();
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+        
+        .botao-social{
+            @include align-vertical-center();
+            border-radius: 3px;
+            background: white;
+            height: 35px;
+            min-width: 90px;
+            font-size: .65em;
+            &:first-child{
+                margin-right: 40px;
+            }
+            
+        }
+        
+        #fb{
+            color: #335190;
+        }
+        
+        #tt{
+            color: #00aff3;
+        }
+        
+        svg{
+            font-size: 1.75em;
+            margin: 0 8px 0 5px;
+        }
+    }
+}
