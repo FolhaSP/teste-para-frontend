@@ -1657,3 +1657,40 @@ nav .social svg {
     margin: 0;
   }
 }
+
+#carrossel {
+  margin-top: 75px;
+}
+
+#carrossel .carousel-control-next-icon, #carrossel .carousel-control-prev-icon {
+  background: white;
+  color: #283c4f;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#carrossel .carousel-control-next, #carrossel .carousel-control-prev {
+  opacity: 1;
+}
+
+#carrossel .carousel-control-next {
+  right: -85px;
+}
+
+#carrossel .carousel-control-prev {
+  left: -85px;
+}
+
+#carrossel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  bottom: -44px;
+  background-color: #9b9b9b;
+}
+
+#carrossel .carousel-indicators .active {
+  background-color: #3498DB;
+}

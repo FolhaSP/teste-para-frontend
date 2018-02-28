@@ -1,0 +1,36 @@
+#carrossel{
+    margin-top: 75px;
+    
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        background: white;
+        color: #283c4f;
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    
+    .carousel-control-next, .carousel-control-prev{
+        opacity: 1;
+    }
+    
+    .carousel-control-next{
+        right: -85px;
+    }
+    
+    .carousel-control-prev{
+        left: -85px;
+    }
+    
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        bottom: -44px;
+        background-color: #9b9b9b;
+    }
+    
+    .carousel-indicators .active {
+        background-color: $azul-claro;
+    }
+}
