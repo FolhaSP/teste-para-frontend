@@ -1536,8 +1536,11 @@ nav {
 
 @media (max-width: 767.98px) {
   nav {
-    padding-top: 15px;
+    padding-top: 20px;
     height: 65px;
+  }
+  nav .menu-item {
+    max-width: 36px;
   }
 }
 
@@ -1578,8 +1581,8 @@ nav .heading p {
 @media (max-width: 767.98px) {
   nav .heading #logo {
     max-width: 150px;
-    margin-bottom: -33px;
-    margin-top: -19px;
+    margin-bottom: -23px;
+    margin-top: -17px;
   }
 }
 

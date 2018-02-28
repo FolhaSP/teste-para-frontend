@@ -16,9 +16,11 @@ nav {
     }
     
     @include media-breakpoint-down(sm) {
-        padding-top: 15px;
+        padding-top: 20px;
         height: 65px;
-
+        .menu-item{
+            max-width: 36px;
+        }
 
     }
     
@@ -60,8 +62,8 @@ nav {
         @include media-breakpoint-down(sm){
             #logo{
                 max-width: 150px;
-                margin-bottom: -33px;
-                margin-top: -19px;
+                margin-bottom: -23px;
+                margin-top: -17px;
             }
         }
         
