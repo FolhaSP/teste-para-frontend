@@ -4,7 +4,8 @@ body {
     box-sizing: border-box;
     
     @include media-breakpoint-down(md) {
-        background-color: $azul-medio; 
+        background-color: $azul-medio;
+        padding-top: 85px;
     }
     
     @include media-breakpoint-down(sm) {

@@ -1505,6 +1505,7 @@ body {
 @media (max-width: 991.98px) {
   body {
     background-color: #2980B9;
+    padding-top: 85px;
   }
 }
 
@@ -1526,6 +1527,7 @@ nav {
 @media (max-width: 991.98px) {
   nav {
     position: fixed;
+    top: 0;
     width: 100%;
     padding-right: 0;
     padding-left: 0;
@@ -1564,6 +1566,7 @@ nav .heading p {
   position: absolute;
   top: 25px;
   margin-left: 10px;
+  color: #d0f3ff;
 }
 
 @media (max-width: 991.98px) {
@@ -1603,12 +1606,12 @@ nav .social .botao-social {
   -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
+  border-radius: 5px;
   background: white;
-  padding: 7px;
   height: 30px;
   width: 90px;
   font-size: .65em;
+  letter-spacing: -.5px;
 }
 
 @media (max-width: 991.98px) {
@@ -1624,7 +1627,7 @@ nav .social .botao-social {
 }
 
 nav .social .botao-social:first-child {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 @media (max-width: 991.98px) {
@@ -1664,10 +1667,10 @@ nav .social svg {
 
 #carrossel .carousel-control-next-icon, #carrossel .carousel-control-prev-icon {
   background: white;
-  color: #283c4f;
+  color: #2C3E50;
   height: 60px;
   width: 60px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 50%;
 }
 
@@ -1693,4 +1696,27 @@ nav .social svg {
 
 #carrossel .carousel-indicators .active {
   background-color: #3498DB;
+}
+
+#carrossel .carousel-caption {
+  text-align: left;
+  left: 30px;
+}
+
+#carrossel .carousel-caption h3 {
+  background-color: #3498DB;
+  padding-left: 18px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  font-weight: 500;
+  display: block;
+  max-width: 290px;
+  margin-bottom: 18px;
+  font-size: 1.05em;
+  font-weight: 500;
+}
+
+#carrossel .carousel-caption h2 {
+  font-size: 28px;
+  font-weight: 600;
 }

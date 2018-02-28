@@ -3,10 +3,10 @@
     
     .carousel-control-next-icon, .carousel-control-prev-icon{
         background: white;
-        color: #283c4f;
+        color: $azul-marinho;
         height: 60px;
         width: 60px;
-        padding: 10px;
+        padding: 15px;
         border-radius: 50%;
     }
     
@@ -32,5 +32,27 @@
     
     .carousel-indicators .active {
         background-color: $azul-claro;
+    }
+    
+    .carousel-caption{
+        text-align: left;
+        left: 30px;
+        
+        h3{
+            background-color: $azul-claro;
+            padding-left: 18px;
+            padding-top: 5px;
+            padding-bottom: 3px;
+            font-weight: 500;
+            display: block;
+            max-width: 290px;
+            margin-bottom: 18px;
+            font-size: 1.05em;
+            font-weight: 500;
+        }
+        h2{
+            font-size: 28px;
+            font-weight: 600;
+        }
     }
 }

@@ -8,6 +8,7 @@ nav {
     
     @include media-breakpoint-down(md) {
         position: fixed;
+        top: 0;
         width: 100%;
         padding-right: 0;
         padding-left: 0;
@@ -44,6 +45,7 @@ nav {
             position: absolute;
             top: 25px;
             margin-left: 10px;
+            color: #d0f3ff;
         }
         
         @include media-breakpoint-down(md){
@@ -77,12 +79,12 @@ nav {
         .botao-social{
             @include align-vertical-center();
             @include box-shadow(0px 0px 2px 1px rgba(0, 0, 0, 0.3));
-            border-radius: 3px;
+            border-radius: 5px;
             background: white;
-            padding: 7px;
             height: 30px;
             width: 90px;
             font-size: .65em;
+            letter-spacing: -.5px;
             
             @include media-breakpoint-down(md) {
                 -webkit-justify-content: center;
@@ -94,7 +96,7 @@ nav {
                 margin-right: 15px;
             }
             &:first-child{
-                margin-right: 40px;
+                margin-right: 30px;
                 @include media-breakpoint-down(md) {
                     margin-right: 15px;
                 }
