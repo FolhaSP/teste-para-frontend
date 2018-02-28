@@ -1504,14 +1504,7 @@ body {
 
 @media (max-width: 991.98px) {
   body {
-    background-color: #2980B9;
     padding-top: 85px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  body {
-    background-color: #E74C3C;
   }
 }
 
@@ -1522,6 +1515,7 @@ nav {
   background-color: #3498DB;
   padding: 40px;
   color: #ECF0F1;
+  z-index: 9999;
 }
 
 @media (max-width: 991.98px) {
@@ -1719,4 +1713,69 @@ nav .social svg {
 #carrossel .carousel-caption h2 {
   font-size: 28px;
   font-weight: 600;
+}
+
+@media (max-width: 991.98px) {
+  #carrossel {
+    margin-top: 45px;
+  }
+  #carrossel .carousel-control-next-icon, #carrossel .carousel-control-prev-icon {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  #carrossel .carousel-control-next {
+    right: -55px;
+  }
+  #carrossel .carousel-control-prev {
+    left: -55px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #carrossel {
+    margin-top: 15px;
+  }
+  #carrossel .carousel-control-next-icon, #carrossel .carousel-control-prev-icon {
+    display: none;
+  }
+  #carrossel .carousel-control-next {
+    right: 0;
+  }
+  #carrossel .carousel-control-prev {
+    left: 0;
+  }
+  #carrossel .carousel-caption {
+    z-index: 9999;
+    position: relative;
+    text-align: left;
+    margin-top: -40px;
+    margin-left: -30px;
+  }
+  #carrossel .carousel-caption h3 {
+    background-color: #3498DB;
+    padding-left: 18px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-weight: 500;
+    display: block;
+    max-width: 290px;
+    margin-bottom: 24px;
+    font-size: 1.0em;
+    font-weight: 500;
+  }
+  #carrossel .carousel-caption h2 {
+    color: #2C3E50;
+    font-size: 1.5em;
+  }
+  #carrossel .carousel-caption span {
+    display: none;
+  }
+  #carrossel .carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    bottom: -0px;
+  }
 }

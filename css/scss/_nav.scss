@@ -5,6 +5,7 @@ nav {
     background-color: $azul-claro;
     padding: 40px;
     color: $background-color;
+    z-index: 9999;
     
     @include media-breakpoint-down(md) {
         position: fixed;
