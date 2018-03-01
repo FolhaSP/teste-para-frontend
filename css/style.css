@@ -1505,6 +1505,19 @@ body {
 @media (max-width: 991.98px) {
   body {
     padding-top: 85px;
+    background-color: #2980B9;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    background-color: #E74C3C;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    background-color: #3498DB;
   }
 }
 
@@ -1778,4 +1791,27 @@ nav .social svg {
     border-radius: 50%;
     bottom: -0px;
   }
+}
+
+#topnews {
+  margin-top: 80px;
+}
+
+#topnews .topcard {
+  margin-top: 20px;
+}
+
+#topnews .topcard p {
+  position: relative;
+  display: inline-block;
+  min-width: 90px;
+  top: -60px;
+  color: white;
+  background-color: rgba(231, 76, 60, 0.8);
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1em;
+  font-size: .9em;
 }

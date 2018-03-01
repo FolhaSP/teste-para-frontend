@@ -5,9 +5,14 @@ body {
     
     @include media-breakpoint-down(md) {
         padding-top: 85px;
+        background-color: $azul-medio;
     }
     
     @include media-breakpoint-down(sm) {
-
+        background-color: $cinnabar;
+    }
+    
+    @include media-breakpoint-down(xs) {
+        background-color: $azul-claro;
     }
 }

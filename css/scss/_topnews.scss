@@ -1,0 +1,23 @@
+#topnews{
+    margin-top: 80px;
+    .topcard{
+        
+        margin-top: 20px;
+        
+        p{
+            position: relative;
+            display: inline-block;
+            min-width: 90px;
+            top: -60px;
+            color: white;
+            background-color: rgba($cinnabar, 0.8);
+            padding-top: 10px;
+            padding-bottom: 8px;
+            padding-left: 20px;
+            padding-right: 20px;
+            line-height: 1em;
+            font-size: .9em;
+            
+        }
+    }
+}
