@@ -1505,19 +1505,6 @@ body {
 @media (max-width: 991.98px) {
   body {
     padding-top: 85px;
-    background-color: #2980B9;
-  }
-}
-
-@media (max-width: 767.98px) {
-  body {
-    background-color: #E74C3C;
-  }
-}
-
-@media (max-width: 575.98px) {
-  body {
-    background-color: #3498DB;
   }
 }
 
@@ -1816,6 +1803,10 @@ nav .social svg {
   font-size: .9em;
 }
 
+#topnews .topcard img {
+  width: 100%;
+}
+
 #divoltis .article-card {
   background-color: #f2f2f2;
   margin-top: 15px;
@@ -1825,6 +1816,7 @@ nav .social svg {
 }
 
 #divoltis .article-card .title {
+  margin-top: 15px;
   color: #2980B9;
 }
 
@@ -1832,9 +1824,15 @@ nav .social svg {
   color: #2C3E50;
 }
 
+#divoltis .article-card .img-constraint {
+  display: flex;
+}
+
 #divoltis .article-card img {
-  height: 100%;
+  max-width: 100%;
   max-height: 215px;
+  object-fit: cover;
+  width: 100%;
 }
 
 #divoltis .publicidade {
@@ -1887,6 +1885,11 @@ nav .social svg {
   background-color: #f2f2f2;
 }
 
+#last-section .small-card img {
+  object-fit: cover;
+  width: 100%;
+}
+
 #last-section .small-card .title {
   margin-top: 10px;
   color: #E74C3C;
@@ -1895,6 +1898,10 @@ nav .social svg {
 #last-section .small-card .subtitle {
   font-size: 1em;
   padding-right: 15px;
+}
+
+#last-section .small-card.no-back {
+  background-color: transparent;
 }
 
 footer {

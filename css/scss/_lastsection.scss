@@ -24,6 +24,12 @@
     .small-card{
         margin-bottom: 20px;
         background-color: $background-card;
+        
+        img{
+            object-fit: cover;
+            width: 100%;
+        }
+        
         .title{
             margin-top: 10px;
             color: $cinnabar;
@@ -32,6 +38,9 @@
         .subtitle{
             font-size: 1em;
             padding-right: 15px;
+        }
+        &.no-back{
+            background-color: transparent;
         }
     }
     
