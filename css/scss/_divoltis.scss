@@ -1,0 +1,37 @@
+#divoltis{
+    .article-card{
+        margin-top: 15px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid $cinza-hr;
+        
+        .title{
+            color: $azul-medio;
+        }
+        
+        .subtitle{
+            color: $azul-marinho;
+        }
+        
+        img{
+            height: 215px;
+        }
+    }
+    
+    .publicidade{
+        text-align: center;
+        img{
+            position: relative;
+            top: -19px;
+        }
+    }
+    
+    .texto-publicidade{
+        position: relative;
+        bottom: 22px;
+        text-align: right;
+        padding-right: 24px;
+        color: grey;
+        font-size: .8em;
+    }
+}
