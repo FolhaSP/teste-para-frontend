@@ -1,6 +1,6 @@
 body {
     background-color: $background-color;
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: Helvetica, 'Arial', sans-serif;
     box-sizing: border-box;
     
     @include media-breakpoint-down(md) {

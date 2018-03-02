@@ -1,0 +1,38 @@
+#last-section{
+    
+    color: $azul-marinho;
+    
+    .cinnabar{
+        color: $cinnabar;
+    }
+    
+    .azul-claro{
+        color: $azul-claro;
+    }
+    
+    .h4{
+        margin-bottom:25px;
+    }
+    
+    .no-pic{
+        color: $azul-marinho;
+        padding-bottom: 15px;
+        margin-top: 15px;
+        border-bottom: 1px solid $cinza-hr;
+    }
+    
+    .small-card{
+        margin-bottom: 20px;
+        background-color: $background-card;
+        .title{
+            margin-top: 10px;
+            color: $cinnabar;
+        }
+        
+        .subtitle{
+            font-size: 1em;
+            padding-right: 15px;
+        }
+    }
+    
+}

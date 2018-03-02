@@ -1,0 +1,30 @@
+footer{
+    margin: 0 auto;
+    margin-top: 300px;
+    max-width: 1300px;
+    
+    #voltar-ao-topo{
+        background-color: $azul-claro;
+        color: white;
+        padding: 15px 0 10px 0;
+        
+        .container{
+            text-align: right;
+        }
+    }
+    
+    #actual-footer{
+        color: white;
+        background-color: $azul-marinho;
+        padding: 25px 0 20px 0;
+        
+        img{
+            @include align-vertical-center();
+        }
+        
+        .copyright{
+            font-size: .75em;
+            @include align-vertical-center();
+        }
+    }
+}
