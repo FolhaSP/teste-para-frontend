@@ -1,8 +1,11 @@
+//
 $azul-marinho: #2C3E50;
 $cinnabar: #E74C3C;
 $background-color: #ECF0F1;
 $azul-claro: #3498DB;
 $azul-medio: #2980B9;
+
+//
 $cinza-hr: #d4d4d4;
 $background-card: #f2f2f2;
 
@@ -16,6 +19,5 @@ $background-card: #f2f2f2;
 @mixin box-shadow($shadow... ) {
      -webkit-box-shadow: $shadow;
      -moz-box-shadow: $shadow;
-     box-shadow: $shadow;
-    
+     box-shadow: $shadow;  
 }

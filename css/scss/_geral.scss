@@ -7,12 +7,6 @@ body {
         padding-top: 85px;
     }
     
-    @include media-breakpoint-down(sm) {
-    }
-    
-    @include media-breakpoint-down(xs) {
-    }
-    
     p{
         
         @include media-breakpoint-down(md) {
