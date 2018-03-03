@@ -2025,6 +2025,10 @@ footer {
   max-width: 1300px;
 }
 
+footer .row {
+  max-width: 100%;
+}
+
 footer #voltar-ao-topo {
   background-color: #3498DB;
   color: white;

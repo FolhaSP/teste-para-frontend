@@ -3,6 +3,10 @@ footer{
     margin-top: 300px;
     max-width: 1300px;
     
+    .row{
+        max-width: 100%;
+    }
+    
     #voltar-ao-topo{
         background-color: $azul-claro;
         color: white;
