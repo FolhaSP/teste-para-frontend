@@ -43,6 +43,7 @@ nav {
         }
         
         p{
+            font-size: 1rem;
             position: absolute;
             top: 25px;
             margin-left: 10px;
@@ -59,6 +60,8 @@ nav {
             p{
                 top: 20px;
                 margin-left: 10px;
+                font-size: .9em;
+                white-space: nowrap;
             }
         }
         
@@ -67,6 +70,11 @@ nav {
                 max-width: 150px;
                 margin-bottom: -23px;
                 margin-top: -17px;
+            }
+            p{
+                top: 20px;
+                margin-left: 10px;
+                font-size: .75rem;
             }
         }
         
@@ -87,15 +95,17 @@ nav {
             font-size: .65em;
             letter-spacing: -.5px;
             
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(sm) {
                 -webkit-justify-content: center;
                 justify-content: center;
-                width: 40px;
-                height: 35px;
+                width: 36px;
+                height: 36px;
                 padding: 5px;
                 text-align: center;
                 margin-right: 15px;
             }
+            
+            
             &:first-child{
                 margin-right: 30px;
                 @include media-breakpoint-down(md) {
@@ -103,7 +113,7 @@ nav {
                 }
             }
             span{
-                @include media-breakpoint-down(md) {
+                @include media-breakpoint-down(sm) {
                     display: none;
                 }
             }
@@ -120,7 +130,7 @@ nav {
         svg{
             font-size: 1.75em;
             margin: 0 8px 0 5px;
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(sm) {
                 margin: 0;
             }
         }

@@ -1557,6 +1557,7 @@ nav .heading #logo {
 }
 
 nav .heading p {
+  font-size: 1rem;
   position: absolute;
   top: 25px;
   margin-left: 10px;
@@ -1572,6 +1573,8 @@ nav .heading p {
   nav .heading p {
     top: 20px;
     margin-left: 10px;
+    font-size: .9em;
+    white-space: nowrap;
   }
 }
 
@@ -1580,6 +1583,11 @@ nav .heading p {
     max-width: 150px;
     margin-bottom: -23px;
     margin-top: -17px;
+  }
+  nav .heading p {
+    top: 20px;
+    margin-left: 10px;
+    font-size: .75rem;
   }
 }
 
@@ -1608,12 +1616,12 @@ nav .social .botao-social {
   letter-spacing: -.5px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   nav .social .botao-social {
     -webkit-justify-content: center;
     justify-content: center;
-    width: 40px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
     padding: 5px;
     text-align: center;
     margin-right: 15px;
@@ -1630,7 +1638,7 @@ nav .social .botao-social:first-child {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   nav .social .botao-social span {
     display: none;
   }
@@ -1649,7 +1657,7 @@ nav .social svg {
   margin: 0 8px 0 5px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   nav .social svg {
     margin: 0;
   }
@@ -1785,7 +1793,7 @@ nav .social svg {
 }
 
 #topnews .topcard {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #topnews .topcard p {
@@ -1809,7 +1817,7 @@ nav .social svg {
 
 #divoltis .article-card {
   background-color: #f2f2f2;
-  margin-top: 15px;
+  margin-top: 10px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #d4d4d4;
