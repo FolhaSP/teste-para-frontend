@@ -2,11 +2,16 @@
     
     
     .article-card{
-//        background-color: $background-card;
+        background-color: $background-card;
         margin-top: 1px;
         padding-bottom: 30px;
         margin-bottom: 30px;
         border-bottom: 1px solid $cinza-hr;
+        
+        
+        @include media-breakpoint-down(sm) {
+            background-color: transparent;
+        }    
         
         .title{
             margin-top: 15px;

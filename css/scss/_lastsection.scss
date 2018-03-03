@@ -23,7 +23,7 @@
     
     .small-card{
         margin-bottom: 20px;
-//        background-color: $background-card;
+        background-color: $background-card;
         
         img{
             object-fit: cover;
@@ -35,8 +35,12 @@
             color: $cinnabar;
         }
         
+        .card-info .col-6{
+            padding-right: 0;
+        }
+        
         .subtitle{
-            padding-right: 15px;
+//            padding-right: 15px;
         }
         &.no-back{
             background-color: transparent;
@@ -55,6 +59,10 @@
     }
     
     @include media-breakpoint-down(sm) {
+        .small-card{
+            background-color: transparent;
+                        
+        }
         .col-sm-6{
             margin-bottom: 45px;
         }
@@ -64,6 +72,11 @@
             padding-bottom: 10px;
             margin-top: 15px;
             border-bottom: 1px solid $cinza-hr;
+        }
+        
+        .col-6.d-flex{
+            padding-right: 0;
+            padding-left: 0;
         }
     }
     

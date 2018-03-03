@@ -55,16 +55,27 @@
             font-weight: 600;
         }
     }
+    @include media-breakpoint-down(md) {
+        .carousel-control-next{
+            right: -50px;
+        }
+
+        .carousel-control-prev{
+            left: -50px;
+        }
+    }
     
     @include media-breakpoint-down(sm) {
         
         margin-top: 45px;
         
+        img{
+            height: 300px;
+            object-fit: cover;
+        }
+        
         .carousel-control-next-icon, .carousel-control-prev-icon{
-            height: 36px;
-            width: 36px;
-            padding: 10px;
-            border-radius: 50%;
+            display: none;
         }
         .carousel-control-next{
             right: -40px;
@@ -80,11 +91,38 @@
             border-radius: 50%;
             bottom: -30px;
         }
+        
+        .carousel-caption{
+            text-align: left;
+            left: 10px;
+            bottom: 0px;
+
+            h3{
+                background-color: $azul-claro;
+                padding-left: 10px;
+                padding-top: 5px;
+                padding-bottom: 3px;
+                font-weight: 500;
+                display: block;
+                max-width: 290px;
+                margin-bottom: 10px;
+                font-size: .8em;
+                font-weight: 500;
+            }
+            h2{
+                font-size: 1.2em;
+                font-weight: 600;
+            }
+        }
     }
     
     @include media-breakpoint-down(xs) {
-        
+    
         margin-top: 15px;
+        margin-bottom: -70px;
+        img{
+            height: 200px;
+        }
         
         .carousel-control-next-icon, .carousel-control-prev-icon{
             display: none;
@@ -101,8 +139,10 @@
             z-index: 9999;
             position: relative;
             text-align: left;
-            margin-top: -40px;
-            margin-left: -30px;
+            bottom:60px;
+            left: 0px;
+//            margin-top: -40px;
+//            margin-left: -30px;
             
             h3{
                 background-color: $azul-claro;
@@ -113,12 +153,12 @@
                 display: block;
                 max-width: 290px;
                 margin-bottom: 24px;
-                font-size: 1.0em;
+//                font-size: .8em;
                 font-weight: 500;
             }
             h2{
                 color: $azul-marinho;
-                font-size: 1.5em;
+//                font-size: 1.0em;
             }
             span{
                 display: none;
@@ -126,7 +166,7 @@
         }
         
         .carousel-indicators li {
-            bottom: -0px;
+            bottom: 50px;
 
         }
     }

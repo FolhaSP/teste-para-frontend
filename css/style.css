@@ -1735,15 +1735,25 @@ nav .social svg {
   font-weight: 600;
 }
 
+@media (max-width: 991.98px) {
+  #carrossel .carousel-control-next {
+    right: -50px;
+  }
+  #carrossel .carousel-control-prev {
+    left: -50px;
+  }
+}
+
 @media (max-width: 767.98px) {
   #carrossel {
     margin-top: 45px;
   }
+  #carrossel img {
+    height: 300px;
+    object-fit: cover;
+  }
   #carrossel .carousel-control-next-icon, #carrossel .carousel-control-prev-icon {
-    height: 36px;
-    width: 36px;
-    padding: 10px;
-    border-radius: 50%;
+    display: none;
   }
   #carrossel .carousel-control-next {
     right: -40px;
@@ -1757,11 +1767,36 @@ nav .social svg {
     border-radius: 50%;
     bottom: -30px;
   }
+  #carrossel .carousel-caption {
+    text-align: left;
+    left: 10px;
+    bottom: 0px;
+  }
+  #carrossel .carousel-caption h3 {
+    background-color: #3498DB;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-weight: 500;
+    display: block;
+    max-width: 290px;
+    margin-bottom: 10px;
+    font-size: .8em;
+    font-weight: 500;
+  }
+  #carrossel .carousel-caption h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 575.98px) {
   #carrossel {
     margin-top: 15px;
+    margin-bottom: -70px;
+  }
+  #carrossel img {
+    height: 200px;
   }
   #carrossel .carousel-control-next-icon, #carrossel .carousel-control-prev-icon {
     display: none;
@@ -1776,8 +1811,8 @@ nav .social svg {
     z-index: 9999;
     position: relative;
     text-align: left;
-    margin-top: -40px;
-    margin-left: -30px;
+    bottom: 60px;
+    left: 0px;
   }
   #carrossel .carousel-caption h3 {
     background-color: #3498DB;
@@ -1788,18 +1823,16 @@ nav .social svg {
     display: block;
     max-width: 290px;
     margin-bottom: 24px;
-    font-size: 1.0em;
     font-weight: 500;
   }
   #carrossel .carousel-caption h2 {
     color: #2C3E50;
-    font-size: 1.5em;
   }
   #carrossel .carousel-caption span {
     display: none;
   }
   #carrossel .carousel-indicators li {
-    bottom: -0px;
+    bottom: 50px;
   }
 }
 
@@ -1828,6 +1861,7 @@ nav .social svg {
 
 #topnews .topcard img {
   width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 767.98px) {
@@ -1846,10 +1880,17 @@ nav .social svg {
 }
 
 #divoltis .article-card {
+  background-color: #f2f2f2;
   margin-top: 1px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #d4d4d4;
+}
+
+@media (max-width: 767.98px) {
+  #divoltis .article-card {
+    background-color: transparent;
+  }
 }
 
 #divoltis .article-card .title {
@@ -1919,6 +1960,7 @@ nav .social svg {
 
 #last-section .small-card {
   margin-bottom: 20px;
+  background-color: #f2f2f2;
 }
 
 #last-section .small-card img {
@@ -1931,8 +1973,8 @@ nav .social svg {
   color: #E74C3C;
 }
 
-#last-section .small-card .subtitle {
-  padding-right: 15px;
+#last-section .small-card .card-info .col-6 {
+  padding-right: 0;
 }
 
 #last-section .small-card.no-back {
@@ -1953,6 +1995,9 @@ nav .social svg {
 }
 
 @media (max-width: 767.98px) {
+  #last-section .small-card {
+    background-color: transparent;
+  }
   #last-section .col-sm-6 {
     margin-bottom: 45px;
   }
@@ -1961,6 +2006,10 @@ nav .social svg {
     padding-bottom: 10px;
     margin-top: 15px;
     border-bottom: 1px solid #d4d4d4;
+  }
+  #last-section .col-6.d-flex {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
