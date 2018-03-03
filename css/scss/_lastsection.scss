@@ -23,7 +23,7 @@
     
     .small-card{
         margin-bottom: 20px;
-        background-color: $background-card;
+//        background-color: $background-card;
         
         img{
             object-fit: cover;
@@ -36,12 +36,42 @@
         }
         
         .subtitle{
-            font-size: 1em;
             padding-right: 15px;
         }
         &.no-back{
             background-color: transparent;
         }
     }
+    
+
+    .texto-publicidade{
+        margin-top: 30px;
+        text-align: right;
+        color: grey;
+        font-size: .8em;
+        @include media-breakpoint-down(xs) {
+            text-align: center;
+        }
+    }
+    
+    @include media-breakpoint-down(sm) {
+        .col-sm-6{
+            margin-bottom: 45px;
+        }
+        
+        .no-pic{
+            color: $azul-marinho;
+            padding-bottom: 10px;
+            margin-top: 15px;
+            border-bottom: 1px solid $cinza-hr;
+        }
+    }
+    
+    @include media-breakpoint-down(sm) {
+        .publicidade{
+            text-align: center;
+        }
+    }
+
     
 }

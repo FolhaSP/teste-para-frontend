@@ -12,4 +12,16 @@ body {
     
     @include media-breakpoint-down(xs) {
     }
+    
+    p{
+        
+        @include media-breakpoint-down(md) {
+            font-size: .9rem;
+        }
+        
+        @include media-breakpoint-down(sm) {
+            font-size: .8rem;
+        }
+    
+    }
 }

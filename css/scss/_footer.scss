@@ -20,11 +20,25 @@ footer{
         
         img{
             @include align-vertical-center();
+            height: max-content;
+            width: max-content;
         }
         
         .copyright{
             font-size: .75em;
             @include align-vertical-center();
+        }
+    }
+    
+    
+    @include media-breakpoint-down(sm) {
+        margin-top: 140px;
+    }
+    
+    @include media-breakpoint-down(xs) {
+        .row{
+            padding-right: 15px;
+            padding-left: 15px;
         }
     }
 }
