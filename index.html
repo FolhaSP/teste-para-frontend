@@ -12,35 +12,65 @@
 	</head>
 	<body>
 		<header class="header">
-			<button class="header__button">
-				<svg>
-					<use xlink:href="./assets/img/icons.svg#menu" />
-				</svg>
-			</button>
-			<div class="header__logo">
-				<img
-					src="./assets/img/logo.png"
-					alt="Logomarca da Folha de São Paulo"
-				/>
-				<h2 class="header__logo__subtitle">
-					O site de teste para <strong>novos webs</strong>
-				</h2>
-			</div>
-			<div class="header__social-medias">
-				<div class="header__social-media header__social-media--facebook">
+			<div class="header__container">
+				<button class="header__button">
 					<svg>
-						<use xlink:href="./assets/img/icons.svg#facebook" />
+						<use xlink:href="./assets/img/icons.svg#menu" />
 					</svg>
-					<span>Curtir</span>
+				</button>
+				<div class="header__logo">
+					<img
+						src="./assets/img/logo.png"
+						alt="Logomarca da Folha de São Paulo"
+					/>
+					<h2 class="header__logo__subtitle">
+						O site de teste para <strong>novos webs</strong>
+					</h2>
 				</div>
-				<div class="header__social-media header__social-media--twitter">
-					<svg>
-						<use xlink:href="./assets/img/icons.svg#twitter" />
-					</svg>
-					<span>Seguir</span>
+				<div class="header__social-medias">
+					<div class="header__social-media header__social-media--facebook">
+						<svg>
+							<use xlink:href="./assets/img/icons.svg#facebook" />
+						</svg>
+						<span>Curtir</span>
+					</div>
+					<div class="header__social-media header__social-media--twitter">
+						<svg>
+							<use xlink:href="./assets/img/icons.svg#twitter" />
+						</svg>
+						<span>Seguir</span>
+					</div>
 				</div>
 			</div>
 		</header>
-		<main></main>
+		<main class="main">
+			<section class="carousel">
+				<article class="carousel__item">
+					<h3 class="carousel__title">Mussum ipsum cacilds</h3>
+					<h4 class="carousel__subtitle">
+						Pra lá, depois divoltis porris, paradis.<br />
+						Paisis, filhis, espiritis santis
+					</h4>
+				</article>
+				<h4 class="carousel__subtitle carousel__subtitle--variant">
+					Pra lá, depois divoltis porris, paradis.
+				</h4>
+				<div class="carousel__buttons">
+					<button class="carousel__button"></button>
+					<button class="carousel__button"></button>
+					<button class="carousel__button"></button>
+				</div>
+				<button class="carousel__arrow carousel__arrow--left">
+					<svg>
+						<use xlink:href="./assets/img/icons.svg#chevron-left"></use>
+					</svg>
+				</button>
+				<button class="carousel__arrow carousel__arrow--right">
+					<svg>
+						<use xlink:href="./assets/img/icons.svg#chevron-right"></use>
+					</svg>
+				</button>
+			</section>
+		</main>
 	</body>
 </html>

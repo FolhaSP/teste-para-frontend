@@ -1,0 +1,108 @@
+@import "./colors";
+
+.carousel {
+	color: #fff;
+	position: relative;
+
+	.carousel__item {
+		align-items: flex-start;
+		background-image: url(../img/carousel.png);
+		background-position: center;
+		background-size: cover;
+		box-shadow: inset 0px -85px 115px #333;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		min-height: 350px;
+		padding: 1rem 0px;
+
+		@media (min-width: 576px) {
+			padding: 1rem;
+		}
+		@media (min-width: 768px) {
+			min-height: 450px;
+		}
+	}
+
+	.carousel__title {
+		background-color: $color-4;
+		display: inline-block;
+		font-size: 1rem;
+		margin: 0px;
+		padding: 0.375rem 4rem 0.375rem 1rem;
+		text-transform: uppercase;
+	}
+
+	.carousel__subtitle {
+		display: none;
+		font-size: 1.5rem;
+		line-height: 1.375;
+		margin-bottom: 0px;
+		margin-top: 1rem;
+
+		&.carousel__subtitle--variant {
+			color: $color-1;
+			display: block;
+		}
+
+		@media (min-width: 576px) {
+			display: block;
+
+			&.carousel__subtitle--variant {
+				display: none;
+			}
+		}
+	}
+
+	.carousel__buttons {
+		display: flex;
+		justify-content: center;
+		margin-top: 1rem;
+
+		.carousel__button {
+			background-color: $color-4;
+			border: none;
+			border-radius: 50%;
+			$size: 0.75rem;
+			height: $size;
+			width: $size;
+
+			& + .carousel__button {
+				background-color: #999;
+				margin-left: 1rem;
+			}
+		}
+	}
+
+	.carousel__arrow {
+		background-color: #fff;
+		border: none;
+		border-radius: 50%;
+		box-shadow: 0px 2px 4px rgba($color: #000000, $alpha: 0.5);
+		display: none;
+		padding: 0.25rem;
+		position: absolute;
+		top: 50%;
+		$size: 2.75rem;
+
+		@media (min-width: calc(1200px + 52px)) {
+			display: flex;
+		}
+
+		&.carousel__arrow--left {
+			right: 100%;
+			transform: translate(50%, -50%);
+		}
+
+		&.carousel__arrow--right {
+			left: 100%;
+			transform: translate(-50%, -50%);
+		}
+
+		& > svg {
+			display: flex;
+			height: $size;
+			width: $size;
+		}
+	}
+}

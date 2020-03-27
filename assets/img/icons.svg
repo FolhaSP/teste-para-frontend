@@ -13,4 +13,10 @@
 	<symbol id="facebook" style="width:24px;height:24px" viewBox="0 0 24 24">
     <path fill="#3b5998" d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
 	</symbol>
+	<symbol id="chevron-left" style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+	</symbol>
+	<symbol id="chevron-right" style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+	</symbol>
 </svg>

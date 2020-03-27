@@ -3,10 +3,15 @@
 $button-size: 2.5rem;
 
 .header {
-	align-items: center;
 	background-color: $color-4;
-	display: flex;
-	padding: 0px 1rem;
+
+	.header__container {
+		align-items: center;
+		display: flex;
+		margin: auto;
+		max-width: 1200px;
+		padding: 0px 1rem;
+	}
 
 	.header__button {
 		background: none;
