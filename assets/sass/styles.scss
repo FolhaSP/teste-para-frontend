@@ -41,13 +41,18 @@ ul {
 .main {
 	display: grid;
 	gap: 2rem;
-	max-width: 1200px;
-	margin: auto;
-	padding: 3rem 1rem 4rem 1rem;
+	padding: 3rem 1rem 8rem 1rem;
 
 	@media (min-width: 768px) {
 		gap: 5rem;
 	}
 }
 
-@import "./header", "./carousel", "./highlight", "./news", "./small-news";
+.container {
+	max-width: 1200px;
+	margin: auto;
+	width: 100%;
+}
+
+@import "./header", "./carousel", "./highlight", "./news", "./small-news",
+	"./footer";
