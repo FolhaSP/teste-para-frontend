@@ -11,7 +11,7 @@
 	@media (min-width: 576px) {
 		grid-template-columns: repeat(2, 1fr);
 	}
-	@media (min-width: 768px) {
+	@media (min-width: 992px) {
 		grid-template-columns: 1.25fr 1.25fr 1fr;
 	}
 }
@@ -23,9 +23,8 @@
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
-	width: 100%;
 
-	@media (min-width: 768px) {
+	@media (min-width: 992px) {
 		display: block;
 	}
 }
