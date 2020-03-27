@@ -14,16 +14,6 @@
 		background-size: cover;
 		padding: 1rem 0px;
 
-		&:nth-child(1) {
-			background-image: url(../img/highlight-01.png);
-		}
-		&:nth-child(2) {
-			background-image: url(../img/highlight-02.png);
-		}
-		&:nth-child(3) {
-			background-image: url(../img/highlight-03.png);
-		}
-
 		.highlight__title {
 			background-color: rgba($color: $color-2, $alpha: 0.8);
 			color: #fff;
@@ -33,6 +23,28 @@
 			margin: 0px;
 			padding: 0.375rem 1rem;
 			text-transform: uppercase;
+		}
+
+		&:nth-child(1) {
+			background-image: url(../img/highlight-01.png);
+
+			.highlight__title {
+				min-width: 40%;
+			}
+		}
+		&:nth-child(2) {
+			background-image: url(../img/highlight-02.png);
+
+			.highlight__title {
+				min-width: 50%;
+			}
+		}
+		&:nth-child(3) {
+			background-image: url(../img/highlight-03.png);
+
+			.highlight__title {
+				min-width: 65%;
+			}
 		}
 	}
 
@@ -47,6 +59,10 @@
 	@media (min-width: 992px) {
 		.highlight {
 			min-height: 250px;
+
+			.highlight__title {
+				min-width: auto !important;
+			}
 		}
 	}
 }
