@@ -6,6 +6,7 @@
 
 	.highlight {
 		align-items: flex-start;
+		background-image: url(../img/highlight-sprites.jpg);
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
@@ -26,21 +27,19 @@
 		}
 
 		&:nth-child(1) {
-			background-image: url(../img/highlight-01.png);
+			background-position: center bottom;
 
 			.highlight__title {
 				min-width: 40%;
 			}
 		}
 		&:nth-child(2) {
-			background-image: url(../img/highlight-02.png);
-
 			.highlight__title {
 				min-width: 50%;
 			}
 		}
 		&:nth-child(3) {
-			background-image: url(../img/highlight-03.png);
+			background-position: center top;
 
 			.highlight__title {
 				min-width: 65%;
@@ -52,12 +51,14 @@
 		grid-template-columns: repeat(3, 1fr);
 
 		.highlight {
+			background-size: 310px;
 			min-height: 180px;
 		}
 	}
 
 	@media (min-width: 992px) {
 		.highlight {
+			background-size: 420px;
 			min-height: 250px;
 
 			.highlight__title {
