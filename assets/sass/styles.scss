@@ -41,6 +41,7 @@ ul {
 .main {
 	display: grid;
 	gap: 2rem;
+	grid-gap: 2rem;
 	padding: 3rem 1rem 8rem 1rem;
 
 	@media (min-width: 768px) {
