@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+.py-5{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* ClASSE CRAIDA PARA SER APLICADA EM COMPONENTS QUE SERÃO 
+SOMENTE LIDOS POR LEITORES DE TELA, MAS NÃO VISIVEL PARA O USUARIO */
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/*------------ HEADER STYLES ---------------------------------------------------- */
+
+.bg-blue{
+    background-color: #3199dc;
+}
+
+.logo-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.logo-block img{
+    width: 180px;
+}
+
+.logo-block small{
+    margin-top: 1rem;
+}
+
+header .row{
+    align-items: center;
+    display: flex;
+}
+
+.social-pic img{
+    vertical-align: middle;
+    width: 15px;
+}
+
+.social-pic a{
+    background: #fff;
+    padding: 4px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 100;
+    margin-right: 1rem;
+}
+
+.facebook-text{
+    color: #3b5999 ;
+}
+
+.twitter-text{
+    color: #03a9f4;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #3199dc;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.hamburguer-icon{
+    font-size:30px;cursor:pointer
+}
+
+/* 04 Acrescentando estilo ao nosso banner slider */
+
+.carousel {
+    background: #222;
+  }
+  
+  .carousel-cell {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+  
+  }
+  
+  .carousel-cell-image {
+    display: block;
+    max-height: 100%;
+    width: 100%;
+  }  
+    
+  .flickity-button {
+    background: #fff;
+    color: #1e1e1e;
+    border: 2px solid #fff;
+    box-shadow: 3px 6px 9px #00000016;
+  }
+
+  .flickity-prev-next-button.next {
+    right: -10px;
+}
+.flickity-prev-next-button.previous {
+    left: -20px;
+}
+
+  .flickity-prev-next-button {
+   height: 40px;
+   width: 40px;
+
+}
+
+.slider .container{
+    padding: unset;
+}
+
+.caption{
+    position: absolute;
+    padding: 29px;
+    color: #fff;
+    bottom: 0;
+}
+
+.caption span{
+    background-color: #3199dc;
+    padding: 5px 35px; 
+}
+
+.caption p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.flickity-page-dots .dot.is-selected {
+    opacity: 1;
+    background: #3199dc;
+}
+
+
+/* ===== CONTENT =========================================================*/
+
+.card-caption{
+    position: absolute;
+    color: #fff;
+    bottom: 5rem;
+}
+
+.card-caption span{
+    background: rgb(211 85 70);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 100;
+    border-radius: 3px;
+}
+
+.card-description h2{
+    color: #3199dc;
+    margin: unset;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.second-section-content .card{
+    margin-bottom: 5rem;
+    box-shadow: 0 1px 0 #00000016;
+}
+
+.second-section-content .card img{
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+}
+
+.card-description{
+    padding: 0px 0 6px 0;
+}
+
+.publicidade-block{
+    text-align: end;
+}
+
+.publicidade-column{
+    margin-top: -2rem;
+}
+
+.card-description p{
+    font-weight: 600;
+    margin: unset;
+}
+
+.third-section-content .title-list-link{
+    color: #3199dc;
+}
+
+.third-section-content ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.third-section-content ul li a{
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.third-section-content ul li{
+    margin-bottom: 1rem;
+}
+
+.third-section-content ul li::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #1e1e1e36;
+    margin-top: 2rem;
+}
+
+.third-section-content .block-flex--first h2{
+    color: rgb(211 85 70 / 77%);
+}
+
+.title-block-flex{
+    color: rgb(211 85 70 / 77%);
+    display: table-cell;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.third-section-content .block-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section-content .block-flex .block{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+.block-flex--first .block p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.btn-back-to-top{
+    padding: 1rem;
+    text-align: end;
+
+}
+
+.back-to-top a{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    text-align: end;
+}
+
+.back-to-top a:hover{
+    text-decoration: none;
+}
+
+.back-to-top.pt-25{
+    padding-top: 25rem;
+}
+
+.bg-footer{
+    background: #283c4f;
+    color: #fff;
+}
+
+.link-footer{
+    text-decoration: underline;
+}
+.link-footer:hover{
+    color: #fff;
+}
+
+.ads-small-scren{
+    display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 992px){
+
+    header .row {
+        display: block;
+    }
+
+    body{
+        background: #eee;
+    }
+
+    .social-pic a,
+    .logo-block small,
+    .flickity-button,
+    .publicidade-block,
+    .first-section-content h2 {
+        display: none;
+    }
+
+    .card-description p {
+        font-size: 18px;
+    }
+
+    .card-description h2,
+    .third-section-content .title-list-link {
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    .hamburguer-icon {
+        position: absolute;
+        top: 2rem;
+        z-index: 1;
+    }
+
+    .card{
+        margin-bottom: 2rem;
+    }
+
+    .carousel{
+        background: transparent;
+    }
+
+    .caption {
+        bottom: -100px;
+        padding: 1px;
+    }
+
+    .caption p {
+        color: #1e1e1e;
+        font-size: 25px;
+    }
+
+    .flickity-viewport{
+        height: 32rem !important;
+    }
+
+    .third-section-content .block-flex {
+        flex-direction: column;
+    }
+
+    .third-section-content{
+        margin-top: -8rem;
+    }
+
+    footer img{
+        display: none;
+    }
+
+    .ads-small-scren{
+        display: block;
+    }
+
+    .small-publicidade{
+        display: none;
+    }
+
+    
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+    /* CSS */
+
+    #flex-sm{
+        display: none;
+    }
+
+    .small-publicidade{
+        display: block;
+    }
+
+    .ads-small-scren{
+        text-align: end;
+
+    }
+
+    .third-section-content .block-flex {
+        display: block;
+       
+    }
+
+    .last-block-flex {
+        width: 55%;
+        margin-top: -7rem;
+    }
+
+    .caption {
+        bottom: -5px;
+    }
+
+    .caption p {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .social-pic a {
+        display: inline-flex !important;
+        margin-top: 3rem;
+    }
+
+    .label-social{
+        display: none;
+    }
+
+  }
+  
