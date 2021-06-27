@@ -1,16 +1,329 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Folha de S.Paulo</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- CAROUSEL SLIDER LIBRARY - Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./css/grid_system.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <title> TESTE - Frontend - Folha de São Paulo</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container bg-blue">
+            <div class="row">
+                <div class="col-lg-2 col-sm-2">
+                    <div id="menu" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#">lorem ipsum </a>
+                        <a href="#">lorem ipsum </a>
+                        <a href="#">lorem ipsum </a>
+                        <a href="#">lorem ipsum </a>
+                      </div>
+                
+                      <span class="hamburguer-icon" onclick="openNav()">&#9776;</span>
+                </div>
+                <div class="logo-block col-lg-7 col-md-6 col-sm-6 text-center">
+                    <picture>
+                        <img src="./images/desktop-images/logo.png" alt="Logo Folha" 
+                             class="img-fluid" loading="lazy">
+                    </picture>
+                    <small> o site de teste para novos webs</small>
+                </div>
+                <div class="col-lg-2 col-sm-2">
+                    <picture class="social-pic">
+                       <a href="" class="facebook-text" alt="Ir para o facebook">
+                           <img src="./images/desktop-images/facebook.png" alt="Logo Facebook"> <span class="label-social"> Curtir </span></a>
+                       <a href="" class="twitter-text" alt="Ir para o twitter">
+                           <img src="./images/desktop-images/twitter.png" alt="Logo Twitter"> <span class="label-social"> Seguir</span></a>
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    </head>
-    <body>
-      
-    </body>
+    <main>
+        <section class="py-5 slider">
+            <div class="container">
+                <h2 class="sr-only">Banner</h2>
+                <div class="carousel" data-flickity='{ "imagesLoaded": true }'>
+                    <div class="carousel-cell">
+                        <picture>
+                            <source media="(max-width:425px)" 
+                                srcset="./images/mobile-images/image_rotate.png" />
+                            <img
+                                class="carousel-cell-image"
+                                src="./images/desktop-images/image_rotate.png"
+                                alt=" Imagem Banner Slider Flickity"
+                                loading="lazy"
+                            />
+                        </picture>
+                        <div class="caption">
+                            <span> LOREM IPSUM</span>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-cell">
+                        <picture>
+                            <source media="(max-width:425px)"  srcset="./images/mobile-images/image_rotate.png" />
+                            <img class="carousel-cell-image"  src="./images/desktop-images/image_rotate.png" alt="Imagem Banner Slider Flickity" loading="lazy" />
+                        </picture>
+                        <div class="caption">
+                            <span> LOREM IPSUM</span>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                               </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-5 first-section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2> lorem ipsum </h2>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="card">
+                            <picture>
+                                <source media="(max-width:425px)" srcset="./images/mobile-images/highlight-01.png">
+                                <img src="./images/desktop-images/highlight-01.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-caption">
+                                <span> lorem ipsum </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="card">
+                            <picture>
+                                <source media="(max-width:425px)" 
+                                       srcset="./images/mobile-images/highlight-02.png" />
+                                <img src="./images/desktop-images/highlight-02.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-caption">
+                                <span> lorem ipsum </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="card">
+                            <picture>
+                                <source media="(max-width:425px)" 
+                                       srcset="./images/mobile-images/highlight-03.png" />
+                                <img src="./images/desktop-images/highlight-03.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-caption">
+                                <span> lorem ipsum </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 second-section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2> lorem ipsum </h2>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="card">
+                            <picture>
+                                <source media="(max-width:425px)" srcset="./images/mobile-images/divoltis-porris-01.png">
+                                <img src="./images/desktop-images/divoltis_porris-01.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-description">
+                                <h2> lorem ipsum</h2>
+                                <p> loremLaborum laborum aliquip cillum in cupidatat ipsum.
+                                    Cillum id eiusmod enim laborum ad do sunt esse.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <picture>
+                                <source media="(max-width:425px)"  srcset="./images/mobile-images/divoltis-porris-02.png" />
+                                <img src="./images/desktop-images/divoltis_porris-02.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-description">
+                                <h2> lorem ipsum</h2>
+                                <p> loremLaborum laborum aliquip cillum in cupidatat ipsum.
+                                    Cillum id eiusmod enim laborum ad do sunt esse.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="card">
+                            <picture>
+                                <source media="(max-width:425px)"  srcset="./images/mobile-images/divoltis-porris-03.png" />
+                                <img src="./images/desktop-images/divoltis_porris-03.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-description">
+                                <h2> lorem ipsum</h2>
+                                <p> loremLaborum laborum aliquip cillum in cupidatat ipsum.
+                                    Cillum id eiusmod enim laborum ad do sunt esse.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <picture>
+                                <source media="(max-width:425px)"  srcset="./images/mobile-images/divoltis-porris-04.png" />
+                                <img src="./images/desktop-images/divoltis_porris-04.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-description">
+                                <h2> lorem ipsum</h2>
+                                <p> loremLaborum laborum aliquip cillum in cupidatat ipsum.
+                                    Cillum id eiusmod enim laborum ad do sunt esse.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 publicidade-block">
+                       <div class="publicidade-column">
+                        <small> Publicidade </small>
+                        <picture>
+                            <img src="./images/desktop-images/ads-300x600.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy"/>
+                        </picture>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 third-section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-5">
+                        <h2 class="title-list-link"> lorem ipsum, lorem ipsum , lorem</h2>
+                        <ul>
+                            <li><a href="" alt="Texto alternativo Genérico"> loremEt commodo velit consequat laborum do cillum officia esse ut ad minim esse ullamco. </a></li>
+                            <li><a href="" alt="Texto alternativo Genérico"> loremEt commodo velit consequat laborum do cillum officia esse ut ad minim esse ullamco. </a></li>
+                            <li><a href="" alt="Texto alternativo Genérico"> loremEt commodo velit consequat. </a></li>
+                            <li><a href="" alt="Texto alternativo Genérico"> loremEt commodo velit consequat laborum do cillum officia esse ut ad minim esse ullamco. </a></li>
+                            <li><a href="" alt="Texto alternativo Genérico"> loremEt commodo velit consequat laborum do cillum officia. </a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="block-flex">
+                            <!-- <h2> lorem ipsum</h2> -->
+                            <div class="block-flex--first">
+                                <h2> lorem ipsum</h2>
+                                <div class="block">
+                                    <picture>
+                                        <source media="(max-width:425px)" srcset="./images/mobile-images/se_pirulita-01.png">
+                                        <img src="./images/desktop-images/se_pirulita-01.png" alt="">
+                                    </picture>
+                                    <p>
+                                        <span class="title-block-flex"> lorem ipsum</span>
+                                        lorem ipsum dolor sit amet
+                                        lorem ipsum dolor sit amet
+                                    </p>
+                                </div>
+
+                                <div class="block">
+                                    <picture>
+                                        <source media="(max-width:425px)" srcset="./images/mobile-images/se_pirulita-02.png">
+                                        <img src="./images/desktop-images/se_pirulita-02.png" alt="">
+                                    </picture>
+                                    <p>
+                                        <span class="title-block-flex"> lorem ipsum</span>
+                                        lorem ipsum dolor sit amet
+                                        lorem ipsum dolor sit amet
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="block-flex--first" id="flex-sm">
+                                <h2> lorem ipsum</h2>
+                                <div class="block">
+                                    <picture>
+                                        <source media="(max-width:425px)" srcset="./images/mobile-images/suco_de_cevadiss-01.png">
+                                        <img src="./images/desktop-images/suco_de_cevadiss-01.png" alt="">
+                                    </picture>
+                                    <p>
+                                        <span class="title-block-flex"> lorem ipsum</span>
+                                        lorem ipsum dolor sit amet
+                                        lorem ipsum dolor sit amet
+                                    </p>
+
+                                </div>
+
+                                <div class="block last-block-flex">
+                                    <picture>
+                                        <source media="(max-width:425px)" srcset="./images/mobile-images/suco_de_cevadiss-02.png">
+                                        <img src="./images/desktop-images/suco_de_cevadiss-02.png" alt="">
+                                    </picture>
+                                    <p>
+                                        <span class="title-block-flex"> lorem ipsum</span>
+                                        lorem ipsum dolor sit amet
+                                        lorem ipsum dolor sit amet
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ads-small-scren">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <small class="small-publicidade"> Publicidade </small>
+                        
+                        <picture  >
+                          
+                            <img src="./images/mobile-images/ads-300x250.png" alt="Texto alternativo Genérico">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-25 back-to-top">
+            <div class="container">
+                <div class="row bg-blue">
+                    <div class="col-lg-12">
+                        <div class="btn-back-to-top">
+                            <a href="#header" title="Voltar ao início da página" alt="Texto alternativo Genérico"> Voltar ao topo <img src="./images/desktop-images/up-arrow.png" alt="Texto alternativo Genérico" loading="lazy" width="20"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer >
+            <div class="container">
+                <div class="row bg-footer py-5">
+                    <div class="col-lg-3 text-center">
+                       <picture>
+                           <img src="./images/desktop-images/logo_footer.png" alt="Texto alternativo Genérico" loading="lazy">
+                       </picture>
+                    </div>
+                    <div class="col-lg-9">
+                        <p> Copyright Folha de S.Paulo. Todos os direitos reservados.
+                             É proibida a reprodução do conteúdo desta página em qualquer meio de comunicação, eletrônico ou impresso,
+                              sem autorização escrita da Folhapress. <a class="link-footer" href="#" target="_blank" alt="Texto alternativo Genérico">(pesquisa@folhapress.com.br)</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <!-- CDN async Flickity Slider -->
+    <script async src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
 </html>
