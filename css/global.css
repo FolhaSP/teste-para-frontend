@@ -1,0 +1,121 @@
+body, html{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #edf0f1;
+  scroll-behavior: smooth;
+  overflow-x:hidden;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4{
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 100;
+}
+
+p{
+  color: #28364f;
+}
+
+p{
+  margin: 0;
+}
+
+.titulo-section{
+  font-size: 1.7rem;
+  color: #28364f;
+  padding-bottom: 20px;
+}
+
+section{
+  padding-top:40px;
+}
+
+.centralizar{
+  max-width: 1139px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1250px){
+  .centralizar{
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1070px){
+  .centralizar{
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 990px){
+  .centralizar{
+    max-width: 800px;
+  }
+
+  
+}
+
+@media (max-width: 820px){
+  .centralizar{
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 750px){
+  .centralizar{
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 630px){
+  .centralizar{
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 580px){
+  .centralizar{
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 520px){
+  .centralizar{
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 420px){
+  .centralizar{
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 360px){
+  .centralizar{
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 335px){
+  .centralizar{
+    max-width: 300px;
+  }
+}
+
+
