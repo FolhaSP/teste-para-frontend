@@ -1,0 +1,63 @@
+.rodape{
+ background-color:  #283c4f;
+}
+
+.voltar{
+  background-color: #3199dc;
+  height: 50px;
+  text-align: right;
+  text-transform: uppercase;
+  color:white;
+  padding-top:25px;
+}
+
+.topo{
+  position:relative;
+}
+
+.topo::after{
+  content: '';
+  display:block;
+  background: url(../slices/mobile/arrow_top-icon.png) no-repeat center;
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  right: -30px;
+  top: 0;
+}
+
+
+.infos-rodape{
+  display:flex;
+  height: 100px;
+  align-items: center;
+  gap:30px;
+}
+
+.copy{
+  font-size: .800rem;
+  color:white;
+}
+
+@media (max-width: 900px){
+
+  .topo{
+    margin-right:50px;
+  }
+
+  }
+
+  @media (max-width: 520px){
+    .infos-rodape img{
+      display:none;
+    }
+  }
+
+  @media (max-width: 360px){
+    .copy{
+      font-size: 0.7rem;
+    }
+
+    
+  }
+
