@@ -1,0 +1,39 @@
+
+.listas-noticias{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.top-lista{
+  position:relative;
+  z-index:0;
+}
+
+.titulo-top{
+  background-color: #df5e45;
+  display: inline-block;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  z-index: 1;
+}
+
+@media (max-width: 1250px){
+  .listas-noticias{
+    gap:20px;
+   }
+}
+
+@media (max-width: 580px){
+  .listas-noticias {
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+}
+
+
